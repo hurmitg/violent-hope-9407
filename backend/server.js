@@ -6,8 +6,9 @@ const connectDB = require("./config/db");
 const PORT = process.env.PORT || 8080;
 
 const userRoutes = require("./routes/user.routes");
+const productRoutes = require("./routes/product.routes");
 const { notFound, errorHandler } = require("./middlewares/error.middleware");
-const cartRoutes = require("./routes/cart.routes")
+const cartRoutes = require("./routes/cart.routes");
 
 const app = express();
 app.use(express.json());
@@ -21,6 +22,7 @@ app.use(cors());
 app.get("/", (req, res) => res.send("API is running"));
 
 app.use("/api/user", userRoutes);
+app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 
 app.use(notFound);
