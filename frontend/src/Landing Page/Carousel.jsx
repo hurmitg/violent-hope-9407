@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
+import { Box, IconButton, SimpleGrid, useBreakpointValue,Heading, Button } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { IoIosArrowBack,IoIosArrowForward } from "react-icons/io";
 // And react-slick as our Carousel Lib
@@ -49,6 +49,9 @@ export default function Carousel() {
   ];
 
   return (
+    
+      
+     
     <Box
       position={"relative"}
       height={"60vh"}
@@ -56,6 +59,7 @@ export default function Carousel() {
       m="auto"
       mt="5%"
       overflow={"hidden"}
+      textAlign={"center"}
     >
       {/* CSS files for react-slick */}
       <link
@@ -70,6 +74,7 @@ export default function Carousel() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       {/* Left Icon */}
+      <Heading fontWeight={200}>New Arrivals</Heading>
       <IconButton
         aria-label="left-arrow"
         colorScheme="none"
@@ -79,11 +84,12 @@ export default function Carousel() {
         top={top}
         _hover={{bg:"none"}}
         bg={"transparent"}
-        transform={"translate(0%, -150%)"}
+        
+        transform={"translate(0%,10%)"}
         zIndex={2}
         onClick={() => slider?.slickPrev()}
-      >
-        <IoIosArrowBack color="#111" fontSize={"3rem"}  onClick={() => slider?.slickPrev()} />
+        >
+        <IoIosArrowBack  color="#111" fontSize={"3rem"}   onClick={() => slider?.slickPrev()} />
       </IconButton>
       {/* Right Icon */}
       <IconButton
@@ -96,21 +102,26 @@ export default function Carousel() {
         
         _hover={{bg:"none"}}
         bg={"transparent"}
-        transform={"translate(0%, -150%)"}
+        transform={"translate(0%, 10%)"}
         
         zIndex={2}
         onClick={() => slider?.slickNext()}
-      >
+        >
         <IoIosArrowForward color="#111" fontSize={"3rem"}  />
       </IconButton>
       {/* Slider */}
+      
+       
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
+
         {cards.map((url, index) => (
-          <Box  p="1rem" h="60vh" >
+          <Box  p="1rem" h="70vh" >
             <ProductCard />
           </Box>
         ))}
       </Slider>
+     
     </Box>
+  
   );
 }
