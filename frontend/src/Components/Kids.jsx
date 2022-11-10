@@ -11,10 +11,13 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import React from "react";
+import Corousel from "./Corousel";
+import Navbar from "./Navbar";
 
 function Kids() {
   return (
-    <>
+    <> 
+    <Navbar/>
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto">
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}
@@ -208,7 +211,7 @@ function Kids() {
           <Text color="black" fontSize={25} mb="1rem" textAlign="center">
             KIDS DESIGNERS
           </Text>
-          corosel
+          <Corousel/>
           <Center>
             <Button
               colorScheme="blackAlpha"
