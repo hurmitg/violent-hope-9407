@@ -1,0 +1,107 @@
+.cartCardparent{
+    padding: 15px 0px 30px 0px;
+    display: flex;
+    margin: 0px 50px;
+    height: auto;
+
+}
+
+.first{
+    width: 15%;
+    padding: 5px;
+}
+
+.second{
+    width: 58%;
+}
+.one{
+    font-size: 14.5px;
+    color: gray;
+}
+
+.two{
+    /* width: 9%; */
+    /* display: flex; */
+    width: 33%;
+    font-size: 15px;
+  
+    
+}
+
+
+@media screen and (max-width:950px) {
+    .one{
+     font-size: 11px;
+    }
+
+    .two{
+        font-size: 11px;
+    }
+     
+ }
+
+
+ @media screen and (max-width:700px) {
+    
+    .first{
+      width: 30%;
+    }
+
+    .second{
+    widows: 43%;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    
+    .cartCardparent{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .two{
+        
+        /* border: 1px solid red; */
+        width: auto;
+
+    }
+
+    .incdre{
+        display: flex;
+        
+    }
+}
+
+
+/* section 3 */
+
+.section3{
+    display: flex;
+    /* border: 1px solid green; */
+    padding: 15px 0px 0px 0px
+}
+
+.section31{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+
+.section31a{
+    display: flex;
+}
+
+.section32{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+    
+}
