@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import Layout from './Landing Page/Layout';
+
 import LoginMain from './Login/Main';
+
+import "./App.css";
+
+
 
 function App() {
   return (
     <>
+
     <LoginMain/>
+
     </>
   );
 }

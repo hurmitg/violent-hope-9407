@@ -1,0 +1,59 @@
+
+*{
+    box-sizing: border-box;
+}
+.cfirst{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+
+.cone{
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    gap:15px;
+    margin-bottom: 30px;
+}
+
+.cone1{
+    
+    width: 50%;
+    height: 100%;
+    border: 1px solid gray;
+    padding-top:20px;
+   
+}
+
+
+
+.cartfoot{
+    font-size: 13px;
+}
+
+
+@media screen and (max-width:580px) {
+    .cone{
+        width:100%;
+        height: 350px;
+        flex-direction: column;
+    }
+    .cone1{
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .cone2{
+        font-size: 13.5px;
+    }
+
+    .cartfoot{
+        font-size: 10px;
+    }
+}
+
+
