@@ -14,11 +14,27 @@ import {
   useColorModeValue,
   Select,
 } from "@chakra-ui/react";
+import { useState } from "react";
 
 export default function SignUp() {
+  const [user, setUser] = useState({
+    contractions: "",
+    profession: "",
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setUser({ ...user, [name]: value });
+
+    console.log(user);
+  };
+
   return (
     <Flex
-      
       w={["100%", "100%", "50%"]}
       color="#757575"
       minH={"100vh"}
@@ -26,26 +42,50 @@ export default function SignUp() {
       justify={"center"}
       bg={useColorModeValue("gray.50", "gray.800")}
     >
-      <Stack spacing={8} w="100%" py={12} >
-        <Box bg={"white"} textAlign={"justify"} p={8} borderRight={"1px solid #cfcfcf"}>
-          <Box fontSize={"2xl"} textTransform={'uppercase'}  color="#111" fontWeight={100}>
+      <Stack spacing={8} w="100%" py={12}>
+        <Box
+          bg={"white"}
+          textAlign={"justify"}
+          p={8}
+          borderRight={["none","none","1px solid #cfcfcf"]}
+        >
+          <Box
+            fontSize={"2xl"}
+            textTransform={"uppercase"}
+            color="#111"
+            fontWeight={100}
+          >
             Create An Account
           </Box>
           <Text mt="3%">
             Please enter the following information to create your account.
           </Text>
           <Box mt="5%">
-           <CheckboxGroup  colorScheme="blue" defaultValue={["Ms."]}>
-            <Stack spacing={[1, 5]} mt="2%" direction={["column","row", "row"]}>
-              <Checkbox value="Ms.">Ms.</Checkbox>
-              <Checkbox value="Mrs.">Mrs.</Checkbox>
-              <Checkbox value="Mr.">Mr.</Checkbox>
-            </Stack>
-          </CheckboxGroup>
+            <CheckboxGroup colorScheme="blue">
+              <Stack
+                spacing={[1, 5]}
+                mt="2%"
+                direction={["column", "row", "row"]}
+              >
+                <Checkbox
+                 
+                  value="Ms."
+                  defaultValue
+                >
+                  Ms.
+                </Checkbox>
+                <Checkbox  value="Mrs.">
+                  Mrs.
+                </Checkbox>
+                <Checkbox  value="Mr.">
+                  Mr.
+                </Checkbox>
+              </Stack>
+            </CheckboxGroup>
           </Box>
           <Stack spacing={5} mt="5%">
             <FormControl id="email">
-              <Select>
+              <Select name="profession" onChange={(e) => handleChange(e)}>
                 <option value="academic title">academic title</option>
                 <option value=""></option>
                 <option value="Dr.">Dr.</option>
@@ -54,19 +94,44 @@ export default function SignUp() {
               </Select>
             </FormControl>
             <FormControl id="email">
-              <Input type="first name" placeholder="First name*" />
+              <Input
+                name="firstName"
+                type="first name"
+                onChange={(e) => handleChange(e)}
+                placeholder="First name*"
+              />
             </FormControl>
             <FormControl id="password">
-              <Input type="last name" placeholder="Last name*" />
+              <Input
+                name="lastName"
+                type="last name"
+                onChange={(e) => handleChange(e)}
+                placeholder="Last name*"
+              />
             </FormControl>
             <FormControl id="password">
-              <Input type="email" placeholder="Email address*" />
+              <Input
+                name="email"
+                type="email"
+                onChange={(e) => handleChange(e)}
+                placeholder="Email address*"
+              />
             </FormControl>
             <FormControl id="password">
-              <Input type="password" placeholder="password*" />
+              <Input
+                name="password"
+                type="password"
+                onChange={(e) => handleChange(e)}
+                placeholder="password*"
+              />
             </FormControl>
-            <FormControl id="password*">
-              <Input type="confirm password*" placeholder="Last name*" />
+            <FormControl id="password">
+              <Input
+                name="comfirmpassword"
+                type="confirm password*"
+                onChange={(e) => handleChange(e)}
+                placeholder="confirm password*"
+              />
             </FormControl>
             <Stack spacing={10}>
               <Box
