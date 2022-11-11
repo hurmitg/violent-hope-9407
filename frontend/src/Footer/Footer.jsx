@@ -46,7 +46,7 @@ const SocialButton = ({ children, label, href }) => {
 
 const ListHeader = ({ children }) => {
   return (
-    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
+    <Text fontWeight={"500"}  fontSize={"lg"} mb={2}>
       {children}
     </Text>
   );
@@ -75,7 +75,7 @@ export default function LargeWithNewsletter() {
               alt="onkar"
             />
           </Box>
-            <Text fontSize={"md"} color={"#cfcfcf"}>
+            <Text fontSize={"md"} color={"gray"}>
               © 2022 Violent Hope. All rights reserved
             </Text>
           </Stack>
