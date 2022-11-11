@@ -13,11 +13,11 @@ import {
 import React from "react";
 import Corousel from "./Corousel";
 import Navbar from "./Navbar";
-
+import { Link } from "react-router-dom";
 function Men() {
   return (
-    <>  
-    <Navbar/>
+    <>
+      <Navbar />
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto" mt="100PX">
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}
@@ -52,21 +52,22 @@ function Men() {
                 Marni x Mytheresa Men
               </Text>
             </Stack>
-
-            <Button
-              colorScheme="white"
-              bgColor="white"
-              maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              color="black"
-              mt="1.2rem"
-              fontWeight="none"
-              w="20vw"
-            >
-              SHOP NOW
-            </Button>
+            <Link to="/menproduct">
+              <Button
+                colorScheme="white"
+                bgColor="white"
+                maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
+                h={8}
+                fontSize={13}
+                borderRadius="none"
+                color="black"
+                mt="1.2rem"
+                fontWeight="none"
+                w="20vw"
+              >
+                SHOP NOW
+              </Button>
+            </Link>
           </Flex>
         </Flex>
 
@@ -75,22 +76,26 @@ function Men() {
             <Heading fontWeight="400" fontSize="35px" mt="2rem">
               New Arrivals
             </Heading>
-          
-            <Box mt="2rem" mb="2rem" ><Corousel /></Box>
-           
+
+            <Box mt="2rem" mb="2rem">
+              <Corousel />
+            </Box>
+
             <Center>
-              <Button
-                maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={{ lg: "13", md: "11", sm: "11" }}
-                bgColor="black"
-                borderRadius="none"
-                color="white"
-                w="10vw"
-                mt="1rem"
-              >
-                VIEW ALL
-              </Button>
+              <Link to="/menproduct">
+                <Button
+                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={{ lg: "13", md: "11", sm: "11" }}
+                  bgColor="black"
+                  borderRadius="none"
+                  color="white"
+                  w="10vw"
+                  mt="1rem"
+                >
+                  VIEW ALL
+                </Button>
+              </Link>
             </Center>
           </Box>
         </Center>
@@ -116,18 +121,20 @@ function Men() {
               <Text fontWeight="400" fontSize="14px">
                 The pieces to add to your wishlist
               </Text>
-              <Button
-                maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={{ lg: "13", md: "11", sm: "11" }}
-                bgColor="white"
-                borderRadius="none"
-                color="black"
-                w="10vw"
-                mt="1rem"
-              >
-                VIEW ALL
-              </Button>
+              <Link to="/menproduct">
+                <Button
+                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={{ lg: "13", md: "11", sm: "11" }}
+                  bgColor="white"
+                  borderRadius="none"
+                  color="black"
+                  w="10vw"
+                  mt="1rem"
+                >
+                  VIEW ALL
+                </Button>
+              </Link>
             </Box>
             <Image
               src="https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW45/BIG2/DESKTOP_2X_20221107170819.jpg?imwidth=1180&imdensity=1"
@@ -136,7 +143,9 @@ function Men() {
           </Flex>
         </Center>
 
-        <Box  mt="2rem" mb="2rem" ><Corousel/></Box>
+        <Box mt="2rem" mb="2rem">
+          <Corousel />
+        </Box>
         <Center mt="3rem">
           <Flex>
             <Image
@@ -162,36 +171,42 @@ function Men() {
               <Text fontWeight="400" fontSize="14px">
                 The pieces to add to your wishlist
               </Text>
-              <Button
-                maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={{ lg: "13", md: "11", sm: "11" }}
-                bgColor="white"
-                borderRadius="none"
-                color="black"
-                w="10vw"
-                mt="1rem"
-              >
-                VIEW ALL
-              </Button>
+              <Link to="/menproduct">
+                <Button
+                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={{ lg: "13", md: "11", sm: "11" }}
+                  bgColor="white"
+                  borderRadius="none"
+                  color="black"
+                  w="10vw"
+                  mt="1rem"
+                >
+                  VIEW ALL
+                </Button>
+              </Link>
             </Box>
           </Flex>
         </Center>
 
-        <Box  mt="2rem" mb="2rem" ><Corousel/></Box>
+        <Box mt="2rem" mb="2rem">
+          <Corousel />
+        </Box>
         <Center>
-          <Button
-            maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-            h={8}
-            fontSize={{ lg: "13", md: "11", sm: "11" }}
-            bgColor="black"
-            borderRadius="none"
-            color="white"
-            w="10vw"
-            mt="1rem"
-          >
-            SHOP NOW
-          </Button>
+          <Link to="/menproduct">
+            <Button
+              maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+              h={8}
+              fontSize={{ lg: "13", md: "11", sm: "11" }}
+              bgColor="black"
+              borderRadius="none"
+              color="white"
+              w="10vw"
+              mt="1rem"
+            >
+              SHOP NOW
+            </Button>
+          </Link>
         </Center>
 
         <Center>

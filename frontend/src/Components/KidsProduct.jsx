@@ -5,7 +5,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function MenProduct() {
+function KidsProduct() {
   const [data, setData] = useState([]);
 
   let getData = () => {
@@ -30,7 +30,7 @@ function MenProduct() {
         >
           {data?.map((e) => (
             <Flex w="20vw" h="20vw" alignItems="center" direction="column">
-              <Link to={`/menproduct/${e.id}`}>
+              <Link to="/id">
                 <Image src={e.image} h="100%" w="90%"></Image>
 
                 {/* <Text>{e.title}</Text> */}
@@ -46,4 +46,4 @@ function MenProduct() {
   );
 }
 
-export default MenProduct;
+export default KidsProduct;

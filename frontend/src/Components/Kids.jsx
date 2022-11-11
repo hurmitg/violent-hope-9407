@@ -11,13 +11,14 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 import Corousel from "./Corousel";
 import Navbar from "./Navbar";
 
 function Kids() {
   return (
-    <> 
-    <Navbar/>
+    <>
+      <Navbar />
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto">
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}
@@ -42,20 +43,21 @@ function Kids() {
               >
                 Girls
               </Text>
-
-              <Button
-                bgColor="white"
-                maxW={{ lg: "6vw", md: "10vw", sm: "10vw" }}
-                h={8}
-                fontSize={13}
-                borderRadius="none"
-                color="black"
-                mt="1.2rem"
-                fontWeight="none"
-                w="20vw"
-              >
-                SHOP NOW
-              </Button>
+              <Link to="/kidsproduct">
+                <Button
+                  bgColor="white"
+                  maxW={{ lg: "6vw", md: "10vw", sm: "10vw" }}
+                  h={8}
+                  fontSize={13}
+                  borderRadius="none"
+                  color="black"
+                  mt="1.2rem"
+                  fontWeight="none"
+                  w="20vw"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </Stack>
           </Flex>
 
@@ -77,20 +79,21 @@ function Kids() {
               >
                 Boys
               </Text>
-
-              <Button
-                bgColor="white"
-                maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={13}
-                borderRadius="none"
-                color="black"
-                mt="1.2rem"
-                fontWeight="none"
-                w="20vw"
-              >
-                SHOP NOW
-              </Button>
+              <Link to="/kidsproduct">
+                <Button
+                  bgColor="white"
+                  maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={13}
+                  borderRadius="none"
+                  color="black"
+                  mt="1.2rem"
+                  fontWeight="none"
+                  w="20vw"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </Stack>
           </Flex>
         </Flex>
@@ -113,21 +116,22 @@ function Kids() {
             >
               Baby
             </Text>
-
-            <Button
-              colorScheme="black"
-              bgColor="black"
-              maxW={{ lg: "6vw", md: "9vw", sm: "9vw" }}
-              h={8}
-              fontSize={{ lg: "13", md: "10", sm: "10" }}
-              borderRadius="none"
-              color="white"
-              mt="1.2rem"
-              fontWeight="none"
-              w="20vw"
-            >
-              SHOP NOW
-            </Button>
+            <Link to="/kidsproduct">
+              <Button
+                colorScheme="black"
+                bgColor="black"
+                maxW={{ lg: "6vw", md: "9vw", sm: "9vw" }}
+                h={8}
+                fontSize={{ lg: "13", md: "10", sm: "10" }}
+                borderRadius="none"
+                color="white"
+                mt="1.2rem"
+                fontWeight="none"
+                w="20vw"
+              >
+                SHOP NOW
+              </Button>
+            </Link>
           </Stack>
         </Flex>
 
@@ -154,20 +158,21 @@ function Kids() {
               >
                 KIDS' SKIWEAR
               </Text>
-
-              <Button
-                bgColor="white"
-                maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={13}
-                borderRadius="none"
-                color="black"
-                mt="1.2rem"
-                fontWeight="none"
-                w="20vw"
-              >
-                SHOP NOW
-              </Button>
+              <Link to="/kidsproduct">
+                <Button
+                  bgColor="white"
+                  maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={13}
+                  borderRadius="none"
+                  color="black"
+                  mt="1.2rem"
+                  fontWeight="none"
+                  w="20vw"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </Stack>
           </Flex>
 
@@ -189,20 +194,21 @@ function Kids() {
               >
                 LOUBI FAMILY
               </Text>
-
-              <Button
-                bgColor="white"
-                maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={13}
-                borderRadius="none"
-                color="black"
-                mt="1.2rem"
-                fontWeight="none"
-                w="20vw"
-              >
-                SHOP NOW
-              </Button>
+              <Link to="/kidsproduct">
+                <Button
+                  bgColor="white"
+                  maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={13}
+                  borderRadius="none"
+                  color="black"
+                  mt="1.2rem"
+                  fontWeight="none"
+                  w="20vw"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </Stack>
           </Flex>
         </Flex>
@@ -211,21 +217,23 @@ function Kids() {
           <Text color="black" fontSize={25} mb="1rem" textAlign="center">
             KIDS DESIGNERS
           </Text>
-          <Corousel/>
+          <Corousel />
           <Center>
-            <Button
-              colorScheme="blackAlpha"
-              maxW={{ lg: "10vw", md: "10vw", sm: "9vw" }}
-              h={8}
-              fontSize={13}
-              bgColor="black"
-              borderRadius="none"
-              color="white"
-              mt="1.6rem"
-              w="10vw"
-            >
-              SHOP KIDS DESIGNERS
-            </Button>
+            <Link to="/kidsproduct">
+              <Button
+                colorScheme="blackAlpha"
+                maxW={{ lg: "10vw", md: "10vw", sm: "9vw" }}
+                h={8}
+                fontSize={13}
+                bgColor="black"
+                borderRadius="none"
+                color="white"
+                mt="1.6rem"
+                w="10vw"
+              >
+                SHOP KIDS DESIGNERS
+              </Button>
+            </Link>
           </Center>
         </Box>
 
