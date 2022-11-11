@@ -8,17 +8,35 @@ const cartSchema = mongoose.Schema(
       ref: "User",
     },
     cartItems: [
-      {
-        name: { type: String, required: true },
-        quantity: { type: String, required: true },
-        image: { type: String, required: true },
-        price: { type: String, required: true },
-        products: {
-          type: mongoose.Schema.Types.ObjectId,
-          required: true,
-          ref: "Product",
+      
+        {
+          brand: { type: String, required: true },
+          title: { type: String, required: true },
+          image: { type: String, required: true },
+          description: { type: String, required: true },
+          type: { type: String, required: true },
+          category: { type: String, required: true },
+          price: { type: Number, required: true },
+          products: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: "Product",
+          },
         },
-      },
+
+
+
+
+        // name: { type: String, required: true },
+        // quantity: { type: String, required: true },
+        // image: { type: String, required: true },
+        // price: { type: String, required: true },
+        // products: {
+        //   type: mongoose.Schema.Types.ObjectId,
+        //   required: true,
+        //   ref: "Product",
+        // },
+      
     ],
   },
   {
