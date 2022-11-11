@@ -22,7 +22,7 @@ function App() {
     <>
 
 
-
+<Allroutes/>
    
 
     </>

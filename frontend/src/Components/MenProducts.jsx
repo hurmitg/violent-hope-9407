@@ -30,7 +30,7 @@ function MenProduct() {
         >
           {data?.map((e) => (
             <Flex w="20vw" h="20vw" alignItems="center" direction="column">
-              <Link to={`/menproduct/${e.id}`}>
+              <Link to={`/products/${e.id}`}>
                 <Image src={e.image} h="100%" w="90%"></Image>
 
                 {/* <Text>{e.title}</Text> */}

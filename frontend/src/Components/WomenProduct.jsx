@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
 import { useEffect } from "react";
-
+import {Link} from "react-router-dom"
 function WomenProduct() {
   const [data, setData] = useState([]);
 
@@ -29,10 +29,12 @@ function WomenProduct() {
         >
           {data?.map((e) => (
             <Flex w="20vw" h="20vw" alignItems="center" direction="column">
+                <Link to={`/products/${e.id}`}>
               <Image src={e.image} h="100%" w="90%"></Image>
 
               {/* <Text>{e.title}</Text> */}
               <Text as="b"> ₹{e.price}</Text>
+              </Link>
             </Flex>
           ))}
 

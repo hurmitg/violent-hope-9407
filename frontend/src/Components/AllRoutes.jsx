@@ -18,7 +18,7 @@ function Allroutes() {
         <Route path="/menproduct" element={<MenProduct />} />
         <Route path="/womenproduct" element={<WomenProduct />} />
         <Route path="/kidsproduct" element={<KidsProduct />} />
-        <Route path="/:id" element={<SingleProd />} />
+        <Route path="/:category/:id" element={<SingleProd />} />
       </Routes>
     </>
   );

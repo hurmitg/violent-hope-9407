@@ -1,24 +1,43 @@
 import { useEffect, useState } from "react";
 import { Box, Flex, Image, Stack, Text, Button } from "@chakra-ui/react";
-import { Link, useParams } from "react-router-dom";
-import axios from "axios";
+import {  useParams } from "react-router-dom";
+import axios from "axios"
+
 import Navbar from "./Navbar";
 
 const SingleProd = () => {
-  const [data, setData] = useState({});
+
+  const [data, setData] = useState([]);
   const params = useParams();
 
-  const getData = (params = {}) => {
-    return axios.get(`https://fakestoreapi.com/products/`, {
-      params: {
-        id: params.id,
-      },
+    
+// console.log(params.category)
+// console.log(params.id)
+
+
+
+     let getData = () => {
+    axios.get(`https://fakestoreapi.com/products/${params.id}`).then((res) => {
+      console.log(data);
+      setData(res.data);
     });
   };
 
-  useEffect(() => {
-    getData({ id: params.id }).then((res) => setData(res.data[0]));
-  }, [params.id]);
+
+  useEffect(()=>{
+    getData()
+  },[])
+  
+
+
+ 
+
+
+
+
+
+
+  
 
   return (
     <>
