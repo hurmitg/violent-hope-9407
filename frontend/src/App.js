@@ -21,7 +21,7 @@ function App() {
   return (
     <>
    <Navbar/>
-   <Layout/>
+   <LoginMain/>
   <FooterMain/>
    
 

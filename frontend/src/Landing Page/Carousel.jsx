@@ -19,7 +19,7 @@ const settings = {
   autoplaySpeed: 5000,
 };
 
-export default function Carousel() {
+export default function Carousel({data}) {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = useState(null);
@@ -107,8 +107,8 @@ export default function Carousel() {
        
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
 
-        {arr.map((url, index) => (
-          <Box  p="1rem"  h="70vh" >
+        {data && data.map((url, index) => (
+          <Box key={index}  p="1rem"  h="70vh" >
             <ProductCard url={url} />
           </Box>
         ))}

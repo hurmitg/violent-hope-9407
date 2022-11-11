@@ -63,12 +63,12 @@ export default function ProductCard({url}) {
         <Image
           w="100%"
           h="80%"
-          src={url}
+          src={url.image}
         />
         <Text color={"#9e9d9d"} p="1rem">
-          ALEXANDER MCQUEEN{" "}
+          {url.title}{" "}
         </Text>
-        <span style={{ fontWeight: 800 }}>€ 1,425</span>
+        <span style={{ fontWeight: 800 }}>€ {url.price}</span>
       </Box>
     </Box>
   );

@@ -15,14 +15,14 @@ import {
   Select,
   useToast,
 } from "@chakra-ui/react";
+import axios from "axios";
 import { useState } from "react";
 
 export default function SignUp() {
   const toast = useToast();
   const [user, setUser] = useState({
-    profession: "",
-    firstName: "",
-    lastName: "",
+    name: "",
+
     email: "",
     password: "",
     comfirmpassword: "",
@@ -32,7 +32,7 @@ export default function SignUp() {
 
     setUser({ ...user, [name]: value });
   };
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     if (user.password !== user.comfirmpassword) {
       toast({
@@ -43,7 +43,28 @@ export default function SignUp() {
         isClosable: true,
       });
     } else {
-      console.log(user, "submit");
+      try {
+        let res = await axios.post(
+          "http://localhost:8080/api/user/signup",
+          user
+        );
+        toast({
+          title: "Account created successfully!",
+
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        });
+      } catch (e) {
+        console.log(e);
+        toast({
+          title: e.response.data.message,
+
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
+      }
     }
   }
 
@@ -92,7 +113,7 @@ export default function SignUp() {
           </Box>
           <Stack spacing={5} mt="5%">
             <FormControl id="email">
-              <Select name="profession" onChange={(e) => handleChange(e)}>
+              <Select>
                 <option value="academic title">academic title</option>
                 <option value=""></option>
                 <option value="Dr.">Dr.</option>
@@ -102,19 +123,14 @@ export default function SignUp() {
             </FormControl>
             <FormControl id="email">
               <Input
-                name="firstName"
+                name="name"
                 type="first name"
                 onChange={(e) => handleChange(e)}
                 placeholder="First name*"
               />
             </FormControl>
             <FormControl id="password">
-              <Input
-                name="lastName"
-                type="last name"
-                onChange={(e) => handleChange(e)}
-                placeholder="Last name*"
-              />
+              <Input type="last name" placeholder="Last name*" />
             </FormControl>
             <FormControl id="password">
               <Input
