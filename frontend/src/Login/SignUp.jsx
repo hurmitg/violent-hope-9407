@@ -13,25 +13,39 @@ import {
   Text,
   useColorModeValue,
   Select,
+  useToast,
 } from "@chakra-ui/react";
 import { useState } from "react";
 
 export default function SignUp() {
+  const toast = useToast();
   const [user, setUser] = useState({
-    contractions: "",
     profession: "",
     firstName: "",
     lastName: "",
     email: "",
     password: "",
+    comfirmpassword: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     setUser({ ...user, [name]: value });
-
-    console.log(user);
   };
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (user.password !== user.comfirmpassword) {
+      toast({
+        title: "Password did not match.",
+
+        status: "error",
+        duration: 9000,
+        isClosable: true,
+      });
+    } else {
+      console.log(user, "submit");
+    }
+  }
 
   return (
     <Flex
@@ -47,7 +61,7 @@ export default function SignUp() {
           bg={"white"}
           textAlign={"justify"}
           p={8}
-          borderRight={["none","none","1px solid #cfcfcf"]}
+          borderRight={["none", "none", "1px solid #cfcfcf"]}
         >
           <Box
             fontSize={"2xl"}
@@ -60,6 +74,7 @@ export default function SignUp() {
           <Text mt="3%">
             Please enter the following information to create your account.
           </Text>
+
           <Box mt="5%">
             <CheckboxGroup colorScheme="blue">
               <Stack
@@ -67,19 +82,11 @@ export default function SignUp() {
                 mt="2%"
                 direction={["column", "row", "row"]}
               >
-                <Checkbox
-                 
-                  value="Ms."
-                  defaultValue
-                >
+                <Checkbox value="Ms." defaultValue>
                   Ms.
                 </Checkbox>
-                <Checkbox  value="Mrs.">
-                  Mrs.
-                </Checkbox>
-                <Checkbox  value="Mr.">
-                  Mr.
-                </Checkbox>
+                <Checkbox value="Mrs.">Mrs.</Checkbox>
+                <Checkbox value="Mr.">Mr.</Checkbox>
               </Stack>
             </CheckboxGroup>
           </Box>
@@ -165,6 +172,7 @@ export default function SignUp() {
               <Button
                 bg={"#f2f2f2"}
                 color={"#222"}
+                onClick={handleSubmit}
                 borderRadius={"none"}
                 fontWeight={100}
                 fontSize={"12px"}
