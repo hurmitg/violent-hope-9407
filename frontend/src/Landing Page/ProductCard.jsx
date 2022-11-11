@@ -31,7 +31,7 @@ export default function ProductCard({url}) {
    
   }
   return (
-    <Box>
+    <Box >
       <Box
         p="1rem 0rem"
         cursor={"pointer"}

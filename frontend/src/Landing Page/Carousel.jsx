@@ -40,13 +40,14 @@ export default function Carousel() {
     "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/e4/P00701157.jpg",
     "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/1e/P00737342.jpg",
   ];
+
   return (
     
       
      
     <Box
       position={"relative"}
-      height={"60vh"}
+      height={"70vh"}
       width={"80%"}
       m="auto"
       mt="5%"
@@ -107,7 +108,7 @@ export default function Carousel() {
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
 
         {arr.map((url, index) => (
-          <Box  p="1rem" h="70vh" >
+          <Box  p="1rem"  h="70vh" >
             <ProductCard url={url} />
           </Box>
         ))}
