@@ -10,6 +10,8 @@ import Navbar from './Components/Navbar';
 import SingleProd from './Components/Singleprod';
 import Women from './Components/Women';
 import WomenProduct from './Components/WomenProduct';
+import Layout from './Landing Page/Layout';
+import LoginMain from './Login/Main';
 
 
 

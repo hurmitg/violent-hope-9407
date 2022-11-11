@@ -1,7 +1,7 @@
 import { Box, Heading, IconButton, Image, Text, useToast } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { BsStar,BsFillStarFill } from "react-icons/bs";
-export default function ProductCard() {
+export default function ProductCard({url}) {
   const [flag,setFlag]=useState(false)
   const toast = useToast()
   function handleFavourit(){
@@ -63,7 +63,7 @@ export default function ProductCard() {
         <Image
           w="100%"
           h="80%"
-          src="https://img.mytheresa.com/420/475/95/jpeg/catalog/product/20/P00702018.jpg"
+          src={url}
         />
         <Text color={"#9e9d9d"} p="1rem">
           ALEXANDER MCQUEEN{" "}
