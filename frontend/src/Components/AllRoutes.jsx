@@ -15,11 +15,17 @@ function Allroutes() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}/>
-        <Route path="/login" element={<LoginMain/>}/>
-        <Route path="/men" element={
-          <PrivateRoute>  <Men /></PrivateRoute>
-      } />
+        <Route path="/" element={<Layout />} />
+        <Route path="/login" element={<LoginMain />} />
+        <Route
+          path="/men"
+          element={
+            <PrivateRoute>
+              {" "}
+              <Men />
+            </PrivateRoute>
+          }
+        />
         <Route path="/women" element={<Women />} />
         <Route path="/kids" element={<Kids />} />
         <Route path="/menproduct" element={<MenProduct />} />

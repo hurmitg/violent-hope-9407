@@ -143,9 +143,10 @@ export default function Carousel({ data, title ,link}) {
       >
         <Link to={link}>
         <Button
-          bg="black"
-          color="#f2f2f2"
-          _hover={{ bg: "#111" }}
+          bg="#f2f2f2"
+          color="black"
+          fontWeight={100}
+          _hover={{ bg: "#f3f3f3" }}
           transform={"1s"}
           borderRadius={"none"}
         >

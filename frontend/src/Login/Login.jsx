@@ -16,7 +16,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../Context/Context";
 export default function Login() {
-  const { token,nav } = useContext(AppContext);
+  const { token,nav,setLoading,setError,setSuccess,loading,error,success } = useContext(AppContext);
   const toast = useToast();
 
   const [user, setUser] = useState({
@@ -31,6 +31,8 @@ export default function Login() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setLoading(true)
+  
     console.log(user);
     if (token) {
       toast({
@@ -49,7 +51,8 @@ export default function Login() {
         );
        
         document.cookie = "MyMetheresaToken" + "=" + res.data.token;
-        localStorage.setItem("token", res.data.token);
+        
+       await  localStorage.setItem("token", res.data.token);
         toast({
           title: "Login successfully!",
 
@@ -57,9 +60,15 @@ export default function Login() {
           duration: 9000,
           isClosable: true,
         });
+        setLoading(false)
+        setSuccess(true)
         nav("/")
+        window.location.reload();
+        
       } catch (e) {
         console.log(e);
+        setError(false)
+        setLoading(false)
         toast({
           title: e.response.data.message,
 
@@ -119,6 +128,10 @@ export default function Login() {
                 </Box>
                 <Box mt="5%">
                   <Button
+                  isLoading={loading?true:false}
+                    
+                  
+                  loadingText='Please wait...'
                     bg={"#111"}
                     color={"white"}
                     borderRadius={"none"}
