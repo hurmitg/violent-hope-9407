@@ -27,7 +27,7 @@ const CartCard = ({
   handleminus,
   handleRemove,
   id,
-  s
+  itemnumber
 }) => {
   const [data, setData] = useState({ price: 5000, wish: false, qty: 1 });
   const [wish, setWish] = useState(false);
@@ -83,7 +83,7 @@ const CartCard = ({
                 Size : FR 36/XS-S
               </Text>
               <Text color={"gray"} fontSize={["11px", "11px", "14.5px"]}>
-                Item No : {s}
+                Item No : {itemnumber}
               </Text>
             </VStack>
             <HStack spacing={["50px", "30px", "15px"]}>
