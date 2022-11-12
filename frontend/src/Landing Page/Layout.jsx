@@ -10,44 +10,37 @@ import Poster2 from "./Poster2";
 import Poster3 from "./Poster3";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import children from "./Kids.json";
 export default function Layout() {
-  const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   Fetch();
-  // }, []);
-  // async function Fetch() {
-  //   try {
-  //     let res = await axios.get("http://localhost:8080/api/products");
-  //     setData(res.data);
-  //   } catch (e) {
-  //     console.log(e.message);
-  //   }
-  // }
-  // console.log(data, "me data hooooooooooooooooooooon");
-
-  const image1 =
-    "https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW45/BIG1/TABLET_2x_20221107134847.jpg?imwidth=1024&imdensity=1";
-  const image2 =
-    "https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW45/BIG3/BIG_3_2x_20221107171209.jpg?imwidth=1180&imdensity=1";
-  const image3 =
-    "https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW45/BIG2/DESKTOP_2X_20221107170819.jpg?imwidth=1180&imdensity=1";
-  const image4 =
-    "https://img.mytheresa.com/media/static/raw/cms/l/LIFE_HP_2022_CW45/Big_Gucci-Decor-desktop_2x_20221107085555.jpg?imwidth=1180&imdensity=1";
+  const kids = {
+    image:
+      "https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_KIDS_DSK_2x_20220908102616.jpg?imwidth=1180&imdensity=1",
+    title: "Kids",
+    
+  };
+  const Life = {
+    image:
+      "https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_LIFE_DSK_2x_20220908102608.jpg?imwidth=1180&imdensity=1",
+    title: "Life",
+    
+  };
+  const mens = {
+    image:
+      "https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_DSK_2x_20220908102600.jpg?imwidth=1180&imdensity=1",
+    title: "Men",
+    title2: "Women",
+  };
   return (
     <Box>
-      <Link to="/men">
-        <Poster image={image1} />
-      </Link>
-      <Carousel data={men} />
-      <Link to="women">
-        <Poster2 image={image2} />
-      </Link>
-      <Carousel data={women} />
+      <Poster2 data={mens} />
+      <Poster data={kids} />
+      <Poster data={Life} />
 
-      <Link to="women">
-        <Poster3 image={image3} />
-      </Link>
-      <Carousel data={accessories.reverse()} />
+      <Carousel link={"/men"} title="Men's Collection" data={men} />
+      <Carousel link={"/women"} title="Women's Collection" data={women} />
+      <Carousel link={"/kids"} title="Kid's Collection" data={children} />
+
+      <Carousel link={"/accessories"} title="Life New Arrivals" data={accessories.reverse()} />
       {/* <Poster4 image={image4} /> */}
     </Box>
   );
