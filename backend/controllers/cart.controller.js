@@ -1,84 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const Cart = require("../models/cart.model");
 
-// const getCartProducts = asyncHandler(async (req, res) => {
-//     const { _id } = req.user;
-//     let cartProducts = await Cart.findOne({ user: _id })
-//     console.log("cart", cartProducts);
-//     res.json(cartProducts);
-//   });
-
-
-  // const deletFromCart = asyncHandler(async (req, res) => {
-
-  //   const {cartItems} = await Cart.findOne({user: req.user._id})
-
-
-  //   let afterUpdating = cartItems.filter((el)=>el.product !== req.params.id)
-
-  //   finalUpdate = await Cart.findByIdAndUpdate({user: req.user._id},{cartItems:afterUpdating})
-
-  //   res.json({message: "Product removed from cart",data:finalUpdate})
-
-
-  // })
-
-
-//   const addToCart = asyncHandler(async (req, res) => {
-//     // Cart.findOne({user: req.user._id}).exec((error,cart)=>{
-//     //   if (error) return res.status(400).json({ error });
-//       let itemTobeAdded = req.body
-
-//       console.log(req.body)
-//       const checkUser = await Cart.findOne({ user: req.user._id})
-//       if(!checkUser){
-//           const cart = await Cart.create({user: req.user, cartItems :itemTobeAdded })
-//           console.log(cart)
-//           // const newCart = 
-//           // await cart.save();
-//           res.send({message: "Product added in the cart",product:cart})
-//       }else{
-//         let afterUpdating;
-//         let finalUpdate;
-//         let {cartItems} = checkUser
-
-//         let checkforItem =  cartItems.find((el)=>el.product === itemTobeAdded.product)
-
-//         if(checkforItem===undefined){
-//           afterUpdating = [...cartItems,itemTobeAdded]
-//         }else{
-
-//           finalUpdate = await Cart.findByIdAndUpdate({user: req.user._id},{cartItems:afterUpdating})
-//         }
-
-
-//       //   for(let i=0; i<itemTobeAdded.length; i++){
-//       //     const {product} = itemTobeAdded[i]
-//       //     const ifPresent = cartItems.find((item)=>item.product===product)
-        
-
-//       //   if(!ifPresent){
-//       //     afterUpdating = [...cartItems,itemTobeAdded[i]]
-//       //   }else{
-//       //     afterUpdating = cartItems.map((el)=>{
-//       //       if(el.product===product){
-//       //         el.quantity = Number(itemTobeAdded[i])
-//       //         return el;
-//       //       }else{
-//       //         return el;
-//       //       }
-//       //     })
-//       //   }
-
-//       //   finalUpdate = await Cart.findByIdAndUpdate({user: req.user._id},{cartItems:afterUpdating})
-
-//       // }
-//       res.json({ message: "Product added to cart", data: finalUpdate });
-//     }
-// })
-
 const getCartProducts = asyncHandler(async (req, res) => {
-
   const { _id } = req.user;
   let cartProducts = await Cart.find({ user: _id }).populate({path:"cartItems",populate: {path:"product"}})
   // console.log("cart", cartProducts);
@@ -109,33 +32,31 @@ const addToCart = asyncHandler(async (req, res) => {
     
   
   try{
-    const {cartItems} = req.body
-    const newCart = {user: req.user, cartItems: cartItems}
-    const cart = await Cart.create(newCart)
-    const fullcart = await Cart.findOne({_id: cart._id}).populate({path:"cartItems",populate: {path:"product"}})
-   return res.send({ message: "Product added to cart", data: fullcart });
+    const checkUserInCart = await Cart.findOne({user: req.user})
+
+      if(!checkUserInCart){
+        const {cartItems} = req.body
+        const newCart = {user: req.user, cartItems: cartItems}
+        const cart = await Cart.create(newCart)
+        const fullcart = await Cart.findOne({_id: cart._id}).populate({path:"cartItems",populate: {path:"product"}})
+        return res.send({ message: "Product added to cart", data: fullcart });
+      }else{
+        const {cartItems} = req.body
+
+        const newCart = checkUserInCart.cartItems
+        
+        // newCart.push({product:cartItems[0].product,quantity:cartItems[0].quantity})
+        // const updatedCart = await Cart.findByIdAndUpdate(checkUserInCart._id,{cartItems: newCart})
+        // const fullcart = await Cart.findOne({_id: checkUserInCart._id}).populate({path:"cartItems",populate: {path:"product"}})
+
+        const xyz = await Cart.updateMany({_id: checkUserInCart._id},{$push:{cartItems:cartItems}})
+        const fullcart = await Cart.findOne({_id: checkUserInCart._id}).populate({path:"cartItems",populate: {path:"product"}})
+        // use fullcart for showing updatedCart after adding new product
+        return res.send({fullcart})
+      }
   }catch(err){
     return res.send(console.error)
   }
-  const {cartItems} = req.body
-  const newCart = {user: req.user, cartItems: cartItems}
-
-  const checkUser = await Cart.findOne({ user: req.user._id})
-
-  if(!checkUser){
-
-
-  }
-
-  const cart = await Cart.create(newCart)
-  // const fullcart = await Cart.findOne({_id: cart._id}).populate("cartItems")
-
-  const fullcart = await Cart.findOne({_id: cart._id}).populate({path:"cartItems",populate: {path:"product"}})
-
-
-
-  res.send({ message: "Product added to cart", data: fullcart });
-
 })
 
 
@@ -143,19 +64,41 @@ const addToCart = asyncHandler(async (req, res) => {
 const deletFromCart = asyncHandler(async (req, res) => {
 
         try {
-          let cartProducts = await Cart.findOne({ user: req.user._id }).populate({path:"cartItems",populate: {path:"product"}})
-        const { id } = req.params;
-        await cartProducts.findByIdAndRemove(id);
+          const { cartProID} = req.body;
+          let cartProducts = await Cart.findOne({ user: req.user._id })
+
+          const xyz = await Cart.updateMany({_id: cartProducts._id},{$pull:{cartItems:{_id:cartProID}}})
+
+
+          res.send({message:" product deleted"})
       } catch (error) {
-        console.log(error.message);
+        res.status(400).send({message:"Something went wrong"})
       }
 })
 
 const updateInCart = asyncHandler(async (req, res) => {
-    let cartProducts = await Cart.find({ user: req.user._id }).populate({path:"cartItems",populate: {path:"product"}})
+  console.log(req.user._id)
+    const {qty,proId} = req.body
+    // console.log(qty,proId)
+    let cartProducts = await Cart.findOne({ user: req.user._id }).populate({path:"cartItems",populate: {path:"product"}})
+    let newarry= cartProducts.cartItems.map((el)=>{
 
+      if(el.id===proId){
+        el.quantity=qty
+      }
+      return el})
+
+      const xyz = await Cart.updateOne({_id:cartProducts._id,"cartItems._id":proId},{$set:{"cartItems.$.quantity":qty}})
+      // console.log(xyz)
+
+
+      const fullcart = await Cart.findOne({user: req.user._id}).populate({path:"cartItems",populate: {path:"product"}})
+      // console.log(fullcart)
+    // const cart = await Cart.findByIdAndUpdate({_id:cartProducts._id},{$set:{cartItems:{quantity:qty}}})
+
+
+    return res.send(fullcart);
 });
 
 
-module.exports={getCartProducts,deletFromCart,addToCart}
-
+module.exports={getCartProducts,deletFromCart,addToCart,updateInCart}
