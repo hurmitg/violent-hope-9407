@@ -11,9 +11,12 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import axios from "axios";
-import React, { useState } from "react";
-import {useNavigate} from "react-router-dom"
+import React, { useContext, useState } from "react";
+
+import { useNavigate } from "react-router-dom";
+import { AppContext } from "../Context/Context";
 export default function Login() {
+  const { token,nav } = useContext(AppContext);
   const toast = useToast();
 
   const [user, setUser] = useState({
@@ -29,26 +32,42 @@ export default function Login() {
   async function handleSubmit(e) {
     e.preventDefault();
     console.log(user);
-
-    try {
-      let res = await axios.post("http://localhost:8080/api/user/login", user);
+    if (token) {
       toast({
-        title: "Login successfully!",
+        title: "You have already login!",
 
         status: "success",
         duration: 9000,
         isClosable: true,
       });
-  
-    } catch (e) {
-      console.log(e);
-      toast({
-        title: e.response.data.message,
+      nav("/")
+    } else {
+      try {
+        let res = await axios.post(
+          "http://localhost:8080/api/user/login",
+          user
+        );
+       
+        document.cookie = "MyMetheresaToken" + "=" + res.data.token;
+        localStorage.setItem("token", res.data.token);
+        toast({
+          title: "Login successfully!",
 
-        status: "error",
-        duration: 9000,
-        isClosable: true,
-      });
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        });
+        nav("/")
+      } catch (e) {
+        console.log(e);
+        toast({
+          title: e.response.data.message,
+
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
+      }
     }
   }
 

@@ -17,6 +17,7 @@ import { ReactNode } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { BiMailSend, BiMobile } from "react-icons/bi";
 import { BsLinkedin, BsPinterest } from "react-icons/bs";
+import Logo from "../Components/Logo";
 
 
 
@@ -67,14 +68,7 @@ export default function LargeWithNewsletter() {
           spacing={8}
         >
           <Stack spacing={6}>
-          <Box >
-            <Image
-              w="18vw"
-              cursor="pointer"
-              src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220906T141618"
-              alt="onkar"
-            />
-          </Box>
+             <Logo/>
             <Text fontSize={"md"} color={"gray"}>
               © 2022 Violent Hope. All rights reserved
             </Text>

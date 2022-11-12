@@ -16,9 +16,12 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import axios from "axios";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AppContext } from "../Context/Context";
 
 export default function SignUp() {
+  const {token,nav}=useContext(AppContext)
+  
   const toast = useToast();
   const [user, setUser] = useState({
     name: "",
@@ -43,28 +46,44 @@ export default function SignUp() {
         isClosable: true,
       });
     } else {
-      try {
-        let res = await axios.post(
-          "http://localhost:8080/api/user/signup",
-          user
-        );
+      if(token){
         toast({
-          title: "Account created successfully!",
-
+          title: "You are already login!",
+  
           status: "success",
           duration: 9000,
           isClosable: true,
         });
-      } catch (e) {
-        console.log(e);
-        toast({
-          title: e.response.data.message,
-
-          status: "error",
-          duration: 9000,
-          isClosable: true,
-        });
       }
+      else{
+        try {
+          let res = await axios.post(
+            "http://localhost:8080/api/user/signup",
+            user
+          );
+          document.cookie="MyMetheresaToken"+"="+(res.data.token)
+          localStorage.setItem("token",res.data.token)
+          toast({
+            title: "Account created successfully!",
+  
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          });
+          nav("/")
+        } catch (e) {
+          console.log(e);
+          toast({
+            title: e.response.data.message,
+  
+            status: "error",
+            duration: 9000,
+            isClosable: true,
+          });
+        }
+
+      }
+     
     }
   }
 

@@ -23,8 +23,9 @@ function App() {
   return (
     <>
 
-
+<Navbar/>
 <Allroutes/>
+<FooterMain/>
    
 
     </>
