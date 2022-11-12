@@ -13,25 +13,60 @@ import {
   Text,
   useColorModeValue,
   Select,
+  useToast,
 } from "@chakra-ui/react";
+import axios from "axios";
 import { useState } from "react";
 
 export default function SignUp() {
+  const toast = useToast();
   const [user, setUser] = useState({
-    contractions: "",
-    profession: "",
-    firstName: "",
-    lastName: "",
+    name: "",
+
     email: "",
     password: "",
+    comfirmpassword: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     setUser({ ...user, [name]: value });
-
-    console.log(user);
   };
+  async function handleSubmit(e) {
+    e.preventDefault();
+    if (user.password !== user.comfirmpassword) {
+      toast({
+        title: "Password did not match.",
+
+        status: "error",
+        duration: 9000,
+        isClosable: true,
+      });
+    } else {
+      try {
+        let res = await axios.post(
+          "http://localhost:8080/api/user/signup",
+          user
+        );
+        toast({
+          title: "Account created successfully!",
+
+          status: "success",
+          duration: 9000,
+          isClosable: true,
+        });
+      } catch (e) {
+        console.log(e);
+        toast({
+          title: e.response.data.message,
+
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
+      }
+    }
+  }
 
   return (
     <Flex
@@ -47,7 +82,7 @@ export default function SignUp() {
           bg={"white"}
           textAlign={"justify"}
           p={8}
-          borderRight={["none","none","1px solid #cfcfcf"]}
+          borderRight={["none", "none", "1px solid #cfcfcf"]}
         >
           <Box
             fontSize={"2xl"}
@@ -60,6 +95,7 @@ export default function SignUp() {
           <Text mt="3%">
             Please enter the following information to create your account.
           </Text>
+
           <Box mt="5%">
             <CheckboxGroup colorScheme="blue">
               <Stack
@@ -67,25 +103,17 @@ export default function SignUp() {
                 mt="2%"
                 direction={["column", "row", "row"]}
               >
-                <Checkbox
-                 
-                  value="Ms."
-                  defaultValue
-                >
+                <Checkbox value="Ms." defaultValue>
                   Ms.
                 </Checkbox>
-                <Checkbox  value="Mrs.">
-                  Mrs.
-                </Checkbox>
-                <Checkbox  value="Mr.">
-                  Mr.
-                </Checkbox>
+                <Checkbox value="Mrs.">Mrs.</Checkbox>
+                <Checkbox value="Mr.">Mr.</Checkbox>
               </Stack>
             </CheckboxGroup>
           </Box>
           <Stack spacing={5} mt="5%">
             <FormControl id="email">
-              <Select name="profession" onChange={(e) => handleChange(e)}>
+              <Select>
                 <option value="academic title">academic title</option>
                 <option value=""></option>
                 <option value="Dr.">Dr.</option>
@@ -95,19 +123,14 @@ export default function SignUp() {
             </FormControl>
             <FormControl id="email">
               <Input
-                name="firstName"
+                name="name"
                 type="first name"
                 onChange={(e) => handleChange(e)}
                 placeholder="First name*"
               />
             </FormControl>
             <FormControl id="password">
-              <Input
-                name="lastName"
-                type="last name"
-                onChange={(e) => handleChange(e)}
-                placeholder="Last name*"
-              />
+              <Input type="last name" placeholder="Last name*" />
             </FormControl>
             <FormControl id="password">
               <Input
@@ -165,6 +188,7 @@ export default function SignUp() {
               <Button
                 bg={"#f2f2f2"}
                 color={"#222"}
+                onClick={handleSubmit}
                 borderRadius={"none"}
                 fontWeight={100}
                 fontSize={"12px"}
