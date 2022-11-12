@@ -1,0 +1,371 @@
+[
+    {
+        "brand": "GUCCI",
+        "title": "GG jacquard wool sweater",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/8f/P00746517.jpg",
+        "price": 745,
+        "description": "Ease into the new season with stylish knitwear like this lightweight sweater from Gucci. It's made in Italy from wool and features an all-over GG jacquard motif for enviable recognition.",
+        "type": "clothing",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Technical pants",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/3d/P00684125.jpg",
+        "price": 1095,
+        "description": "These pants from Giorgio Armani are made from technical shell that's padded for insulation and resistant to water and wind. They have multiple zippered pockets and a straight cut.",
+        "type": "clothing",
+        "category": "men"
+    },
+    {
+        "brand": "GUCCI",
+        "title": "Rhyton GG canvas sneakers",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/8a/P00674037.jpg",
+        "price": 665,
+        "description": "Defined by contrasting fabrics and colors, Gucci’s Spring/Summer '22 collection showcased irresistible designs that spoke to retro-inspired glamour. This reiteration of the Rhyton sneakers is made from GG Supreme canvas with tonal trims and soles.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "BALENCIAGA",
+        "title": "x Adidas Triple S sneakers",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/b1/P00765715.jpg",
+        "price": 895,
+        "description": "Step out in style in the Triple S hybrid sneakers from the Balenciaga x Adidas collaboration. Presented in a label-signature chunky silhouette, the pair sit atop logo-embossed rubber soles and are detailed with a signature stripe motif.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "GUCCI",
+        "title": "Tasseled patent leather loafers",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/81/P00737351.jpg",
+        "price": 715,
+        "description": "Gucci’s penchant for nostalgic design is spotlighted by these patent leather loafers. Appearing with tasseled vamps, this style has gold-toned lettering to the stacked heels and round toes.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "GUCCI",
+        "title": "Embellished leather knee-high boots",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/cd/P00737349.jpg",
+        "price": 1505,
+        "description": "These knee-high boots from Gucci are accented with gold-tone branded buttons and lace-up detailing on the front. The style is made from black leather and has a practical heel loop.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "GUCCI",
+        "title": "Horsebit jacquard loafer",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/9a/P00737465.jpg",
+        "price": 585,
+        "description": "One of Gucci's most powerful emblems, the Horsebit points to the house's storied fascination with equestrian design codes. These classic loafers feature a black Horsebit jacquard pattern and gold-tone hardware.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "ALEXANDER MCQUEEN",
+        "title": "Thread Slick canvas ankle boots",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/51/P00729434.jpg",
+        "price": 549,
+        "description": "With oversized rubber soles, these high-top Alexander McQueen sneakers have a lace-up design, a debossed rubber logo on the sides and branding on the pull-tabs.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "ALEXANDER MCQUEEN",
+        "title": "Sprint leather sneakers",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/39/P00745724.jpg",
+        "price": 549,
+        "description": "Fit to conquer any terrain, Alexander McQueen's Sprint sneakers sit on wide, chunky runner soles that run up the heels. They're made from leather, suede, and mesh panels with an appliqued Seal logo on the side.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Technical holdall bag",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/76/P00663086.jpg",
+        "price": 1265,
+        "description": "Made from lightweight, hard-wearing technical fabric with leather accents, this black holdall is printed with Giorgio Armani’s logo and has a double zip fastening. It sits on polished silver studs, ready for your next getaway.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "AURALEE",
+        "title": "x Foot The Coacher leather Chelsea boots",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/39/P00745724.jpg",
+        "price": 795,
+        "description": "Auralee updates the classic Chelsea style in collaboration with Foot The Coacher. The pair is crafted from black calfskin, fitted with side gussets resting on rugged Vibram soles, and features a slightly squared toe.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "AURALEE",
+        "title": "x Foot The Coacher leather sandals",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/01/P00662124.jpg",
+        "price": 435,
+        "description": "Made in collaboration with Foot The Coacher, these leather sandals from Auralee have slingback ankle straps and ridged rubber soles.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Leather Derby shoes",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/47/P00663076.jpg",
+        "price": 685,
+        "description": "These leather Derby shoes from Giorgio Armani are a classic with a modern twist. This pair is designed without laces so they can be easily slipped on and are made in Italy from brushed leather that has a high-shine finish.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Canvas sneakers",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/80/P00666824.jpg",
+        "price": 525,
+        "description": "Made from canvas with leather trims, these sneakers from Giorgio Armani are set on rubber soles and have lace-up fronts.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "La Greca Signature tote bag",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/20/P00681308.jpg",
+        "price": 749,
+        "description": "This sizeable Versace tote bag is patterned with the La Greca Signature print all over. It's made from faux leather and edged with leather trims. Notice the complementary pouch and protective caps along the base.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Buckled sandals",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/31/P00666826.jpg",
+        "price": 585,
+        "description": "Balancing function and style, these hiking sandals from Giorgio Armani are made in Italy from technical fabric They are finished with black buckles and feature embossed branding on the midsole.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "Greca Labyrinth leather Derby shoes",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/70/P00680495.jpg",
+        "price": 635,
+        "description": "For a style to take your workwear uniform up a notch, opt for the Greca Labyrinth Derby shoes from Versace. They're crafted from smooth, shiny leather with wide rubber Greca motif midsoles.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "BALENCIAGA",
+        "title": "Explorer leather backpack",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/c7/P00726316.jpg",
+        "price": 1800,
+        "description": "The Explorer backpack is crafted in Italy from smooth lambskin leather and softly padded shoulder straps. The practical design is given a streetwear edge with a graffiti print and matte black hardware.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "Barocco espadrilles",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/26/P00680523.jpg",
+        "price": 355,
+        "description": "Featuring the brand's iconic print, Versace's Barocco espadrilles make a bold statement. They're made from cotton canvas with jute midsoles and ultra-comfortable leather insoles.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "La Greca Signature pouch",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/f5/P00681302.jpg",
+        "price": 795,
+        "description": "Versace’s La Greca Signature pattern is inspired by the house’s decadent heritage. This pouch bag features logo plaque lettering, a wrist loop, and a detachable shoulder strap for versatile carrying options.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "Medusa slides",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/e0/P00680527.jpg",
+        "price": 415,
+        "description": "Versace's Medusa slides feature a playful style that's reminiscent of the '90s. Cut from rubber with leather detailing, they're set on comfortable soles and topped off with iconic gold-toned hardware.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "La Medusa leather loafers",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/76/P00680503.jpg",
+        "price": 465,
+        "description": "This iteration of Versace's La Medusa loafers is distinguished by its moccasin-like stitching. The smooth leather uppers are embellished with the iconic Medusa hardware and rest atop La Greca rubber soles.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "BALENCIAGA",
+        "title": "Triple S sneakers",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/c4/P00721768.jpg",
+        "price": 795,
+        "description": "In the iconic oversized shape, these multicolored Triple S sneakers from Balenciaga have mesh and faux-leather upper inserts. They're complete with an embroidered style number on the cap and logo on the side.",
+        "type": "shoes",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "Medusa embellished leather crossbody bag",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/8b/P00680502.jpg",
+        "price": 835,
+        "description": "Made in Italy from smooth black leather, this Versace crossbody bag has a detachable shoulder strap and a gleaming gold-toned Medusa adorning the front.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Nylon crossbody bag",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/76/P00666822.jpg",
+        "price": 759,
+        "description": "Giorgio Armani employs its signature clean-cut aesthetic in the design of this functional crossbody bag. Made from durable nylon, this bag has a removable shoulder strap, leather detailing, and an unexpected interior logo print.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "ALEXANDER MCQUEEN",
+        "title": "The Harness nylon backpack",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/27/P00745672.jpg",
+        "price": 1005,
+        "description": "This backpack from Alexander McQueen is designed with brand signature Harness cross-over detailing on the front. Made from nylon, it's lightweight and a practical option for every day.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Leather-trimmed canvas shoulder bag",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/2d/P00666821.jpg",
+        "price": 1179,
+        "description": "Giorgio Armani elevates this highly functional design with leather detailing and a colorful interior. This canvas bag has an accessible snap-button closure, secure buckle fastening, and both a backpack and shoulder strap for increased versatility.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "BALENCIAGA",
+        "title": "BB Signature canvas tote bag",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/81/P00701000.jpg",
+        "price": 950,
+        "description": "This large tote bag is made from coated canvas with a jacquard rendition of Balenciaga's BB Signature monogram. It has antiqued golden hardware, leather trims and interior pockets for organization.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "BALENCIAGA",
+        "title": "Leather crossbody bag",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/b7/P00726309.jpg",
+        "price": 1490,
+        "description": "This crossbody bag from Balenciaga is crafted from leather, fastening with a silver zip at the top. Featuring the brand's name at every angle, this style has an adjustable shoulder strap and is fully lined.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "ALEXANDER MCQUEEN",
+        "title": "The Grip leather tote bag",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/ae/P00745668.jpg",
+        "price": 1505,
+        "description": "The Grip tote bag from Alexander McQueen takes its name from the metal handles that adorn the top edge of this style. Crafted from leather with contrast stitching, this piece has an internal card slot and phone pocket.",
+        "type": "bags",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "Medusa necklace",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/f5/P00680525.jpg",
+        "price": 239,
+        "description": "This antique gold-tone necklace from Versace will add edge to any ensemble. Constructed in Italy with a slender chain-link strap, it is centered by a round Greca-framed pendant embellished with the house’s iconic Medusa-head hardware.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "Greca leather card holder",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/15/P00680512.jpg",
+        "price": 295,
+        "description": "Store your essentials safely in Versace's compact yet eye-catching Greca card holder. Accented with the label's iconic motif, it's made in Italy from calf leather with a zipped pocket and a money clip.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "VERSACE",
+        "title": "La Medusa leather belt",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/5f/P00680501.jpg",
+        "price": 339,
+        "description": "Versace injects its signature magnetism into everyday essentials, beginning with this calf leather belt. Cut to an angular end, the understated design is elevated with the brand's silver-toned Medusa hardware.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "STONE ISLAND",
+        "title": "Padded hood",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/8d/P00706880.jpg",
+        "price": 265,
+        "description": "This hood showcases Stone Island’s cult streetwear status. This padded piece is made from iridescent Nylon Metal fabric, formed by ECONYL® regenerated nylon, and has a 6-panel crown, frontal storm flap, and breathable inlay.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "STONE ISLAND",
+        "title": "Ribbed-knit wool beanie",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/7f/P00706875.jpg",
+        "price": 135,
+        "description": "In a vivid hue, this ribbed-knit beanie from Stone Island has a wide brim embroidered with the brand's logo patch. Woven in Italy, it is made entirely from wool.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "STONE ISLAND",
+        "title": "Padded nylon bucket hat",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/a5/P00706889.jpg",
+        "price": 195,
+        "description": "Whatever the weather, this Stone Island bucket hat is forever an option with its insulating padding. Made from green regenerated nylon, it’s finished with adjustable drawcords, a detachable rim at the back, and iconic logo embroidery.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Shearling and suede hat",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/01/P00684132.jpg",
+        "price": 429,
+        "description": "This tactile hat is from Giorgio Armani's Neve winter capsule collection. It's made from supremely cozy shearling with a smooth suede-paneled crown.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Logo cashmere scarf",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/d1/P00684129.jpg",
+        "price": 1095,
+        "description": "This rectangular scarf from Giorgio Armani is made from pure cashmere in a neutral hue and accented with the label’s jacquard logo in brown, a color block strip, and ribbed knit detailing.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "GIORGIO ARMANI",
+        "title": "Round glasses",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/99/P00749591.jpg",
+        "price": 229,
+        "description": "These round glasses from Armani Eyewear are made from metal, making them both durable and lightweight. The timeless design combines tortoiseshell-effect coating and silver-toned metal.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "AURALEE",
+        "title": "Cotton terry bucket hat",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/00/P00662122.jpg",
+        "price": 179,
+        "description": "This brown bucket hat is made entirely from organically-certified cotton. Auralee collaborates with celebrated hatmaker, Kijima Takayuki, for this minimalist design.",
+        "type": "accessories",
+        "category": "men"
+    },
+    {
+        "brand": "BALENCIAGA",
+        "title": "BB Icon ring",
+        "image": "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/1c/P00669851.jpg",
+        "price": 295,
+        "description": "This chunky ring from Balenciaga boldly displays the brand's BB Icon logo. Made in Italy, the brass design has an antique gold finish.",
+        "type": "accessories",
+        "category": "men"
+    }
+]

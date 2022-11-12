@@ -24,8 +24,11 @@ import FooterMain from './Footer/FooterMain';
 function App() {
   return (
     <>
-      <Allroutes />
-      
+
+<Navbar/>
+<Allroutes/>
+<FooterMain/>
+
 
     </>
   );

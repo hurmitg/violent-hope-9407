@@ -18,7 +18,7 @@ import Navbar from "./Navbar";
 function Kids() {
   return (
     <>
-      <Navbar />
+
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto">
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}
