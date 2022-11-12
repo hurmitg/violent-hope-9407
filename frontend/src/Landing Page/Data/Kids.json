@@ -1,0 +1,562 @@
+[
+    {
+        "brand" : "POLO",
+        "title" : "Printed cotton-blend shorts",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/a0/P00765684.jpg",
+        "price" : 69,
+        "gender": "girl",
+        "description" : "Enliven your little one’s everyday edit with vibrant designs like these shorts from Polo Ralph Lauren Kids. Made from a soft, skin-kind cotton-blend, they feature an elasticated drawstring waist and brand-iconic logo detailing",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "POLO",
+        "title" : "Checked cotton flannel shirt",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/1c/P00765859_b1.jpg",
+        "price" : 145,
+        "gender": "girl",
+        "description" : "Your little trendsetter will love this checked shirt from Polo Ralph Lauren Kids. Made from cotton flannel, it features the softest fleece lining, quilted detailing, and a colorful patch on the sleeve.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "POLO",
+        "title" : "Camouflage cotton polo shirt",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/12/P00765846_b1.jpg",
+        "price" : 75,
+        "gender": "girl",
+        "description" : "This polo shirt from Polo Ralph Lauren Kids is made from breathable pure cotton in a regular fit. This pattern has short sleeves with ribbed trims and features the iconic house logo in front.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Gingham checked wool blazer",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/5e/P00759822_b1.jpg",
+        "price" : 749,
+        "gender": "girl",
+        "description" : "This blazer from Gucci Kids has a gingham checked pattern on a classic silhouette with a notch lapel. It is made from pure wool with patch pockets and the house's embroidered lion emblem.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Logo cotton T-shirt",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/d1/P00372425_b1.jpg",
+        "price" : 200,
+        "gender": "girl",
+        "description" : "Perfect for mini-me looks, this T-shirt from Gucci Kids is a downsized iteration of the beloved adult style. The relaxed design has been crafted in Italy from black cotton, and is printed with the house's logo and two distinctive codes — the interlocking GG and Web.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Logo printed cotton jersey sweatshirt",
+        "image" : "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/c6/P00681548.jpg",
+        "price" : 200,
+        "gender": "girl",
+        "description" : "Expand their casual rotation with this sweatshirt from Gucci Kids. Made from cotton jersey, this classic crewneck design is enhanced with Sylvie stripes and features paneled shoulders and a kangaroo pocket.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Logo cotton jersey top",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/a5/P00681572_b1.jpg",
+        "price" : 180,
+        "gender": "girl",
+        "description" : "Expand their casual rotation with this sweatshirt from Gucci Kids. Made from cotton jersey, this classic crewneck design is enhanced with Sylvie stripes and features paneled shoulders and a kangaroo pocket.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Printed cotton sweatshirt",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/5f/P00681552_b1.jpg",
+        "price" : 290,
+        "gender": "girl",
+        "description" : "Expand their casual rotation with this sweatshirt from Gucci Kids. Made from cotton jersey, this classic crewneck design is enhanced with Sylvie stripes and features paneled shoulders and a kangaroo pocket.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Cotton hoodie",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/3e/P00584356_b1.jpg",
+        "price" : 290,
+        "gender": "girl",
+        "description" : "Expand their casual rotation with this sweatshirt from Gucci Kids. Made from cotton jersey, this classic crewneck design is enhanced with Sylvie stripes and features paneled shoulders and a kangaroo pocket.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Horsebit shearling-trim suede clog sandals",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/72/P00759810_d2.jpg",
+        "price" : 290,
+        "gender": "girl",
+        "description" : "These suede leather sandals from Gucci Kids have a wooden outer sole in the traditional clog style, which is revamped with the signature horsebit detail, a shearling trim, eyelet stud detailing, and VELCRO® slingback fastening.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Horsebit patent leather ballet flats",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/2b/P00759812_d2.jpg",
+        "price" : 190,
+        "gender": "girl",
+        "description" : "These ballet flats from Gucci Kids are made in Italy from white patent leather with a contrast perforated vamp. They feature an elasticated buckle strap and the signature horsebit detail in front.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Web leather sandals",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/c9/P00535792_d2.jpg",
+        "price" : 180,
+        "gender": "girl",
+        "description" : "These ballet flats from Gucci Kids are made in Italy from white patent leather with a contrast perforated vamp. They feature an elasticated buckle strap and the signature horsebit detail in front.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "GUCCI",
+        "title" : "Web leather sandals",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/8d/P00535793_d2.jpg",
+        "price" : 195,
+        "gender": "girl",
+        "description" : "These ballet flats from Gucci Kids are made in Italy from white patent leather with a contrast perforated vamp. They feature an elasticated buckle strap and the signature horsebit detail in front.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BONPOINT",
+        "title" : "Web leather sandals",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/71/P00715738_d2.jpg",
+        "price" : 65,
+        "gender": "girl",
+        "description" : "These ballet flats from Gucci Kids are made in Italy from white patent leather with a contrast perforated vamp. They feature an elasticated buckle strap and the signature horsebit detail in front.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BONPOINT",
+        "title" : "Metallic leather boots",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/b7/P00715798_d2.jpg",
+        "price" :  109,
+        "gender": "girl",
+        "description" : "These ballet flats from Gucci Kids are made in Italy from white patent leather with a contrast perforated vamp. They feature an elasticated buckle strap and the signature horsebit detail in front.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Baby Melissa cotton knit mobile",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/b6/P00768395_d2.jpg",
+        "price" :  55,
+        "gender": "girl",
+        "description" : "These ballet flats from Gucci Kids are made in Italy from white patent leather with a contrast perforated vamp. They feature an elasticated buckle strap and the signature horsebit detail in front.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Baby Angela cotton music mobile",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/d4/P00768396_d2.jpg",
+        "price" :  75,
+        "gender": "girl",
+        "description" : "These ballet flats from Gucci Kids are made in Italy from white patent leather with a contrast perforated vamp. They feature an elasticated buckle strap and the signature horsebit detail in front.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Baby Angela cotton music mobile",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/ac/P00768408_d2.jpg",
+        "price" :  75,
+        "gender": "girl",
+        "description" : "The Links building blocks set from Liewood comprises 100 cubes in different colors. This construction puzzle is made from silicone.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Baby Marlen stroller chain",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/28/P00768403_d2.jpg",
+        "price" :  75,
+        "gender": "girl",
+        "description" : "The Links building blocks set from Liewood comprises 100 cubes in different colors. This construction puzzle is made from silicone.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Baby Marlen stroller chain",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/e7/P00713870_d2.jpg",
+        "price" :  75,
+        "gender": "girl",
+        "description" : "The Links building blocks set from Liewood comprises 100 cubes in different colors. This construction puzzle is made from silicone.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Wilhelm striped jersey pajamas",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/28/P00760553_b1.jpg",
+        "price" :  59,
+        "gender": "girl",
+        "description" : "These ballet flats from Gucci Kids are made in Italy from white patent leather with a contrast perforated vamp. They feature an elasticated buckle strap and the signature horsebit detail in front.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Baby Birk printed cotton-blend onesie",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/0f/P00760559_b1.jpg",
+        "price" :  49,
+        "gender": "girl",
+        "description" : "Liewood's Yves jacket is made from plush teddy and accented with softshell details like the diamond-quilted pockets. The hooded design comes with a logo patch and a snap-buttoned front.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Cotton terry robe",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/88/P00663103.jpg",
+        "price" :  59,
+        "gender": "girl",
+        "description" : "Liewood's Yves jacket is made from plush teddy and accented with softshell details like the diamond-quilted pockets. The hooded design comes with a logo patch and a snap-buttoned front.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Yves teddy and softshell jacket",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/f4/P00718940_b1.jpg",
+        "price" :  59,
+        "gender": "girl",
+        "description" : "Liewood's Yves jacket is made from plush teddy and accented with softshell details like the diamond-quilted pockets. The hooded design comes with a logo patch and a snap-buttoned front.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Garry technical snow boots",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/a0/P00718855_d2.jpg",
+        "price" :  59,
+        "gender": "girl",
+        "description" : "Liewood's Yves jacket is made from plush teddy and accented with softshell details like the diamond-quilted pockets. The hooded design comes with a logo patch and a snap-buttoned front.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "LIEWOOD",
+        "title" : "Jordan technical ankle boots",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/31/P00718867_d2.jpg",
+        "price" :  89,
+        "gender": "girl",
+        "description" : "Liewood's Yves jacket is made from plush teddy and accented with softshell details like the diamond-quilted pockets. The hooded design comes with a logo patch and a snap-buttoned front.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BURBERRY",
+        "title" : "Quilted jacket",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/ab/P00694610_b1.jpg",
+        "price" :  89,
+        "gender": "girl",
+        "description" : "Baby will look adorably preppy in this tennis-inspired white polo dress from Burberry Kids. Vintage Check panels, a logo-embroidered chest pocket and a pleated skirt makes this cotton-piqué style extra fun.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BURBERRY",
+        "title" : "Baby Vintage Check cotton piqué polo dress",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/55/P00577419_b1.jpg",
+        "price" :  99,
+        "gender": "girl",
+        "description" : "Baby will look adorably preppy in this tennis-inspired white polo dress from Burberry Kids. Vintage Check panels, a logo-embroidered chest pocket and a pleated skirt makes this cotton-piqué style extra fun.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BURBERRY",
+        "title" : "Striped cotton jersey sweatpants",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/68/P00722767_b1.jpg",
+        "price" :  129,
+        "gender": "girl",
+        "description" : "Baby will look adorably preppy in this tennis-inspired white polo dress from Burberry Kids. Vintage Check panels, a logo-embroidered chest pocket and a pleated skirt makes this cotton-piqué style extra fun.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BURBERRY",
+        "title" : "Vintage Check slip-on sneakers",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/9b/P00762949_d2.jpg",
+        "price" :  259,
+        "gender": "girl",
+        "description" : "Bring the timelessness of Burberry Kids' Vintage Check canvas into their everyday edit with these sneakers. The slip-on design has a comfortable leather lining and sits atop chunky rubber soles.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BURBERRY",
+        "title" : "Baby striped leather booties",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/ec/P00760308_d2.jpg",
+        "price" :  159,
+        "gender": "girl",
+        "description" : "Bring the timelessness of Burberry Kids' Vintage Check canvas into their everyday edit with these sneakers. The slip-on design has a comfortable leather lining and sits atop chunky rubber soles.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BURBERRY",
+        "title" : "Thomas bear check bag",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/a9/P00761332_d2.jpg",
+        "price" :  559,
+        "gender": "girl",
+        "description" : "Burberry’s Kids' Thomas bear wants to join your little one on fun adventures, doubling up as an adorable bag. Made from cotton in archive beige check, it has an adjustable strap for multi-way use.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BURBERRY",
+        "title" : "Baby set of 2 Vintage Check bibs",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/a9/P00761332_d2.jpg",
+        "price" :  139,
+        "gender": "girl",
+        "description" : "Burberry’s Kids' Thomas bear wants to join your little one on fun adventures, doubling up as an adorable bag. Made from cotton in archive beige check, it has an adjustable strap for multi-way use.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "BURBERRY",
+        "title" : "Baby Vintage Check coated cotton bib",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/2c/P00492931_d2.jpg",
+        "price" :  139,
+        "gender": "girl",
+        "description" : "Burberry’s Kids' Thomas bear wants to join your little one on fun adventures, doubling up as an adorable bag. Made from cotton in archive beige check, it has an adjustable strap for multi-way use.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Benties faux fur-trimmed dress",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/c8/P00757806_b1.jpg",
+        "price" :  89,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Wadudu leather boots",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/74/P00757864_d2.jpg",
+        "price" :  139,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Pugi backpack",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/97/P00757831_d2.jpg",
+        "price" :  169,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Carline faux fur vest",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/bd/P00757807_b1.jpg",
+        "price" :  109,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Jay cotton cardigan",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/91/P00757848_b1.jpg",
+        "price" :  79,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Prala cotton dress",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/86/P00757844_b1.jpg",
+        "price" :  79,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Veten velour jacket",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/dd/P00757839_b1.jpg",
+        "price" :  279,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Baby Kone ruffled cotton onesie",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/dd/P00757839_b1.jpg",
+        "price" :  115,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Irfi shearling boots",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/8a/P00757857_d2.jpg",
+        "price" :  169,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Wadudu leather boots",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/74/P00757864_d2.jpg",
+        "price" :  169,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Baby Richy leather and faux fur booties",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/b2/P00757813_d2.jpg",
+        "price" :  169,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "DONSJE",
+        "title" : "Baby Aggas Lining leather booties",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/bc/P00757801_d2.jpg",
+        "price" : 99,
+        "gender": "girl",
+        "description" : "Made from a cotton-blend with a faux fur upper, Donsje's Benties dress has a buttoned front, fitted cuff sleeves and a pleated skirt.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Leather sneakers",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/02/P00591990_d2.jpg",
+        "price" : 176,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Leather sneakers",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/da/P00712584_d2.jpg",
+        "price" : 176,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Sock sneakers",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/15/P00712591_d2.jpg",
+        "price" : 155,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "shoes",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Baby logo printed blanket",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/9a/P00699082_d2.jpg",
+        "price" : 155,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Logo beanie and scarf",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/45/P00699064_d2.jpg",
+        "price" : 165,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Logo wool-blend beanie",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/de/P00699452_d2.jpg",
+        "price" : 89,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "accessories",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Baby set of printed cotton rompers",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/4a/P00699084_b1.jpg",
+        "price" : 99,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Logo cotton-blend skirt",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/01/P00699128_b1.jpg",
+        "price" : 79,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Baby logo printed onesie",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/de/P00699061_b1.jpg",
+        "price" : 95,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "clothing",
+        "category" : "kids"
+    },
+    {
+        "brand" : "MOSCHINO",
+        "title" : "Printed cotton jersey T-shirt",
+        "image" : "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/c7/P00699412.jpg",
+        "price" : 69,
+        "gender": "girl",
+        "description" : "These white sneakers from Moschino Kids are accented with the label's teddy bear mascot at the sides. Made in Italy from smooth calf leather, they have black trims and crisp rubber soles.",
+        "type" : "clothing",
+        "category" : "kids"
+    }
+]
