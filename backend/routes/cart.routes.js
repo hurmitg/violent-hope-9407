@@ -9,5 +9,10 @@ router
     .get(protect,getCartProducts)
     .post(protect,addToCart)
 
+
+    // post request (for adding products)
+    // put request ( to change quantities)
+    
+
     module.exports = router
 

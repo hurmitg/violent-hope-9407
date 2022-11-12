@@ -1,5 +1,6 @@
 
 
+
 import './App.css';
 import Allroutes from './Components/AllRoutes'
 import Corousel from './Components/Corousel';
@@ -19,13 +20,11 @@ import FooterMain from './Footer/FooterMain';
 
 
 
+
 function App() {
   return (
     <>
-
-
-<Allroutes/>
-   
+      <Allroutes />
 
     </>
   );

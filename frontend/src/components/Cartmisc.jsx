@@ -1,8 +1,9 @@
 import { Box, Button, Divider, Input, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-import styles from "./styles.module.css";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Cartmisc = () => {
+  const navigate = useNavigate()
   return (
     <>    <Box w={"90%"} m="auto" border={"1px solid white"} mt="10px">
       <VStack align={"left"}>
@@ -11,19 +12,22 @@ const Cartmisc = () => {
         <Divider />
       </VStack>
 
-      <Box className={styles.section3}>
-        <Box className={styles.section31}>
+      <Box display={"flex"} pt="15px" >
+        <Box display={"flex"} flexDirection="column" gap={"25px"} w="50%" >
           <Text fontSize={'14px'}>
             Use code WELCOME 10 for 10% off selected items when your first order
             is over ₹600
           </Text>
-          <Box className={styles.section31a}>
+          <Box display={"flex"}>
             <Input placeholder="Gift Card/Store Credit/Promo Code" />
             <Button colorScheme={"gray"} fontSize="13px">USE CODE</Button>
           </Box>
         </Box>
         <Box
-          className={styles.section32}
+          w={"50%"}
+          display="50%"
+          flexDirection={"column"}
+          gap="5px"
           align="right"
           border="1px solid white"
         >
@@ -54,6 +58,8 @@ const Cartmisc = () => {
           alignItems={"center"}
           justifyContent={"center"}
           w="170px"
+          cursor={"pointer"}
+           onClick={()=>navigate("/cart/delivery")}
         >
           PROCEED TO CHECKOUT
         </Box>

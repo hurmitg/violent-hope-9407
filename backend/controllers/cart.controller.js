@@ -78,6 +78,7 @@ const Cart = require("../models/cart.model");
 // })
 
 const getCartProducts = asyncHandler(async (req, res) => {
+
   const { _id } = req.user;
   let cartProducts = await Cart.find({ user: _id }).populate({path:"cartItems",populate: {path:"product"}})
   // console.log("cart", cartProducts);
@@ -157,3 +158,4 @@ const updateInCart = asyncHandler(async (req, res) => {
 
 
 module.exports={getCartProducts,deletFromCart,addToCart}
+
