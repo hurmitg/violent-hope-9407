@@ -13,12 +13,13 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
 function Women() {
   return (
-    <> 
-    <Navbar/>
+    <>
+      <Navbar />
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto" mt="100PX">
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}
@@ -57,21 +58,22 @@ function Women() {
                 Oscar de la Renta x Mytheresa
               </Text>
             </Stack>
-
-            <Button
-              colorScheme="white"
-              bgColor="white"
-              maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              color="black"
-              mt="1.2rem"
-              fontWeight="none"
-              w="20vw"
-            >
-              SHOP NOW
-            </Button>
+            <Link to="/womenproduct">
+              <Button
+                colorScheme="white"
+                bgColor="white"
+                maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
+                h={8}
+                fontSize={13}
+                borderRadius="none"
+                color="black"
+                mt="1.2rem"
+                fontWeight="none"
+                w="20vw"
+              >
+                SHOP NOW
+              </Button>
+            </Link>
           </Flex>
         </Flex>
         <Flex
@@ -92,20 +94,21 @@ function Women() {
           <Text color="gray" fontSize="1.1rem">
             Oscar de la Renta, Roger Vivier, Chloé, Vince...
           </Text>
-
-          <Button
-            colorScheme="black"
-            maxW={{ lg: "7vw", md: "11vw", sm: "12vw" }}
-            h={8}
-            fontSize={{ lg: "13", md: "11", sm: "11" }}
-            bgColor="black"
-            borderRadius="none"
-            color="white"
-            mt="1.6rem"
-            w="10vw"
-          >
-            SHOP NOW
-          </Button>
+          <Link to="/womenproduct">
+            <Button
+              colorScheme="black"
+              maxW={{ lg: "7vw", md: "11vw", sm: "12vw" }}
+              h={8}
+              fontSize={{ lg: "13", md: "11", sm: "11" }}
+              bgColor="black"
+              borderRadius="none"
+              color="white"
+              mt="1.6rem"
+              w="10vw"
+            >
+              SHOP NOW
+            </Button>
+          </Link>
         </Flex>
         <Box>
           <Flex
@@ -161,18 +164,20 @@ function Women() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Button
-                  colorScheme="#333333"
-                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                  h={8}
-                  fontSize={13}
-                  bgColor="#333333.800"
-                  borderRadius="none"
-                  color="white"
-                  w="10vw"
-                >
-                  SHOP NOW
-                </Button>
+                <Link to="/womenproduct">
+                  <Button
+                    colorScheme="#333333"
+                    maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                    h={8}
+                    fontSize={13}
+                    bgColor="#333333.800"
+                    borderRadius="none"
+                    color="white"
+                    w="10vw"
+                  >
+                    SHOP NOW
+                  </Button>
+                </Link>
               </Flex>
             </GridItem>
 
@@ -209,32 +214,36 @@ function Women() {
             alignItems="center"
           >
             <Flex mt={{ lg: "0", md: "5rem" }}>
-              <Button
-                colorScheme="#333333"
-                maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={{ lg: "13", md: "11", sm: "11" }}
-                bgColor="#333333"
-                borderRadius="none"
-                color="white"
-                w="10vw"
-              >
-                SHOP NOW
-              </Button>
+              <Link to="/womenproduct">
+                <Button
+                  colorScheme="#333333"
+                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={{ lg: "13", md: "11", sm: "11" }}
+                  bgColor="#333333"
+                  borderRadius="none"
+                  color="white"
+                  w="10vw"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </Flex>
             <Flex mt={{ lg: "0", md: "5rem" }}>
-              <Button
-                colorScheme="#333333"
-                maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={{ lg: "13", md: "11", sm: "11" }}
-                bgColor="#333333"
-                borderRadius="none"
-                color="white"
-                w="10vw"
-              >
-                SHOP NOW
-              </Button>
+              <Link to="/womenproduct">
+                <Button
+                  colorScheme="#333333"
+                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={{ lg: "13", md: "11", sm: "11" }}
+                  bgColor="#333333"
+                  borderRadius="none"
+                  color="white"
+                  w="10vw"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </Flex>
           </Flex>
         </Box>
@@ -292,18 +301,20 @@ function Women() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Button
-                  colorScheme="#333333"
-                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                  h={8}
-                  fontSize={13}
-                  bgColor="#333333"
-                  borderRadius="none"
-                  color="white"
-                  w="10vw"
-                >
-                  SHOP NOW
-                </Button>
+                <Link to="/womenproduct">
+                  <Button
+                    colorScheme="#333333"
+                    maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                    h={8}
+                    fontSize={13}
+                    bgColor="#333333"
+                    borderRadius="none"
+                    color="white"
+                    w="10vw"
+                  >
+                    SHOP NOW
+                  </Button>
+                </Link>
               </Flex>
             </GridItem>
 
@@ -340,34 +351,38 @@ function Women() {
             alignItems="center"
           >
             <Flex mt={{ lg: "0", md: "5rem" }}>
-              <Button
-                colorScheme="#333333"
-                maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={{ lg: "13", md: "11", sm: "11" }}
-                bgColor="#333333"
-                borderRadius="none"
-                color="white"
-                w="10vw"
-                mt="1.5rem"
-              >
-                SHOP NOW
-              </Button>
+              <Link to="/womenproduct">
+                <Button
+                  colorScheme="#333333"
+                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={{ lg: "13", md: "11", sm: "11" }}
+                  bgColor="#333333"
+                  borderRadius="none"
+                  color="white"
+                  w="10vw"
+                  mt="1.5rem"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </Flex>
             <Flex mt={{ lg: "0", md: "5rem" }}>
-              <Button
-                colorScheme="#333333"
-                maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={{ lg: "13", md: "11", sm: "11" }}
-                bgColor="#333333"
-                borderRadius="none"
-                color="white"
-                w="10vw"
-                mt="1.5rem"
-              >
-                SHOP NOW
-              </Button>
+              <Link to="/women">
+                <Button
+                  colorScheme="#333333"
+                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
+                  h={8}
+                  fontSize={{ lg: "13", md: "11", sm: "11" }}
+                  bgColor="#333333"
+                  borderRadius="none"
+                  color="white"
+                  w="10vw"
+                  mt="1.5rem"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </Flex>
           </Flex>
         </Box>
@@ -437,19 +452,21 @@ function Women() {
           </Box>
 
           <Center>
-            <Button
-              colorScheme="black"
-              maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-              h={8}
-              fontSize={13}
-              bgColor="#333333"
-              borderRadius="none"
-              color="white"
-              mt="1.9rem"
-              w="10vw"
-            >
-              SHOP NOW
-            </Button>
+            <Link to="/womenproduct">
+              <Button
+                colorScheme="black"
+                maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
+                h={8}
+                fontSize={13}
+                bgColor="#333333"
+                borderRadius="none"
+                color="white"
+                mt="1.9rem"
+                w="10vw"
+              >
+                SHOP NOW
+              </Button>
+            </Link>
           </Center>
         </Box>
 

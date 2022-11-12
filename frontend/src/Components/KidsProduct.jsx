@@ -1,10 +1,11 @@
-import { Box, Center, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
 import { useEffect } from "react";
-import {Link} from "react-router-dom"
-function WomenProduct() {
+import { Link } from "react-router-dom";
+
+function KidsProduct() {
   const [data, setData] = useState([]);
 
   let getData = () => {
@@ -30,10 +31,10 @@ function WomenProduct() {
           {data?.map((e) => (
             <Flex w="20vw" h="20vw" alignItems="center" direction="column">
                 <Link to={`/products/${e.id}`}>
-              <Image src={e.image} h="100%" w="90%"></Image>
+                <Image src={e.image} h="100%" w="90%"></Image>
 
-              {/* <Text>{e.title}</Text> */}
-              <Text as="b"> ₹{e.price}</Text>
+                {/* <Text>{e.title}</Text> */}
+                <Text as="b">₹{e.price}</Text>
               </Link>
             </Flex>
           ))}
@@ -45,4 +46,4 @@ function WomenProduct() {
   );
 }
 
-export default WomenProduct;
+export default KidsProduct;

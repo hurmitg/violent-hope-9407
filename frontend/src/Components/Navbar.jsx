@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Stack, Flex, Text, Spacer, Image, Input } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -13,7 +14,7 @@ export default function Navbar() {
       paddingBottom="1rem"
     >
       <Stack
-        w={{ lg: "75%", md: "90%", sm: "90%" }}
+        w={{ lg: "90%", md: "90%", sm: "90%" }}
         h={{ lg: "23vh", md: "8vh" }}
         margin="auto"
       >
@@ -25,17 +26,21 @@ export default function Navbar() {
           mb={2}
         >
           <Flex gap="1.2rem" fontSize="0.9rem" color="black">
-            <Text letterSpacing={1} cursor="pointer">
-              Women
-            </Text>
-
-            <Text letterSpacing={1} cursor="pointer">
-              Men
-            </Text>
-
-            <Text letterSpacing={1} cursor="pointer">
-              Kids
-            </Text>
+            <Link to="/women">
+              <Text letterSpacing={1} cursor="pointer">
+                Women
+              </Text>
+            </Link>
+            <Link to="/men">
+              <Text letterSpacing={1} cursor="pointer">
+                Men
+              </Text>
+            </Link>
+            <Link to="/kids">
+              <Text letterSpacing={1} cursor="pointer">
+                Kids
+              </Text>
+            </Link>
           </Flex>
 
           <Flex fontSize="0.75rem" color="black" gap="3.5rem">
