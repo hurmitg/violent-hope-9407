@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 function Men() {
   return (
     <>
-      <Navbar />
+      
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto" mt="100PX">
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}
