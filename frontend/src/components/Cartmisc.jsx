@@ -2,7 +2,7 @@ import { Box, Button, Divider, Input, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 
-const Cartmisc = () => {
+const Cartmisc = ({subtotal=0}) => {
   const navigate = useNavigate()
   return (
     <>    <Box w={"90%"} m="auto" border={"1px solid white"} mt="10px">
@@ -32,13 +32,13 @@ const Cartmisc = () => {
           border="1px solid white"
         >
           <Text fontSize={14.5} color={"gray"}>
-            Subtotal {"Subtotal ₹ 3275"}
+            Subtotal {subtotal.toLocaleString()}
           </Text>
           <Text fontSize={14.5} color={"gray"}>
             Shipping(DHL Express) {"₹ 0.00"}
           </Text>
           <Text fontSize={14.5} fontWeight={600}>
-            Grand Total {"₹ 0.00"}
+            Grand Total {subtotal.toLocaleString()}
           </Text>
           <Text fontSize={14.5} color={"gray"}>
             VAT excetption. VAT not included. Shipping not included.
