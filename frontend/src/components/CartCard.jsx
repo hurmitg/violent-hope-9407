@@ -15,7 +15,6 @@ import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useToast } from "@chakra-ui/react";
 import { useState } from "react";
-import styles from "./styles.module.css";
 
 const CartCard = () => {
   const [data, setData] = useState({ price: 5000, wish: false, qty: 1 });
@@ -45,25 +44,25 @@ const CartCard = () => {
 
   return (
     <>
-      <Box className={styles.cartCardparent}>
-        <Box  className={styles.first} align="center">
+      <Box display={"flex"} p={"15px 0px 30px 0px"} m="0px 50px" height={"auto"} justifyContent="center" alignItems={"center"} flexDirection={["column","row","row"]} >
+        <Box  w={["60%","30%","15%"]} p="5px" align="center">
           <Image
             w="80%"
             h={"95%"}
             src="https://img.mytheresa.com/240/240/90/jpeg/catalog/product/e0/P00731129.jpg"
           ></Image>
         </Box>
-        <Box className={styles.second}>
+        <Box w={["60%","43%","58%"]}>
           <VStack spacing={"25px"} align={"left"}>
             <VStack align={"left"}>
               <Text>CHLOE</Text>
-              <Text className={styles.one}>
+              <Text color={"gray"} fontSize={["11px","11px","14.5px"]}>
                 Ruffle-trimmed vergin wool midi dress
               </Text>
-              <Text className={styles.one}>Size : FR 36/XS-S</Text>
-              <Text className={styles.one}>Item No : P00731129</Text>
+              <Text color={"gray"} fontSize={["11px","11px","14.5px"]}>Size : FR 36/XS-S</Text>
+              <Text color={"gray"} fontSize={["11px","11px","14.5px"]}>Item No : P00731129</Text>
             </VStack>
-            <HStack>
+            <HStack spacing={["50px","30px","15px"]}>
               <Button
                 onClick={handleRemove}
                 variant={"link"}
@@ -88,23 +87,24 @@ const CartCard = () => {
 
         <Box w={"27%"} display="flex">
           {" "}
-          <Box className={styles.two} align="center">
+          <Box w={["auto","33%","33%"]} fontSize={[ "11px","11px","15px"]} align="center">
             <Text mt={"15px"} color={"gray"}>
               ₹ {data.price}
             </Text>
           </Box>
-          <Box className={styles.two} align="center">
+          <Box w={["auto","33%","33%"]} fontSize={[ "11px","11px","15px"]} align="center">
             <Text mt={"12px"} color={"gray"} align={"center"}>
-              {data.qty}{" "}
+              {data.qty}
             </Text>
 
-            <Box className={styles.incdre}>
+            <Box  border={"0px"} display={{base:"flex"}} >
             <Button
               disabled={data.qty == 1}
               onClick={() => setData({ ...data, qty: data.qty - 1 })}
               m={"5px"}
               size={"xs"}
               variant="outline"
+              
             >
               -
             </Button>
@@ -119,7 +119,7 @@ const CartCard = () => {
             </Button>
             </Box>
           </Box>
-          <Box className={styles.two} align="center">
+          <Box w={["auto","33%","33%"]} fontSize={[ "11px","11px","15px"]} align="center">
             <Text mt={"15px"} color={"gray"}>
               ₹ {data.qty * data.price}
             </Text>

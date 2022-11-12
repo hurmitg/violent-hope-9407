@@ -8,5 +8,10 @@ router
     .route("/")
     .get(protect,getCartProducts)
 
+
+    // post request (for adding products)
+    // put request ( to change quantities)
+    
+
     module.exports = router
 
