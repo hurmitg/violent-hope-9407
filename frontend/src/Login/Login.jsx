@@ -43,6 +43,7 @@ export default function Login() {
         isClosable: true,
       });
       nav("/")
+      setLoading(false)
     } else {
       try {
         let res = await axios.post(

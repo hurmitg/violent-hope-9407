@@ -16,13 +16,11 @@ export default function Layout() {
     image:
       "https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_KIDS_DSK_2x_20220908102616.jpg?imwidth=1180&imdensity=1",
     title: "Kids",
-    
   };
   const Life = {
     image:
       "https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_LIFE_DSK_2x_20220908102608.jpg?imwidth=1180&imdensity=1",
     title: "Life",
-    
   };
   const mens = {
     image:
@@ -33,14 +31,20 @@ export default function Layout() {
   return (
     <Box>
       <Poster2 data={mens} />
-      <Poster data={kids} />
+      <Link to="/kids">
+        <Poster data={kids} />
+      </Link>
       <Poster data={Life} />
 
       <Carousel link={"/men"} title="Men's Collection" data={men} />
       <Carousel link={"/women"} title="Women's Collection" data={women} />
       <Carousel link={"/kids"} title="Kid's Collection" data={children} />
 
-      <Carousel link={"/accessories"} title="Life New Arrivals" data={accessories.reverse()} />
+      <Carousel
+        link={"/accessories"}
+        title="Life New Arrivals"
+        data={accessories.reverse()}
+      />
       {/* <Poster4 image={image4} /> */}
     </Box>
   );
