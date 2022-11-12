@@ -25,7 +25,6 @@ export default function SignUp() {
   const toast = useToast();
   const [user, setUser] = useState({
     name: "",
-
     email: "",
     password: "",
     comfirmpassword: "",
@@ -64,7 +63,7 @@ export default function SignUp() {
             user
           );
          document.cookie="MyMetheresaToken"+"="+(res.data.token)
-         await localStorage.setItem("token",res.data.token)
+         await window.localStorage.setItem("token",res.data.token)
           toast({
             title: "Account created successfully!",
   

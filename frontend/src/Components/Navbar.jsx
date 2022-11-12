@@ -8,7 +8,7 @@ export default function Navbar() {
   const toast=useToast()
   const { token,nav } = useContext(AppContext);
   function handleLogin(){
-    localStorage.removeItem("token")
+    window.localStorage.removeItem("token")
     toast({
       title: 'Log out succssfully!',
      

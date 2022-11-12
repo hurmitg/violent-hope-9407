@@ -2,8 +2,8 @@ import { useToast } from "@chakra-ui/react";
 import React from "react";
 import { Navigate } from "react-router-dom";
 import { getCookie } from "./readingCookie";
-let localToken = localStorage.getItem("token");
 export default function PrivateRoute({ children }) {
+  let localToken = window.localStorage.getItem("token");
     const toast = useToast()
     
   let cookieToken = getCookie("MyMetheresaToken");
@@ -18,7 +18,7 @@ export default function PrivateRoute({ children }) {
   }
  
  
-  if (localToken != cookieToken || localToken == null || cookieToken == null) {
+  if (!localToken) {
     notLogin()
     return <Navigate to="/login" />;
   }

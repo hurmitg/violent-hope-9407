@@ -50,9 +50,9 @@ export default function Login() {
           user
         );
        
-        document.cookie = "MyMetheresaToken" + "=" + res.data.token;
+      document.cookie = "MyMetheresaToken" + "=" + res.data.token;
         
-       await  localStorage.setItem("token", res.data.token);
+       await  window.localStorage.setItem("token", res.data.token);
         toast({
           title: "Login successfully!",
 
@@ -63,7 +63,7 @@ export default function Login() {
         setLoading(false)
         setSuccess(true)
         nav("/")
-        window.location.reload();
+       // window.location.reload();
         
       } catch (e) {
         console.log(e);
