@@ -1,16 +1,4 @@
-import {
-  Button,
-  Checkbox,
-  Flex,
-  FormControl,
-  FormLabel,
-  Heading,
-  Input,
-  Link,
-  Stack,
-  Image,
-  Divider,
-} from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import Login from "./Login";
 import SignUp from "./SignUp";
 
@@ -23,7 +11,7 @@ export default function LoginMain() {
       direction={{ base: "column", md: "row" }}
     >
       <SignUp />
-      
+
       <Login />
     </Stack>
   );

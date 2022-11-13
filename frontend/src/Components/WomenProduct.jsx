@@ -1,6 +1,5 @@
 import {
   Box,
-  Center,
   Flex,
   Image,
   SimpleGrid,
@@ -10,7 +9,6 @@ import {
   Input,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import axios from "axios";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -23,7 +21,7 @@ function WomenProduct() {
   const getData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8081/api/products?category=women"
+        "https://violent-hope.onrender.com/api/products?category=women"
       );
       setData(data);
 
@@ -54,7 +52,7 @@ function WomenProduct() {
   const BrandFilter = async (brand) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8081/api/products?category=women&brand=${brand}`
+        `https://violent-hope.onrender.com/api/products?category=women&brand=${brand}`
       );
       setData(data);
     } catch (e) {
@@ -71,7 +69,7 @@ function WomenProduct() {
   const TypeFilter = async (type) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8081/api/products?category=women&type=${type}`
+        `https://violent-hope.onrender.com/api/products?category=women&type=${type}`
       );
       let branArr = data
         .map((el) => {

@@ -1,17 +1,14 @@
 import {
   Box,
   Button,
-  Checkbox,
   Flex,
   Image,
   Input,
-  Select,
   SimpleGrid,
   Text,
   useToast,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import axios from "axios";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -24,7 +21,7 @@ function KidsProduct() {
   let getData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8081/api/products?category=kids"
+        "https://violent-hope.onrender.com/api/products?category=kids"
       );
       setData(data);
 
@@ -55,7 +52,7 @@ function KidsProduct() {
   const BrandFilter = async (brand) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8081/api/products?category=kids&brand=${brand}`
+        `https://violent-hope.onrender.com/api/products?category=kids&brand=${brand}`
       );
       setData(data);
     } catch (e) {
@@ -72,7 +69,7 @@ function KidsProduct() {
   const TypeFilter = async (type) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8081/api/products?category=kids&type=${type}`
+        `https://violent-hope.onrender.com/api/products?category=kids&type=${type}`
       );
       let branArr = data
         .map((el) => {

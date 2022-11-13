@@ -29,8 +29,8 @@ function Allroutes() {
           path="/men"
           element={
             // <PrivateRoute>
-           
-              <Men />
+
+            <Men />
             /* </PrivateRoute> */
           }
         />
@@ -40,10 +40,38 @@ function Allroutes() {
         <Route path="/womenproduct" element={<WomenProduct />} />
         <Route path="/kidsproduct" element={<KidsProduct />} />
         <Route path="/:category/:id" element={<SingleProd />} />
-        <Route path="/cart" element={<Cart/>} />
-         <Route path="/cart/delivery" element={<Delivery/>} />
-        <Route path="/cart/delivery/pay" element={<Pay/>} />
-        <Route path="/ordersummary" element={<Summary/>} /> 
+        <Route
+          path="/cart"
+          element={
+            <PrivateRoute>
+              <Cart />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/cart/delivery"
+          element={
+            <PrivateRoute>
+              <Delivery />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/cart/delivery/pay"
+          element={
+            <PrivateRoute>
+              <Pay />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/ordersummary"
+          element={
+            <PrivateRoute>
+              <Summary />
+            </PrivateRoute>
+          }
+        />
         <Route path="*" element={<Text>No Such Page exist</Text>} />
       </Routes>
     </>

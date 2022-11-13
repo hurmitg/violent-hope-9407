@@ -8,19 +8,15 @@ import {
   Text,
   VisuallyHidden,
   Input,
-  Image,
-  
   useColorModeValue,
   Button,
 } from "@chakra-ui/react";
-import { ReactNode, useContext } from "react";
+import { useContext } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import { BiMailSend, BiMobile } from "react-icons/bi";
+import { BiMobile } from "react-icons/bi";
 import { BsLinkedin, BsPinterest } from "react-icons/bs";
 import Logo from "../Components/Logo";
 import { AppContext } from "../Context/Context";
-
-
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -48,17 +44,17 @@ const SocialButton = ({ children, label, href }) => {
 
 const ListHeader = ({ children }) => {
   return (
-    <Text fontWeight={"500"}  fontSize={"lg"} mb={2}>
+    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}
     </Text>
   );
 };
 
 export default function LargeWithNewsletter() {
-  const {nav}=useContext(AppContext);
+  const { nav } = useContext(AppContext);
   function handleLogin() {
-    window.scroll({top:0,left:0})
-    nav("/login")
+    window.scroll({ top: 0, left: 0 });
+    nav("/login");
   }
   return (
     <Box
@@ -66,46 +62,69 @@ export default function LargeWithNewsletter() {
       m="auto"
       borderTop={"1px solid #cfcfcf"}
       borderBottom={"1px solid #cfcfcf"}
-      
     >
       <Container as={Stack} maxW={"6xl"} py={10}>
         <SimpleGrid
           templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}
           spacing={8}
         >
-          <Stack textAlign={"center"} spacing={6} mt={["0%","10%","-20%"]}>
-             <Logo/>
+          <Stack textAlign={"center"} spacing={6} mt={["0%", "10%", "-20%"]}>
+            <Logo />
             <Text fontSize={"md"} color={"gray"}>
               © 2022 Violent Hope. All rights reserved
             </Text>
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader >Violent Hope</ListHeader>
-            <Link href={"#"} color="gray">About us</Link>
-            <Link href={"#"} color="gray">Trust & services</Link>
-            <Link href={"#"} color="gray">Press</Link>
-            <Link href={"#"} color="gray">Careers</Link>
-            <Link href={"#"} color="gray">Affiliates</Link>
+            <ListHeader>Violent Hope</ListHeader>
+            <Link href={"#"} color="gray">
+              About us
+            </Link>
+            <Link href={"#"} color="gray">
+              Trust & services
+            </Link>
+            <Link href={"#"} color="gray">
+              Press
+            </Link>
+            <Link href={"#"} color="gray">
+              Careers
+            </Link>
+            <Link href={"#"} color="gray">
+              Affiliates
+            </Link>
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader >CUSTOMER CARE</ListHeader>
-            <Link href={"#"} color="gray">Contact us</Link>
-            <Link href={"#"} color="gray">Shipping information</Link>
-            <Link href={"#"} color="gray">Secure payment</Link>
-            <Link href={"#"} color="gray">Exchanges</Link>
-            <Link href={"#"} color="gray">Returns</Link>
-            <Link href={"#"} color="gray">Gift card</Link>
+            <ListHeader>CUSTOMER CARE</ListHeader>
+            <Link href={"#"} color="gray">
+              Contact us
+            </Link>
+            <Link href={"#"} color="gray">
+              Shipping information
+            </Link>
+            <Link href={"#"} color="gray">
+              Secure payment
+            </Link>
+            <Link href={"#"} color="gray">
+              Exchanges
+            </Link>
+            <Link href={"#"} color="gray">
+              Returns
+            </Link>
+            <Link href={"#"} color="gray">
+              Gift card
+            </Link>
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader color="#111">GET TREND UPDATES, STYLE TIPS AND MORE</ListHeader>
+            <ListHeader color="#111">
+              GET TREND UPDATES, STYLE TIPS AND MORE
+            </ListHeader>
             <Stack direction={"row"}>
               <Input
-              onClick={handleLogin}
+                onClick={handleLogin}
                 placeholder={"Your email address here..."}
                 borderRadius={"none"}
               />
               <Button
-               onClick={handleLogin}
+                onClick={handleLogin}
                 p="0rem 2rem"
                 bg={"#f2f2f2"}
                 fontWeight={100}

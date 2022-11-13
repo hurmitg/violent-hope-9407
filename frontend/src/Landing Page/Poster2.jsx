@@ -1,4 +1,4 @@
-import { Flex, Image, Box, Text, Button, Heading } from "@chakra-ui/react";
+import { Flex, Image, Box, Heading } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -22,22 +22,19 @@ export default function Poster2({ data }) {
         textAlign={"center"}
         w="100%"
       >
-      
-
         <Box w="50%">
-        <Link to="/women">
-          <Heading fontWeight={400} fontSize={"6xl"}>
-            {data.title2}
-          </Heading>
-        </Link >
+          <Link to="/women">
+            <Heading fontWeight={400} fontSize={"6xl"}>
+              {data.title2}
+            </Heading>
+          </Link>
         </Box>
-        
-        <Box w="50%"  display={"flex"}
-        justifyContent="center">
+
+        <Box w="50%" display={"flex"} justifyContent="center">
           <Link to="/men">
-          <Heading fontWeight={400} fontSize={"6xl"}>
-            {data.title}
-          </Heading>
+            <Heading fontWeight={400} fontSize={"6xl"}>
+              {data.title}
+            </Heading>
           </Link>
         </Box>
       </Box>

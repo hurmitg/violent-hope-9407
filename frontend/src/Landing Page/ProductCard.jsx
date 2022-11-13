@@ -1,37 +1,31 @@
-import { Box, Heading, IconButton, Image, Text, useToast } from "@chakra-ui/react";
+import { Box, IconButton, Image, Text, useToast } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { BsStar,BsFillStarFill } from "react-icons/bs";
-export default function ProductCard({url}) {
-  const [flag,setFlag]=useState(false)
-  const toast = useToast()
-  function handleFavourit(){
-    setFlag(!flag)
-    if(!flag){
+import { BsStar, BsFillStarFill } from "react-icons/bs";
+export default function ProductCard({ url }) {
+  const [flag, setFlag] = useState(false);
+  const toast = useToast();
+  function handleFavourit() {
+    setFlag(!flag);
+    if (!flag) {
       toast({
-        title: 'Added successfully.',
+        title: "Added successfully.",
         description: "You've added this product in your favourite's.",
-        status: 'success',
+        status: "success",
         duration: 9000,
         isClosable: true,
-      })
-
-    }
-    else if(flag){
+      });
+    } else if (flag) {
       toast({
-        title: 'Removed.',
+        title: "Removed.",
         description: "You've remove this product from your favourite's.",
-        status: 'error',
+        status: "error",
         duration: 9000,
         isClosable: true,
-      })
-
+      });
     }
-   
-   
-   
   }
   return (
-    <Box >
+    <Box>
       <Box
         p="1rem 0rem"
         cursor={"pointer"}
@@ -50,21 +44,21 @@ export default function ProductCard({url}) {
         >
           <Text>New Arrivals</Text>
         </Box>
-        <IconButton   variant={"ghost"} _hover={{bg:"none"}} onClick={handleFavourit}>
-          {
-            flag?<BsFillStarFill fontSize={"20px"}/>:<BsStar fontSize={"20px"} />
-          }
+        <IconButton
+          variant={"ghost"}
+          _hover={{ bg: "none" }}
+          onClick={handleFavourit}
+        >
+          {flag ? (
+            <BsFillStarFill fontSize={"20px"} />
+          ) : (
+            <BsStar fontSize={"20px"} />
+          )}
         </IconButton>
-       
-
       </Box>
 
       <Box textAlign="center" h="100%" w="100%">
-        <Image
-          w="100%"
-          h="80%"
-          src={url.image}
-        />
+        <Image w="100%" h="80%" src={url.image} />
         <Text color={"#9e9d9d"} p="1rem">
           {url.title}{" "}
         </Text>

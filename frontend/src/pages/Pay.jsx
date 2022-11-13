@@ -1,21 +1,15 @@
 import {
   Box,
-  Button,
   Divider,
   FormControl,
   FormHelperText,
   FormLabel,
-  HStack,
-  Image,
   Img,
   Input,
   Modal,
   ModalBody,
   ModalContent,
-  ModalFooter,
   ModalHeader,
-  Radio,
-  RadioGroup,
   Spinner,
   Tab,
   TabList,
@@ -23,7 +17,6 @@ import {
   TabPanels,
   Tabs,
   Text,
-  Toast,
   useDisclosure,
   useToast,
   VStack,
@@ -52,7 +45,7 @@ const Pay = () => {
         isClosable: "true",
       });
     }
-    localStorage.clear("qty");
+    localStorage.removeItem("qty");
     onOpen();
     setState(true);
 
