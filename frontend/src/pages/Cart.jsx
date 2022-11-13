@@ -33,37 +33,26 @@ import axios from "axios";
 import { AppContext } from "../Context/Context";
 
 const Cart = () => {
-
-  function getRChar() {
-    return ((Math.random() * 26 + 10) | 0).toString(36).toUpperCase();
-  }
-
-  var s = getRChar() + getRChar() + Math.floor(Math.random() * 99999 * 7);
-
   const toast = useToast();
   const [data1, setData1] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
-  const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNmI3NmMyN2M4ZWZkYTU0MmJkOTA2ZSIsImlhdCI6MTY2ODI2NzUwNCwiZXhwIjoxNjcwODU5NTA0fQ.uNK_AL7zPpSQl4--uUew5zhxZlNWOVegUwuqiOdAVkk";
+  const { token } = useContext(AppContext);
 
-
-
-    const handleGet = () => {
-      const config = {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      };
-      axios
-        .get(`http://localhost:8080/api/cart`, config)
-        .then((res) => {
-          // console.log(res.data[0].cartItems);
-          window.localStorage.setItem("qty",res.data[0].cartItems.length)
-          setData1(res.data[0].cartItems);
-        })
-        .catch((err) => console.log(err));
-    }
-
+  const handleGet = () => {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    axios
+      .get(`http://localhost:8081/api/cart`, config)
+      .then((res) => {
+        // console.log(res.data[0].cartItems);
+        window.localStorage.setItem("qty", res.data[0].cartItems.length);
+        setData1(res.data[0].cartItems);
+      })
+      .catch((err) => console.log(err));
+  };
 
   useEffect(() => {
     handleGet();
@@ -133,28 +122,24 @@ const Cart = () => {
 
   return (
     <>
-
-        
-
-
-
       <Box
         onClick={() => navigate("/cart/delivery")}
         width={"95%"}
         margin="auto"
+        flexDir={["column", "row", "row"]}
         display={"flex"}
         alignItems="center"
         border="1px solid white"
         justifyContent={"space-between"}
         marginBottom="20px"
-        mt={"100px"}
       >
         <Text>YOUR SHOPPING BAG</Text>
         <Box
           cursor={"pointer"}
           boxSizing="border-box"
           border={"1px solid white"}
-          p="7px 2px"
+          display={["none", "inline-block", "inline-block"]}
+          p={3}
           color={"white"}
           bg="black"
           fontSize="13px"
@@ -203,9 +188,9 @@ const Cart = () => {
       </Box>
       <Divider w={"90%"} m="auto" />
 
-      {data1.map((elem, i) => (
+      {data1.map((elem) => (
         <CartCard
-          key={i}
+          key={elem._id}
           brand={elem.product.brand}
           title={elem.product.title}
           image={elem.product.image}
