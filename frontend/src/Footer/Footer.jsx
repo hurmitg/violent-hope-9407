@@ -73,7 +73,7 @@ export default function LargeWithNewsletter() {
           templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}
           spacing={8}
         >
-          <Stack spacing={6}>
+          <Stack textAlign={"center"} spacing={6} mt={["0%","10%","-20%"]}>
              <Logo/>
             <Text fontSize={"md"} color={"gray"}>
               © 2022 Violent Hope. All rights reserved

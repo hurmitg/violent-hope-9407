@@ -64,7 +64,10 @@ export default function SignUp() {
           duration: 9000,
           isClosable: true,
         });
-      } else {
+      } else{ 
+        setLoading(false)
+      
+  
         try {
           let res = await axios.post(
             "http://localhost:8081/api/user/signup",

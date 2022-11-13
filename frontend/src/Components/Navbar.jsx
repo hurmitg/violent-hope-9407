@@ -6,7 +6,10 @@ import { AppContext } from "../Context/Context";
 
 export default function Navbar() {
   const toast=useToast()
+  
   const { token,nav } = useContext(AppContext);
+  const qty=localStorage.getItem("qty")
+  
   function handleLogin(){
     window.localStorage.removeItem("token")
     toast({
@@ -91,21 +94,26 @@ export default function Navbar() {
             <Logo />
           </Box>
           <Spacer />
+          <Link to="/cart">
+
           <Flex gap={2} alignItems="center" cursor="pointer">
             <Text
               display={{ lg: "inline-block", md: "none", sm: "none" }}
               fontSize="0.9rem"
-            >
+              >
               SHOPPING BAG
             </Text>
-
-            <Box>
+            
+            <Box position={"relative"} textAlign="center" display={"flex"} alignItems="center" justifyContent={"center"}>
+            
               <Image
                 h={{ lg: "4.7vh", md: "4vh", sm: "4vh" }}
                 src="https://img.icons8.com/ios/2x/shopping-bag--v3.png"
-              />
+                />
+                <Text mt="30%"   position={"absolute"} color="black">{qty}</Text>
             </Box>
           </Flex>
+          </Link>
         </Flex>
         <Spacer />
 

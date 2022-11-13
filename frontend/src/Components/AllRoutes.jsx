@@ -28,10 +28,10 @@ function Allroutes() {
         <Route
           path="/men"
           element={
-            <PrivateRoute>
-              {" "}
+            // <PrivateRoute>
+           
               <Men />
-            </PrivateRoute>
+            /* </PrivateRoute> */
           }
         />
         <Route path="/women" element={<Women />} />
