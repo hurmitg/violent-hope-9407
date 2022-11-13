@@ -1,14 +1,11 @@
 import { Box } from "@chakra-ui/react";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Carousel from "./Carousel";
 import women from "./Data/women.json";
 import accessories from "./Data/womenaccessories.json";
 import men from "./Data/men.json";
-import Poster4 from "./Poster4";
 import Poster from "./Poster";
 import Poster2 from "./Poster2";
-import Poster3 from "./Poster3";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import children from "./Data/Kids.json";
 export default function Layout() {

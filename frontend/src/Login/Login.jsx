@@ -12,20 +12,10 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useContext, useState } from "react";
-
-import { useNavigate } from "react-router-dom";
 import { AppContext } from "../Context/Context";
 export default function Login() {
-  const {
-    token,
-    nav,
-    setLoading,
-    setError,
-    setSuccess,
-    loading,
-    error,
-    success,
-  } = useContext(AppContext);
+  const { token, nav, setLoading, setError, setSuccess, loading } =
+    useContext(AppContext);
   const toast = useToast();
 
   const [user, setUser] = useState({
@@ -41,12 +31,9 @@ export default function Login() {
   async function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
-
-    console.log(user);
     if (token) {
       toast({
         title: "You have already login!",
-
         status: "success",
         duration: 9000,
         isClosable: true,
@@ -56,11 +43,11 @@ export default function Login() {
     } else {
       try {
         let res = await axios.post(
-          "http://localhost:8081/api/user/login",
+          "https://violent-hope.onrender.com/api/user/login",
           user
         );
 
-        document.cookie = "MyMetheresaToken" + "=" + res.data.token;
+        document.cookie = `MyMetheresaToken=${res.data.token}`;
 
         await window.localStorage.setItem("token", res.data.token);
         toast({

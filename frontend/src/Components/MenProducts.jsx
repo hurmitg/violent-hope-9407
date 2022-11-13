@@ -9,7 +9,6 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import axios from "axios";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -23,7 +22,7 @@ function MenProduct() {
   let getData = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8081/api/products?category=men"
+        "https://violent-hope.onrender.com/api/products?category=men"
       );
       setData(data);
 
@@ -54,7 +53,7 @@ function MenProduct() {
   const BrandFilter = async (brand) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8081/api/products?category=men&brand=${brand}`
+        `https://violent-hope.onrender.com/api/products?category=men&brand=${brand}`
       );
 
       setData(data);
@@ -72,7 +71,7 @@ function MenProduct() {
   const TypeFilter = async (type) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8081/api/products?category=men&type=${type}`
+        `https://violent-hope.onrender.com/api/products?category=men&type=${type}`
       );
       let branArr = data
         .map((el) => {

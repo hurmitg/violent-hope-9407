@@ -1,13 +1,9 @@
 import {
   Box,
-  Button,
   Checkbox,
   Divider,
   FormControl,
-  FormHelperText,
-  FormLabel,
   HStack,
-  Image,
   Img,
   Input,
   Radio,
@@ -20,7 +16,6 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Contactcart from "../Components/Contactcart";
-//   import Contactcart from "../components/Contactcart";
 
 const Delivery = () => {
   const [info, setInfo] = useState({

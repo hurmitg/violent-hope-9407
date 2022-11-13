@@ -1,4 +1,4 @@
-import { Flex, Image, Box, Text, Button, Heading } from "@chakra-ui/react";
+import { Flex, Image, Box, Heading } from "@chakra-ui/react";
 import React from "react";
 
 export default function Poster({ data }) {
@@ -6,7 +6,7 @@ export default function Poster({ data }) {
     <Flex
       m="auto"
       mt="5%"
-      w={["95%","95%","80%"]}
+      w={["95%", "95%", "80%"]}
       cursor={"pointer"}
       alignItems={"center"}
       position="relative"
@@ -17,7 +17,6 @@ export default function Poster({ data }) {
         lineHeight={"7vw"}
         m="auto"
         textAlign={"center"}
-        
         w="100%"
       >
         <Heading fontWeight={400} fontSize={"6xl"}>

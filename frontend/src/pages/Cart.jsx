@@ -1,38 +1,14 @@
-import {
-  Box,
-  Button,
-  Container,
-  Divider,
-  HStack,
-  Image,
-  Table,
-  TableCaption,
-  TableContainer,
-  Tbody,
-  Td,
-  Text,
-  Tfoot,
-  Th,
-  Thead,
-  Tr,
-  useToast,
-  VStack,
-} from "@chakra-ui/react";
-import { CloseIcon, EmailIcon } from "@chakra-ui/icons";
-import { AiOutlineHeart } from "react-icons/ai";
+import { Box, Divider, Text, useToast } from "@chakra-ui/react";
 import React, { useContext, useEffect, useState } from "react";
-// import CartCard from "../components/CartCard";
-
-// import Cartmisc from "../components/Cartmisc";
-// import Contactcart from "../components/Contactcart";
 import CartCard from "../Components/CartCard";
 import Cartmisc from "../Components/Cartmisc";
 import Contactcart from "../Components/Contactcart";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { AppContext } from "../Context/Context";
 
 const Cart = () => {
+  // TODO : add number of items (shopping cart button)
   const toast = useToast();
   const [data1, setData1] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
@@ -45,7 +21,7 @@ const Cart = () => {
       },
     };
     axios
-      .get(`http://localhost:8081/api/cart`, config)
+      .get(`https://violent-hope.onrender.com/api/cart`, config)
       .then((res) => {
         // console.log(res.data[0].cartItems);
         window.localStorage.setItem("qty", res.data[0].cartItems.length);
@@ -77,7 +53,7 @@ const Cart = () => {
 
     axios
       .patch(
-        `http://localhost:8081/api/cart`,
+        `https://violent-hope.onrender.com/api/cart`,
         { proId: id, qty: qty + 1 },
         config
       )
@@ -93,7 +69,7 @@ const Cart = () => {
 
     axios
       .patch(
-        `http://localhost:8081/api/cart`,
+        `https://violent-hope.onrender.com/api/cart`,
         { proId: id, qty: qty - 1 },
         config
       )
@@ -108,7 +84,11 @@ const Cart = () => {
     };
 
     axios
-      .post(`http://localhost:8081/api/cart/remove`, { cartProID: id }, config)
+      .post(
+        `https://violent-hope.onrender.com/api/cart/remove`,
+        { cartProID: id },
+        config
+      )
       .then((res) =>
         toast({
           description: "Product removed",

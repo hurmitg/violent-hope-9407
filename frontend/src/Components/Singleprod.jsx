@@ -7,12 +7,9 @@ import {
   Text,
   Button,
   useToast,
-  Spacer,
 } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-
-import Navbar from "./Navbar";
 import { useContext } from "react";
 import { AppContext } from "../Context/Context";
 
@@ -30,7 +27,7 @@ const SingleProd = () => {
     try {
       axios
         .get(
-          `http://localhost:8081/api/products?category=${params.category}&_id=${params.id}`
+          `https://violent-hope.onrender.com/api/products?category=${params.category}&_id=${params.id}`
         )
         .then((res) => {
           setData(res.data[0]);
@@ -66,7 +63,7 @@ const SingleProd = () => {
 
     try {
       await axios.post(
-        `http://localhost:8081/api/cart`,
+        `https://violent-hope.onrender.com/api/cart`,
         {
           cartItems: [
             {

@@ -12,12 +12,10 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Corousel from "./Corousel";
-import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 function Men() {
   return (
     <>
-      
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto" mt="100PX">
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}

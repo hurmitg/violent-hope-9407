@@ -1,21 +1,17 @@
-import { CloseIcon, SmallAddIcon } from "@chakra-ui/icons";
+import { CloseIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
   Divider,
   HStack,
   Image,
-  Td,
   Text,
-  Toast,
-  Tr,
   VStack,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useToast } from "@chakra-ui/react";
 import { useState } from "react";
-import axios from "axios";
 
 const CartCard = ({
   qty = 1,
@@ -29,7 +25,6 @@ const CartCard = ({
   id,
   itemnumber,
 }) => {
-  const [data, setData] = useState({ price: 5000, wish: false, qty: 1 });
   const [wish, setWish] = useState(false);
   const toast = useToast();
 
@@ -113,7 +108,7 @@ const CartCard = ({
             alignItems="center"
           >
             <Button
-              disabled={qty == 1}
+              disabled={qty === 1}
               onClick={() => handleminus(qty, id)}
               size={"xs"}
               variant="ghost"

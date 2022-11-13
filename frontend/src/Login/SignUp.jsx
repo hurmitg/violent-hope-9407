@@ -2,14 +2,11 @@ import {
   Flex,
   Box,
   FormControl,
-  FormLabel,
   Input,
   CheckboxGroup,
   Checkbox,
   Stack,
-  Link,
   Button,
-  Heading,
   Text,
   useColorModeValue,
   Select,
@@ -20,16 +17,8 @@ import { useContext, useState } from "react";
 import { AppContext } from "../Context/Context";
 
 export default function SignUp() {
-  const {
-    token,
-    nav,
-    setLoading,
-    setError,
-    setSuccess,
-    loading,
-    error,
-    success,
-  } = useContext(AppContext);
+  const { token, nav, setLoading, setError, setSuccess, loading } =
+    useContext(AppContext);
 
   const toast = useToast();
   const [user, setUser] = useState({
@@ -64,17 +53,16 @@ export default function SignUp() {
           duration: 9000,
           isClosable: true,
         });
-      } else{ 
-        setLoading(false)
-      
-  
+      } else {
+        setLoading(false);
+
         try {
           let res = await axios.post(
-            "http://localhost:8081/api/user/signup",
+            "https://violent-hope.onrender.com/api/user/signup",
             user
           );
-          document.cookie = "MyMetheresaToken" + "=" + res.data.token;
-          await window.localStorage.setItem("token", res.data.token);
+          document.cookie = `MyMetheresaToken=${res.data.token}`;
+          window.localStorage.setItem("token", res.data.token);
           toast({
             title: "Account created successfully!",
 
