@@ -28,81 +28,82 @@ import React, { useEffect, useState } from "react";
 import CartCard from "../Components/CartCard";
 import Cartmisc from "../Components/Cartmisc";
 import Contactcart from "../Components/Contactcart";
-import { useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Cart = () => {
-
   function getRChar() {
     return ((Math.random() * 26 + 10) | 0).toString(36).toUpperCase();
   }
 
   var s = getRChar() + getRChar() + Math.floor(Math.random() * 99999 * 7);
 
-
-  const toast = useToast()
+  const toast = useToast();
   const [data1, setData1] = useState([]);
-  const [subtotal,setSubtotal] = useState(0)
+  const [subtotal, setSubtotal] = useState(0);
   const token =
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNmI3NmMyN2M4ZWZkYTU0MmJkOTA2ZSIsImlhdCI6MTY2ODI2NzUwNCwiZXhwIjoxNjcwODU5NTA0fQ.uNK_AL7zPpSQl4--uUew5zhxZlNWOVegUwuqiOdAVkk";
 
-
-    const handleGet = () => {
-      const config = {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      };
-      axios
-        .get(`http://localhost:8080/api/cart`, config)
-        .then((res) => {
-          // console.log(res.data[0].cartItems);
-          setData1(res.data[0].cartItems);
-        })
-        .catch((err) => console.log(err));
-    }
+  const handleGet = () => {
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    axios
+      .get(`http://localhost:8081/api/cart`, config)
+      .then((res) => {
+        // console.log(res.data[0].cartItems);
+        setData1(res.data[0].cartItems);
+      })
+      .catch((err) => console.log(err));
+  };
 
   useEffect(() => {
-   
-    handleGet()
-
+    handleGet();
   }, []);
 
+  useEffect(() => {
+    const st = data1.reduce(
+      (acc, elem) => acc + elem.product.price * elem.quantity,
+      0
+    );
 
-  useEffect(()=>{
-    const st = data1.reduce((acc,elem)=>(
-      acc + (elem.product.price * elem.quantity)
-
-    
-    ),0)
-
-    setSubtotal(st)
-
-  },[data1])
+    setSubtotal(st);
+  }, [data1]);
   const navigate = useNavigate();
 
-  const handleplus = (qty,id) => {
+  const handleplus = (qty, id) => {
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,
       },
     };
 
+    axios
+      .patch(
+        `http://localhost:8081/api/cart`,
+        { proId: id, qty: qty + 1 },
+        config
+      )
+      .then((res) => setData1(res.data.cartItems));
+  };
 
-    axios.patch(`http://localhost:8080/api/cart`,{"proId":id,"qty":qty+1},config).then(res=>setData1(res.data.cartItems))
-  }
-
-  const handleminus = (qty,id) => {
+  const handleminus = (qty, id) => {
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,
       },
     };
 
-
-    axios.patch(`http://localhost:8080/api/cart`,{"proId":id,"qty":qty-1},config).then(res=>setData1(res.data.cartItems))
-  }
-
+    axios
+      .patch(
+        `http://localhost:8081/api/cart`,
+        { proId: id, qty: qty - 1 },
+        config
+      )
+      .then((res) => setData1(res.data.cartItems));
+  };
 
   const handleRemove = (id) => {
     const config = {
@@ -111,19 +112,26 @@ const Cart = () => {
       },
     };
 
-    axios.post(`http://localhost:8080/api/cart/remove`,{ "cartProID":id},config).then(res=>toast({
-
-      description:"Product removed",
-      status:"error",
-      duration:3500,
-      isClosable:true
-      
-
-    })).then(res=>handleGet())
-  } 
+    axios
+      .post(`http://localhost:8081/api/cart/remove`, { cartProID: id }, config)
+      .then((res) =>
+        toast({
+          description: "Product removed",
+          status: "error",
+          duration: 3500,
+          isClosable: true,
+        })
+      )
+      .then((res) => handleGet());
+  };
 
   return (
     <>
+
+        
+
+
+
       <Box
         onClick={() => navigate("/cart/delivery")}
         width={"95%"}
@@ -133,6 +141,7 @@ const Cart = () => {
         border="1px solid white"
         justifyContent={"space-between"}
         marginBottom="20px"
+        mt={"100px"}
       >
         <Text>YOUR SHOPPING BAG</Text>
         <Box
