@@ -20,7 +20,7 @@ import {
 } from "@chakra-ui/react";
 import { CloseIcon, EmailIcon } from "@chakra-ui/icons";
 import { AiOutlineHeart } from "react-icons/ai";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 // import CartCard from "../components/CartCard";
 
 // import Cartmisc from "../components/Cartmisc";
@@ -30,8 +30,10 @@ import Cartmisc from "../Components/Cartmisc";
 import Contactcart from "../Components/Contactcart";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { AppContext } from "../Context/Context";
 
 const Cart = () => {
+
 
   function getRChar() {
     return ((Math.random() * 26 + 10) | 0).toString(36).toUpperCase();
@@ -57,6 +59,7 @@ const Cart = () => {
         .get(`http://localhost:8080/api/cart`, config)
         .then((res) => {
           // console.log(res.data[0].cartItems);
+          window.localStorage.setItem("qty",res.data[0].cartItems.length)
           setData1(res.data[0].cartItems);
         })
         .catch((err) => console.log(err));

@@ -55,6 +55,7 @@ export default function SignUp() {
           duration: 9000,
           isClosable: true,
         });
+        setLoading(false)
       }
       else{
         try {
