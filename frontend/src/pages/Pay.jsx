@@ -52,7 +52,7 @@ const Pay = () => {
         isClosable: "true",
       });
     }
-    localStorage.clear("qty");
+    localStorage.removeItem("qty");
     onOpen();
     setState(true);
 

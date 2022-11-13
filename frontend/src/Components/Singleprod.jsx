@@ -48,6 +48,15 @@ const SingleProd = () => {
   };
 
   let handleCart = async (prodId) => {
+    if (!token) {
+      return toast({
+        title: "Please Login First !",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+        position: "top",
+      });
+    }
     setLoading(true);
     const config = {
       headers: {
