@@ -3,7 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 
 const connectDB = require("./config/db");
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 
 const userRoutes = require("./routes/user.routes");
 const productRoutes = require("./routes/product.routes");
@@ -16,7 +16,7 @@ app.use(express.json());
 dotenv.config();
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-var cookieParser = require('cookie-parser');
+var cookieParser = require("cookie-parser");
 app.use(cookieParser());
 // APIs
 
