@@ -20,8 +20,17 @@ import { useContext, useState } from "react";
 import { AppContext } from "../Context/Context";
 
 export default function SignUp() {
-  const {token,nav,setLoading,setError,setSuccess,loading,error,success}=useContext(AppContext)
-  
+  const {
+    token,
+    nav,
+    setLoading,
+    setError,
+    setSuccess,
+    loading,
+    error,
+    success,
+  } = useContext(AppContext);
+
   const toast = useToast();
   const [user, setUser] = useState({
     name: "",
@@ -36,7 +45,7 @@ export default function SignUp() {
   };
   async function handleSubmit(e) {
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
     if (user.password !== user.comfirmpassword) {
       toast({
         title: "Password did not match.",
@@ -45,52 +54,51 @@ export default function SignUp() {
         duration: 9000,
         isClosable: true,
       });
-      setLoading(false)
+      setLoading(false);
     } else {
-      if(token){
+      if (token) {
         toast({
           title: "You are already login!",
-  
+
           status: "success",
           duration: 9000,
           isClosable: true,
         });
+      } else{ 
         setLoading(false)
-      }
-      else{
+      
+  
         try {
           let res = await axios.post(
-            "http://localhost:8080/api/user/signup",
+            "http://localhost:8081/api/user/signup",
             user
           );
-         document.cookie="MyMetheresaToken"+"="+(res.data.token)
-         await window.localStorage.setItem("token",res.data.token)
+          document.cookie = "MyMetheresaToken" + "=" + res.data.token;
+          await window.localStorage.setItem("token", res.data.token);
           toast({
             title: "Account created successfully!",
-  
+
             status: "success",
             duration: 9000,
             isClosable: true,
           });
-          setLoading(false)
-          setSuccess(false)
-          nav("/")
+          setLoading(false);
+          setSuccess(false);
+          nav("/");
           window.location.reload();
         } catch (e) {
           console.log(e);
-          setLoading(false)
-          setError(false)
+          setLoading(false);
+          setError(false);
           toast({
             title: e.response.data.message,
-  
+
             status: "error",
             duration: 9000,
             isClosable: true,
           });
         }
-
       }
-     
     }
   }
 
@@ -212,10 +220,8 @@ export default function SignUp() {
                 </Box>
               </Box>
               <Button
-                isLoading={loading?true:false}
-                    
-                  
-                loadingText='Please wait...'
+                isLoading={loading ? true : false}
+                loadingText="Please wait..."
                 bg={"#f2f2f2"}
                 color={"#222"}
                 onClick={handleSubmit}

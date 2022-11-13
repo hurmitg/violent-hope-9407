@@ -104,7 +104,7 @@ import Contactcart from "../Components/Contactcart";
 
     return (
       <>
-        <Image margin={"auto"} w={["200px","300px","350px"]} mt={"100px"} src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20221109T180626" />
+        {/* <Image margin={"auto"} w={["200px","300px","350px"]} mt={"100px"} src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20221109T180626" /> */}
   
      
   

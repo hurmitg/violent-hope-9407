@@ -17,6 +17,7 @@ import MenProduct from "./MenProducts";
 import SingleProd from "./Singleprod";
 import Women from "./Women";
 import WomenProduct from "./WomenProduct";
+import Summary from "../pages/Summary";
 
 function Allroutes() {
   return (
@@ -40,9 +41,10 @@ function Allroutes() {
         <Route path="/kidsproduct" element={<KidsProduct />} />
         <Route path="/:category/:id" element={<SingleProd />} />
         <Route path="/cart" element={<Cart/>} />
-        <Route path="/cart/delivery" element={<Delivery/>} />
+         <Route path="/cart/delivery" element={<Delivery/>} />
         <Route path="/cart/delivery/pay" element={<Pay/>} />
-        <Route path="/ordersummary" element={<Text>Summary</Text>} />
+        <Route path="/ordersummary" element={<Summary/>} /> 
+        <Route path="*" element={<Text>No Such Page exist</Text>} />
       </Routes>
     </>
   );

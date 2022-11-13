@@ -64,12 +64,12 @@ import { useNavigate } from "react-router-dom";
       }
     return (
       <>
-        <Image
+        {/* <Image
           margin={"auto"}
           w={["200px", "300px", "350px"]}
           mt={"100px"}
           src="https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20221109T180626"
-        />
+        /> */}
         <Box w={"90%"} border={"0px"} m="auto" mt={"30px"} h={"auto"}>
           <VStack mb={"20px"} align={"left"}>
             <Text>PAYMENT METHOD</Text>
