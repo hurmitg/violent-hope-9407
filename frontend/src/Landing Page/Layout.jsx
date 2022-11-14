@@ -9,6 +9,7 @@ import Poster2 from "./Poster2";
 import { Link } from "react-router-dom";
 import children from "./Data/Kids.json";
 export default function Layout() {
+  document.title="Violent Hope-Luxury Fashion & Designer Shopping"
   const kids = {
     image:
       "https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_KIDS_DSK_2x_20220908102616.jpg?imwidth=1180&imdensity=1",

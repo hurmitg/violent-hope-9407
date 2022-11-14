@@ -8,6 +8,7 @@ import axios from "axios";
 import { AppContext } from "../Context/Context";
 
 const Cart = () => {
+  document.title="Cart"
   // TODO : add number of items (shopping cart button)
   const toast = useToast();
   const [data1, setData1] = useState([]);

@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
 function Women() {
+  document.title="Women’s Luxury Fashion & Designer Shopping | Violent Hope"
   return (
     <>
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto">

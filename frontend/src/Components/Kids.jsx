@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import Corousel from "./Corousel";
 
 function Kids() {
+  document.title="Kids Fashion - Designer Kidswear for Kids online | Violent Hope"
   return (
     <>
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto">
