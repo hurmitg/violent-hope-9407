@@ -60,6 +60,7 @@ export default function LargeWithNewsletter() {
     <Box
       w="90%"
       m="auto"
+      mt="70px"
       borderTop={"1px solid #cfcfcf"}
       borderBottom={"1px solid #cfcfcf"}
     >

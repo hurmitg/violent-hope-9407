@@ -62,7 +62,7 @@ export default function ProductCard({ url }) {
         <Text color={"#9e9d9d"} p="1rem">
           {url.title}{" "}
         </Text>
-        <span style={{ fontWeight: 800 }}>€ {url.price}</span>
+        <span style={{ fontWeight: 800 }}>₹ {url.price}</span>
       </Box>
     </Box>
   );

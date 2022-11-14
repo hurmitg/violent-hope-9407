@@ -50,7 +50,7 @@ const settings = {
   ],
 };
 
-export default function Carousel({ data, title ,link}) {
+export default function Carousel({ data, title, link }) {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = useState(null);
@@ -66,7 +66,6 @@ export default function Carousel({ data, title ,link}) {
     <>
       <Box
         position={"relative"}
-        height={"70vh"}
         width={"85%"}
         m="auto"
         mt="5%"
@@ -142,17 +141,17 @@ export default function Carousel({ data, title ,link}) {
         justifyContent="center"
       >
         <Link to={link}>
-        <Button
-          bg="#f2f2f2"
-          color="black"
-          fontWeight={100}
-          _hover={{ bg: "#f3f3f3" }}
-          transform={"1s"}
-          borderRadius={"none"}
-        >
-          View All
-        </Button>
-          </Link>
+          <Button
+            bg="#f2f2f2"
+            color="black"
+            fontWeight={100}
+            _hover={{ bg: "#f3f3f3" }}
+            transform={"1s"}
+            borderRadius={"none"}
+          >
+            View All
+          </Button>
+        </Link>
       </Box>
     </>
   );
