@@ -220,14 +220,14 @@ function Kids() {
             <Link to="/kidsproduct">
               <Button
                 colorScheme="blackAlpha"
-                maxW={{ lg: "10vw", md: "10vw", sm: "9vw" }}
+                // maxW={{ lg: "10vw", md: "10vw", sm: "9vw" }}
                 h={8}
                 fontSize={13}
                 bgColor="black"
                 borderRadius="none"
                 color="white"
                 mt="1.6rem"
-                w="10vw"
+                // w="10vw"
               >
                 SHOP KIDS DESIGNERS
               </Button>
