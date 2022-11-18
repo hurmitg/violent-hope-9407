@@ -18,6 +18,7 @@ import { useNavigate } from "react-router-dom";
 import Contactcart from "../Components/Contactcart";
 
 const Delivery = () => {
+  document.title="Delivery"
   const [info, setInfo] = useState({
     prefix: "",
     firstname: "",

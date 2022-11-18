@@ -18,6 +18,7 @@ import SingleProd from "./Singleprod";
 import Women from "./Women";
 import WomenProduct from "./WomenProduct";
 import Summary from "../pages/Summary";
+import ErrorPage from "./404 Page/ErrorPage";
 
 function Allroutes() {
   return (
@@ -72,7 +73,7 @@ function Allroutes() {
             </PrivateRoute>
           }
         />
-        <Route path="*" element={<Text>No Such Page exist</Text>} />
+        <Route path="*" element={<ErrorPage/>} />
       </Routes>
     </>
   );

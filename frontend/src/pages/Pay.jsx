@@ -26,6 +26,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Pay = () => {
+  document.title="Payment"
   const [info, setInfo] = useState({
     name: "",
     number: "",

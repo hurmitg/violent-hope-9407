@@ -17,13 +17,15 @@ import {
   MenuOptionGroup,
   MenuDivider,
   IconButton,
+  useDisclosure,
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { AppContext } from "../Context/Context";
 
 export default function Navbar({ category }) {
+  const { isOpen, onOpen, onClose}=useDisclosure()
   const toast = useToast();
 
   const { token, nav } = useContext(AppContext);
@@ -121,29 +123,35 @@ export default function Navbar({ category }) {
                 sm: "inline-block",
               }}
             >
-              <Menu>
+              <Menu >
                 <MenuButton
                   as={IconButton}
-                  aria-label="Options"
-                  icon={<HamburgerIcon />}
+                  size={"md"}
                   variant="ghost"
+                  colorScheme="none"
+                  aria-label="Account"
+                  _hover={{bg:"none"}}
+                  icon={isOpen ? <CloseIcon  color={"#111"}  fontSize={"md"} /> : <HamburgerIcon color={"#111"} fontSize={"2xl"} />}
+                  
+                  display={{ lg: "none" }}
+                  onClick={isOpen ? onClose : onOpen}
                 />
                 <MenuList>
-                  <MenuItem>
+                  <MenuItem _hover={{bg:"#f3f3f3"}} transition="1s">
                     <Link to="/women">
                       <Text letterSpacing={1} cursor="pointer">
                         Women
                       </Text>
                     </Link>
                   </MenuItem>
-                  <MenuItem>
+                  <MenuItem _hover={{bg:"#f3f3f3"}} transition="1s">
                     <Link to="/men">
                       <Text letterSpacing={1} cursor="pointer">
                         Men
                       </Text>
                     </Link>
                   </MenuItem>
-                  <MenuItem>
+                  <MenuItem _hover={{bg:"#f3f3f3"}} transition="1s">
                     <Link to="/kids">
                       <Text letterSpacing={1} cursor="pointer">
                         Kids
@@ -152,7 +160,7 @@ export default function Navbar({ category }) {
                   </MenuItem>
 
                   <MenuDivider />
-                  <MenuItem>
+                  <MenuItem _hover={{bg:"#f3f3f3"}} transition="1s">
                     {token ? (
                       <Text
                         letterSpacing={1}

@@ -14,6 +14,7 @@ import React from "react";
 import Corousel from "./Corousel";
 import { Link } from "react-router-dom";
 function Men() {
+  document.title="Men's Luxury Fashion & Designer Shopping | Violent Hope"
   return (
     <>
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto" mt="100PX">
