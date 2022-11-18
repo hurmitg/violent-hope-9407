@@ -4,6 +4,7 @@ import {
   Flex,
   Image,
   Input,
+  Select,
   SimpleGrid,
   Text,
   useToast,
@@ -91,6 +92,23 @@ function KidsProduct() {
         isClosable: true,
         position: "bottom-left",
       });
+    }
+  };
+
+  const handleSort = (e) => {
+    let query = e.target.value;
+    if (query == "ascending") {
+      let sorted = [...data];
+      sorted.sort((a, b) => {
+        return a.price - b.price;
+      });
+      setData(sorted);
+    } else if (query == "descending") {
+      let sorted = [...data];
+      sorted.sort((a, b) => {
+        return b.price - a.price;
+      });
+      setData(sorted);
     }
   };
 
@@ -202,6 +220,37 @@ function KidsProduct() {
           mt={5}
           flexDirection="column"
         >
+          <Box
+            w="80%"
+            display="flex"
+            mt={5}
+            mb={5}
+            textAlign="center"
+            flexDirection="column"
+          >
+            <Select
+              onChange={(e) => {
+                handleSort(e);
+              }}
+              p="10px"
+              placeholder="Sort By Price"
+              variant="flushed"
+            >
+              <option
+                style={{ padding: "10px", textAlign: "center" }}
+                value="ascending"
+              >
+                Low to High
+              </option>
+              <option
+                style={{ padding: "10px", textAlign: "center" }}
+                value="descending"
+              >
+                High to Low
+              </option>
+            </Select>
+          </Box>
+
           <Text fontSize="lg" as="b" mb={3}>
             Designer
           </Text>
