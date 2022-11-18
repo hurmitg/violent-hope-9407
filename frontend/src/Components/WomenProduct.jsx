@@ -12,17 +12,21 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Dna } from "react-loader-spinner";
 function WomenProduct() {
   const [data, setData] = useState([]);
   const [brand, setBrand] = useState([]);
   const [type, setType] = useState([]);
+  const [dataLoading, setDataLoading] = useState(false);
   const toast = useToast();
 
   const getData = async () => {
     try {
+      setDataLoading(true);
       const { data } = await axios.get(
         "https://violent-hope.onrender.com/api/products?category=women"
       );
+      setDataLoading(false);
       setData(data);
 
       let branArr = data
@@ -39,6 +43,7 @@ function WomenProduct() {
         .filter((item, i, ar) => ar.indexOf(item) === i);
       setType(TypeArr);
     } catch (e) {
+      setDataLoading(false);
       toast({
         title: "Error Occurred !",
         status: "error",
@@ -92,6 +97,28 @@ function WomenProduct() {
   useEffect(() => {
     getData();
   }, []);
+
+  if (dataLoading) {
+    return (
+      <Flex
+        alignItems="center"
+        justifyContent="center"
+        height={["40vh", "60vh", "70vh"]}
+        width="100%"
+      >
+        <Dna
+          visible={true}
+          height="100%"
+          width="100%"
+          ariaLabel="dna-loading"
+          wrapperStyle={{
+            filter: "grayscale(100%)",
+          }}
+          wrapperClass="dna-wrapper"
+        />
+      </Flex>
+    );
+  }
 
   return (
     <>
