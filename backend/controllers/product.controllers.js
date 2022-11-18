@@ -1,6 +1,9 @@
 const asyncHandler = require("express-async-handler");
 const ProductModel = require("../models/product.model");
 
+/**
+ * Gets the products that match the given parameters.
+ */
 const getProducts = asyncHandler(async (req, res) => {
   const params = req.query;
   if (!params)

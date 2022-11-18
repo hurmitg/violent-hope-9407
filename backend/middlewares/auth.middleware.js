@@ -3,6 +3,9 @@ const UserModel = require("../models/user.model");
 const asyncHandler = require("express-async-handler");
 const jwt_Secret = "theresa@123#clone";
 
+/**
+ * A middleware that checks if the user is logged in.
+ */
 const protect = asyncHandler(async (req, res, next) => {
   let token;
   if (
@@ -12,7 +15,7 @@ const protect = asyncHandler(async (req, res, next) => {
     try {
       token = req.headers.authorization.split(" ")[1];
 
-      const decoded = jwt.verify(token, (process.env.JWT_SECRET || jwt_Secret) );
+      const decoded = jwt.verify(token, process.env.JWT_SECRET || jwt_Secret);
 
       req.user = await UserModel.findById(decoded.id).select("-password");
       next();

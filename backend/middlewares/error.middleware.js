@@ -4,6 +4,13 @@ const notFound = (req, res, next) => {
   next(error);
 };
 
+/**
+ * A middleware function that handles errors.
+ * @param {Error} err - The error object.
+ * @param {Request} req - The request object.
+ * @param {Response} res - The response object.
+ * @param {Function} next - The next middleware function.
+ */
 const errorHandler = (err, req, res, next) => {
   const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
   res.status(statusCode);

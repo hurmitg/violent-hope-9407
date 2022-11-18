@@ -1,4 +1,4 @@
-![Home Page](/frontend/src/VH.png "Optional Title")
+<img src="Assets/logo.jpeg" style="border: 2px solid black; border-radius: 10px;" />
 
 # E-commerce Website
 

@@ -3,6 +3,9 @@ const UserModel = require("../models/user.model");
 const generateToken = require("../config/generateToken");
 
 // user signupAPI
+/**
+ * Registers a user with the given information.
+ */
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password } = req.body;
   if (!name || !email || !password) {
@@ -31,6 +34,9 @@ const registerUser = asyncHandler(async (req, res) => {
 });
 
 // user loginAPI
+/**
+ * Takes in a request and response object and authenticates the user.
+ */
 const authUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
@@ -50,6 +56,9 @@ const authUser = asyncHandler(async (req, res) => {
 
 // user getUserAPI
 
+/**
+ * Returns all users except the current user.
+ */
 const allUsers = asyncHandler(async (req, res) => {
   const keyword = req.query.search
     ? {
