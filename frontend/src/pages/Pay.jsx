@@ -24,6 +24,7 @@ import {
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PayButton from "../Components/Paypal/PayButton";
 
 const Pay = () => {
   document.title="Payment"
@@ -75,13 +76,14 @@ const Pay = () => {
           <Divider />
         </VStack>
 
-        <Tabs variant="soft-rounded" colorScheme="gray">
+        <Tabs variant="soft-rounded" colorScheme="none">
           <TabList>
-            <Tab>Card</Tab>
+            <Tab borderRadius={"4px"} w="13%" h="35px" color={"#f2f2f2"} bg="#333">Card</Tab>
+            <PayButton/>
           </TabList>
           <TabPanels>
             <TabPanel>
-              <Box w={["100%", "70%", "50%"]} m="auto">
+              <Box w={["100%", "70%", "50%"]} m="auto" mt="2%" p="2rem" borderRadius={"15px "} shadow="md">
                 <VStack>
                   <FormControl isRequired>
                     <FormLabel>Name on card</FormLabel>
@@ -179,7 +181,10 @@ const Pay = () => {
           >
             Pay
           </Box>
-
+         
+            
+         
+           
           <Box
             boxSizing="border-box"
             border={"1px solid white"}

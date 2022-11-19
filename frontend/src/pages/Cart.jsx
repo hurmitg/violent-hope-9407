@@ -10,6 +10,7 @@ import { AppContext } from "../Context/Context";
 const Cart = () => {
   document.title="Cart"
   // TODO : add number of items (shopping cart button)
+  const {setGrandTotal}=useContext(AppContext)
   const toast = useToast();
   const [data1, setData1] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
@@ -40,7 +41,7 @@ const Cart = () => {
       (acc, elem) => acc + elem.product.price * elem.quantity,
       0
     );
-
+    setGrandTotal(st)
     setSubtotal(st);
   }, [data1]);
   const navigate = useNavigate();
