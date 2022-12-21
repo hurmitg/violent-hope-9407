@@ -11,11 +11,12 @@ import {
   Heading,
   UnorderedList,
   ListItem,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
-
+import Carousel from "../Landing Page/Carousel";
+import women from "../Landing Page/Data/women.json";
 function Women() {
   document.title = "Women’s Luxury Fashion & Designer Shopping | Violent Hope";
   return (
@@ -27,7 +28,6 @@ function Women() {
             direction="column"
             alignItems="flex-end"
             w="100%"
-            backgroundPosition="center"
             backgroundSize="cover"
             backgroundImage={
               "https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/ODLR_Big_DSK_2x_20221028110114.jpg?imwidth=1180&imdensity=1"
@@ -38,38 +38,42 @@ function Women() {
               justifyContent="left"
               alignItems="flex-end"
               direction="column"
-              marginTop="5rem"
+              marginTop={["4rem", "4rem", "4rem", "5rem"]}
               paddingRight="5rem"
             >
               <Stack
-                spacing={2}
-                marginTop="3rem"
-                alignItems="flex-end"
-                ml="2rem"
+                spacing={3}
+                marginTop={"4rem"}
+                alignItems={["flex-start", "flex-end", "flex-end", "flex-end"]}
+                ml={["1rem", "1rem", "2rem", "2rem"]}
               >
                 <Text
                   color="white"
-                  textAlign="left"
-                  letterSpacing={{ lg: "1", md: "0" }}
+                  textAlign={["left", "right", "right", "right"]}
                 >
                   THE EXCLUSIVE CAPSULE COLLECTION
                 </Text>
                 <Text
                   color="white"
                   fontSize={{ lg: "55", md: "35", sm: "30" }}
-                  textAlign="right"
+                  textAlign={["left", "right", "right", "right"]}
                   w="70%"
                 >
                   {" "}
                   Oscar de la Renta x Mytheresa
                 </Text>
+                <Link to="/womenproduct">
+                  <Button
+                    h={8}
+                    fontSize={13}
+                    borderRadius="none"
+                    mt={["1rem", "1.2rem", "1.2rem", "1.2rem"]}
+                    mb={["1rem"]}
+                  >
+                    SHOP NOW
+                  </Button>
+                </Link>
               </Stack>
-              <Link to="/womenproduct">
-               
-                <Button h={8} fontSize={13} borderRadius="none" mt="1.2rem">
-                  SHOP NOW
-                </Button>
-              </Link>
             </Flex>
           </Flex>
         </Link>
@@ -92,7 +96,6 @@ function Women() {
             Oscar de la Renta, Roger Vivier, Chloé, Vince...
           </Text>
           <Link to="/womenproduct">
-          
             <Button
               h={8}
               fontSize={13}
@@ -106,6 +109,63 @@ function Women() {
             </Button>
           </Link>
         </Flex>
+
+        {/* <SimpleGrid columns={[1,2,2,2]} spacing={2}>
+          <Box>
+          <Text fontSize="0.9rem"  textAlign="center">THE BRIBAL EDIT</Text>
+          <Text
+                  textAlign="center"
+                  mt="1rem"
+                  fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
+                >
+                  Your down-the-aisle outfit is ready for you
+                </Text>
+                <Box w="80%" h="auto">
+                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/ActboxTall-StellaParty_2x_20221028105957.jpg?imwidth=600&imdensity=1"></Image>
+               
+                </Box>
+                
+          </Box>
+          <Box>
+          <Text fontSize="0.9rem"  textAlign="center" >CHRISTIAN LOUBOUTIN'S LOUBI FAMILY</Text>
+                <Text
+                  textAlign="center"
+                  fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
+                >
+                  You never forget your first pair of Louboutins
+                </Text>
+                <Box w="80%"> <Image
+                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW51/CW51_ActboxTall__2x_20221216121008.jpg?imwidth=600&imdensity=1"
+                alt="one"
+              /></Box>
+               
+          </Box>
+          <Box>
+          <Text fontSize="0.9rem"  textAlign="center">THE BRIBAL EDIT</Text>
+          <Text
+                  textAlign="center"
+                  mt="1rem"
+                  fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
+                >
+                  Your down-the-aisle outfit is ready for you
+                </Text>
+                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x__20221031171804.jpg?imwidth=600&imdensity=1"></Image>
+               
+          </Box>
+          <Box>
+          <Text fontSize="0.9rem"  textAlign="center">THE BRIBAL EDIT</Text>
+          <Text
+                  textAlign="center"
+                  mt="1rem"
+                  fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
+                >
+                  Your down-the-aisle outfit is ready for you
+                </Text>
+                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x_2_20221031171804.jpg?imwidth=600&imdensity=1"></Image>
+               
+          </Box>
+         </SimpleGrid> */}
+
         <Box>
           <Flex
             h={{ lg: "24vh", md: "19vh", sm: "19vh" }}
@@ -117,6 +177,7 @@ function Women() {
               <Box w={{ lg: "25vw", md: "24vw" }}>
                 <Text
                   textAlign="center"
+                  mt="1rem"
                   fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
                 >
                   Your down-the-aisle outfit is ready for you
@@ -124,7 +185,7 @@ function Women() {
               </Box>
             </Flex>
 
-            <Flex direction="column" justifyContent="" alignItems="center">
+            <Flex direction="column" alignItems="center" textAlign="center">
               <Text fontSize="0.9rem">CHRISTIAN LOUBOUTIN'S LOUBI FAMILY</Text>
               <Box w={{ lg: "25vw", md: "24vw" }}>
                 <Text
@@ -137,7 +198,7 @@ function Women() {
             </Flex>
           </Flex>
 
-          <Grid
+          <SimpleGrid
             gap={3}
             w="100%"
             h={{ lg: "115vh", md: "70vh", sm: "70vh" }}
@@ -146,6 +207,21 @@ function Women() {
           >
             <GridItem rowSpan={2} w="100%">
               <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/ActboxTall-StellaParty_2x_20221028105957.jpg?imwidth=600&imdensity=1"></Image>
+              <Link to="/womenproduct">
+                <Button
+                  h={8}
+                  fontSize={13}
+                  borderRadius="none"
+                  mb="1.2rem"
+                  bgColor="black"
+                  color="white"
+                  colorScheme="black"
+                  mt="1.2rem"
+                  ml={["3rem", "4rem", "13rem", "13rem"]}
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </GridItem>
 
             <GridItem>
@@ -161,18 +237,17 @@ function Women() {
                 alignItems="center"
               >
                 <Link to="/womenproduct">
-                 
                   <Button
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              mt="1.2rem"
-              bgColor="black"
-              color="white"
-              colorScheme="black"
-            >
-              SHOP NOW
-            </Button>
+                    h={8}
+                    fontSize={13}
+                    borderRadius="none"
+                    mt="1.2rem"
+                    bgColor="black"
+                    color="white"
+                    colorScheme="black"
+                  >
+                    SHOP NOW
+                  </Button>
                 </Link>
               </Flex>
             </GridItem>
@@ -184,24 +259,25 @@ function Women() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Stack w="25vw" justifyContent="center" alignItems="center">
-                  <Text fontSize={{ lg: "1.1rem", md: "0.9rem", sm: "0.8rem" }}>
-                    CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
-                  </Text>
-                  <Text
-                    textAlign="center"
-                    fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
-                  >
-                    Furry best friends deserve glamorous treats
-                  </Text>
-                </Stack>
+                <Text
+                  fontSize={{ lg: "1.1rem", md: "0.9rem", sm: "0.8rem" }}
+                  textAlign="center"
+                >
+                  CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
+                </Text>
+                <Text
+                  textAlign="center"
+                  fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
+                >
+                  Furry best friends deserve glamorous treats
+                </Text>
               </Flex>
               <Image
                 src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x_2_20221031171804.jpg?imwidth=600&imdensity=1"
                 alt="two"
               />
             </GridItem>
-          </Grid>
+          </SimpleGrid>
 
           <Flex
             borderBottom="1px solid black"
@@ -209,36 +285,20 @@ function Women() {
             justifyContent="space-around"
             alignItems="center"
           >
+            <Flex mt={{ lg: "0", md: "5rem" }}></Flex>
             <Flex mt={{ lg: "0", md: "5rem" }}>
               <Link to="/womenproduct">
-              
                 <Button
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              mb="1.2rem"
-              bgColor="black"
-              color="white"
-              colorScheme="black"
-            >
-              SHOP NOW
-            </Button>
-              </Link>
-            </Flex>
-            <Flex mt={{ lg: "0", md: "5rem" }}>
-              <Link to="/womenproduct">
-               
-                <Button
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              mb="1.2rem"
-              bgColor="black"
-              color="white"
-              colorScheme="black"
-            >
-              SHOP NOW
-            </Button>
+                  h={8}
+                  fontSize={13}
+                  borderRadius="none"
+                  mb="1.2rem"
+                  bgColor="black"
+                  color="white"
+                  colorScheme="black"
+                >
+                  SHOP NOW
+                </Button>
               </Link>
             </Flex>
           </Flex>
@@ -250,7 +310,7 @@ function Women() {
             justifyContent="space-around"
             alignItems="center"
           >
-            <Flex direction="column" justifyContent="" alignItems="center">
+            <Flex direction="column" textAlign={"center"}>
               <Text fontSize="0.9rem">THE BRIBAL EDIT</Text>
               <Box w={{ lg: "25vw", md: "24vw" }}>
                 <Text
@@ -262,7 +322,9 @@ function Women() {
               </Box>
             </Flex>
             <Flex direction="column" justifyContent="" alignItems="center">
-              <Text fontSize="0.9rem">CHRISTIAN LOUBOUTIN'S LOUBI FAMILY</Text>
+              <Text fontSize="0.9rem" textAlign={"center"}>
+                CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
+              </Text>
               <Box w={{ lg: "25vw", md: "24vw" }}>
                 <Text
                   textAlign="center"
@@ -283,6 +345,20 @@ function Women() {
           >
             <GridItem rowSpan={2}>
               <Image src="https://img.mytheresa.com/media/static/raw/cms/l/Rick_Owens_Moncler/Moncler_Maya_ActboxTall_2x_20221102170308.jpg?imwidth=600&imdensity=1"></Image>
+              <Link to="/womenproduct">
+                <Button
+                  h={8}
+                  fontSize={13}
+                  borderRadius="none"
+                  mt="1.2rem"
+                  ml={["3rem", "4rem", "13rem", "13rem"]}
+                  bgColor="black"
+                  color="white"
+                  colorScheme="black"
+                >
+                  SHOP NOW
+                </Button>
+              </Link>
             </GridItem>
 
             <GridItem>
@@ -298,18 +374,18 @@ function Women() {
                 alignItems="center"
               >
                 <Link to="/womenproduct">
-                  
                   <Button
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              mt="1.2rem"
-              bgColor="black"
-              color="white"
-              colorScheme="black"
-            >
-              SHOP NOW
-            </Button>
+                    h={8}
+                    fontSize={13}
+                    borderRadius="none"
+                    mt="1.2rem"
+                    mb="1.2rem"
+                    bgColor="black"
+                    color="white"
+                    colorScheme="black"
+                  >
+                    SHOP NOW
+                  </Button>
                 </Link>
               </Flex>
             </GridItem>
@@ -321,17 +397,19 @@ function Women() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Stack w="25vw" justifyContent="center" alignItems="center">
-                  <Text fontSize={{ lg: "1.1rem", md: "0.9rem", sm: "0.8rem" }}>
-                    CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
-                  </Text>
-                  <Text
-                    textAlign="center"
-                    fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
-                  >
-                    Furry best friends deserve glamorous treats
-                  </Text>
-                </Stack>
+                <Text
+                  fontSize={{ lg: "1.1rem", md: "0.9rem", sm: "0.8rem" }}
+                  textAlign="center"
+                >
+                  CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
+                </Text>
+
+                <Text
+                  textAlign="center"
+                  fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
+                >
+                  Furry best friends deserve glamorous treats
+                </Text>
               </Flex>
               <Image
                 src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/Festive-Nov_ActboxSmall_GiftHER_2x_20221028110218.jpg?imwidth=600&imdensity=1"
@@ -346,42 +424,27 @@ function Women() {
             justifyContent="space-around"
             alignItems="center"
           >
-            <Flex mt={{ lg: "0", md: "5rem" }}>
-              <Link to="/womenproduct">
-              
-                <Button
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              mb="1.2rem"
-              bgColor="black"
-              color="white"
-              colorScheme="black"
-            >
-              SHOP NOW
-            </Button>
-              </Link>
-            </Flex>
+            <Flex mt={{ lg: "0", md: "5rem" }}></Flex>
             <Flex mt={{ lg: "0", md: "5rem" }}>
               <Link to="/women">
-               
                 <Button
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              mb="1.2rem"
-              bgColor="black"
-              color="white"
-              colorScheme="black"
-            >
-              SHOP NOW
-            </Button>
+                  h={8}
+                  fontSize={13}
+                  borderRadius="none"
+                  mt="1.2rem"
+                  mb="1.2rem"
+                  bgColor="black"
+                  color="white"
+                  colorScheme="black"
+                >
+                  SHOP NOW
+                </Button>
               </Link>
             </Flex>
           </Flex>
         </Box>
 
-        <Box mt={{ lg: "2rem", md: "1rem", sm: "1.9rem" }} mb={12} pt={5}>
+        {/* <Box mt={{ lg: "2rem", md: "1rem", sm: "1.9rem" }} mb={12} pt={5}>
           <Stack
             spacing={{ lg: "1", md: "0", sm: "0" }}
             margin="auto"
@@ -462,14 +525,16 @@ function Women() {
             </Button>
             </Link>
           </Center>
-        </Box>
+        </Box> */}
 
-        <Center>
-          <Box lineHeight="1rem">
+        <Carousel link={"/women"} title="Women's Collection" data={women} />
+<Box w={["80%","95%","95%","95%"]} margin="auto">
+        <Center mt="2rem">
+          <Box lineHeight="1rem" >
             <Heading fontSize="15px" fontWeight="400" mb="0.5rem">
               MYTHERESA – WOMEN’S LUXURY AND DESIGNER FASHION
             </Heading>
-            <Text fontSize="12px" fontWeight="400">
+            <Text fontSize="12px" fontWeight="400" >
               Mytheresa is the most-trusted source for finding the finest
               selection of luxurious womenswear. Our expert buying team travels
               the globe with a simple mission: to bring international fashion’s
@@ -481,8 +546,8 @@ function Women() {
           </Box>
         </Center>
 
-        <Flex mt="2rem">
-          <Box>
+        <Flex mt="2rem" >
+          <Box >
             <Heading fontSize="15px" fontWeight="400" mb="0.5rem">
               A LUXURY SHOPPING EXPERIENCE
             </Heading>
@@ -540,6 +605,7 @@ function Women() {
           Shop with us and discover why Mytheresa is your final destination for
           online shopping for women.
         </Text>
+      </Box>
       </Box>
     </>
   );
