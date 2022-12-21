@@ -110,502 +110,264 @@ function Women() {
           </Link>
         </Flex>
 
-        {/* <SimpleGrid columns={[1,2,2,2]} spacing={2}>
-          <Box>
-          <Text fontSize="0.9rem"  textAlign="center">THE BRIBAL EDIT</Text>
-          <Text
-                  textAlign="center"
-                  mt="1rem"
-                  fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
-                >
-                  Your down-the-aisle outfit is ready for you
-                </Text>
-                <Box w="80%" h="auto">
-                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/ActboxTall-StellaParty_2x_20221028105957.jpg?imwidth=600&imdensity=1"></Image>
-               
-                </Box>
-                
-          </Box>
-          <Box>
-          <Text fontSize="0.9rem"  textAlign="center" >CHRISTIAN LOUBOUTIN'S LOUBI FAMILY</Text>
-                <Text
-                  textAlign="center"
-                  fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
-                >
-                  You never forget your first pair of Louboutins
-                </Text>
-                <Box w="80%"> <Image
-                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW51/CW51_ActboxTall__2x_20221216121008.jpg?imwidth=600&imdensity=1"
-                alt="one"
-              /></Box>
-               
-          </Box>
-          <Box>
-          <Text fontSize="0.9rem"  textAlign="center">THE BRIBAL EDIT</Text>
-          <Text
-                  textAlign="center"
-                  mt="1rem"
-                  fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
-                >
-                  Your down-the-aisle outfit is ready for you
-                </Text>
-                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x__20221031171804.jpg?imwidth=600&imdensity=1"></Image>
-               
-          </Box>
-          <Box>
-          <Text fontSize="0.9rem"  textAlign="center">THE BRIBAL EDIT</Text>
-          <Text
-                  textAlign="center"
-                  mt="1rem"
-                  fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
-                >
-                  Your down-the-aisle outfit is ready for you
-                </Text>
-                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x_2_20221031171804.jpg?imwidth=600&imdensity=1"></Image>
-               
-          </Box>
-         </SimpleGrid> */}
+       
+          
 
-        <Box>
-          <Flex
-            h={{ lg: "24vh", md: "19vh", sm: "19vh" }}
-            justifyContent="space-around"
-            alignItems="center"
-          >
-            <Flex direction="column" justifyContent="" alignItems="center">
-              <Text fontSize="0.9rem">THE BRIBAL EDIT</Text>
-              <Box w={{ lg: "25vw", md: "24vw" }}>
-                <Text
-                  textAlign="center"
-                  mt="1rem"
-                  fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
-                >
-                  Your down-the-aisle outfit is ready for you
-                </Text>
-              </Box>
-            </Flex>
-
-            <Flex direction="column" alignItems="center" textAlign="center">
-              <Text fontSize="0.9rem">CHRISTIAN LOUBOUTIN'S LOUBI FAMILY</Text>
-              <Box w={{ lg: "25vw", md: "24vw" }}>
-                <Text
-                  textAlign="center"
-                  fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
-                >
-                  You never forget your first pair of Louboutins
-                </Text>
-              </Box>
-            </Flex>
-          </Flex>
-
-          <SimpleGrid
-            gap={3}
-            w="100%"
-            h={{ lg: "115vh", md: "70vh", sm: "70vh" }}
-            templateRows="repeat(2,1fr)"
-            templateColumns="repeat(2,1fr)"
-          >
-            <GridItem rowSpan={2} w="100%">
-              <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/ActboxTall-StellaParty_2x_20221028105957.jpg?imwidth=600&imdensity=1"></Image>
-              <Link to="/womenproduct">
-                <Button
-                  h={8}
-                  fontSize={13}
-                  borderRadius="none"
-                  mb="1.2rem"
-                  bgColor="black"
-                  color="white"
-                  colorScheme="black"
-                  mt="1.2rem"
-                  ml={["3rem", "4rem", "13rem", "13rem"]}
-                >
-                  SHOP NOW
-                </Button>
-              </Link>
-            </GridItem>
-
-            <GridItem>
-              <Image
-                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x__20221031171804.jpg?imwidth=600&imdensity=1"
-                alt="one"
-              />
-              <Flex
-                borderBottom="1px solid gray"
-                h={{ lg: "15vh", md: "10vh", sm: "10vh" }}
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <Link to="/womenproduct">
-                  <Button
-                    h={8}
-                    fontSize={13}
-                    borderRadius="none"
-                    mt="1.2rem"
-                    bgColor="black"
-                    color="white"
-                    colorScheme="black"
-                  >
-                    SHOP NOW
-                  </Button>
-                </Link>
-              </Flex>
-            </GridItem>
-
-            <GridItem w="100%">
-              <Flex
-                h={{ lg: "20vh", md: "12vh", sm: "12vh" }}
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <Text
-                  fontSize={{ lg: "1.1rem", md: "0.9rem", sm: "0.8rem" }}
-                  textAlign="center"
-                >
-                  CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
-                </Text>
-                <Text
-                  textAlign="center"
-                  fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
-                >
-                  Furry best friends deserve glamorous treats
-                </Text>
-              </Flex>
-              <Image
-                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x_2_20221031171804.jpg?imwidth=600&imdensity=1"
-                alt="two"
-              />
-            </GridItem>
-          </SimpleGrid>
-
-          <Flex
-            borderBottom="1px solid black"
-            h={{ lg: "18vh", md: "25vh" }}
-            justifyContent="space-around"
-            alignItems="center"
-          >
-            <Flex mt={{ lg: "0", md: "5rem" }}></Flex>
-            <Flex mt={{ lg: "0", md: "5rem" }}>
-              <Link to="/womenproduct">
-                <Button
-                  h={8}
-                  fontSize={13}
-                  borderRadius="none"
-                  mb="1.2rem"
-                  bgColor="black"
-                  color="white"
-                  colorScheme="black"
-                >
-                  SHOP NOW
-                </Button>
-              </Link>
-            </Flex>
-          </Flex>
-        </Box>
-
-        <Box>
-          <Flex
-            h={{ lg: "24vh", md: "19vh", sm: "19vh" }}
-            justifyContent="space-around"
-            alignItems="center"
-          >
-            <Flex direction="column" textAlign={"center"}>
-              <Text fontSize="0.9rem">THE BRIBAL EDIT</Text>
-              <Box w={{ lg: "25vw", md: "24vw" }}>
-                <Text
-                  textAlign="center"
-                  fontSize={{ lg: "2rem", md: "1.2rem", sm: "1.3rem" }}
-                >
-                  Your down-the-aisle outfit is ready for you
-                </Text>
-              </Box>
-            </Flex>
-            <Flex direction="column" justifyContent="" alignItems="center">
-              <Text fontSize="0.9rem" textAlign={"center"}>
-                CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
-              </Text>
-              <Box w={{ lg: "25vw", md: "24vw" }}>
-                <Text
-                  textAlign="center"
-                  fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
-                >
-                  You never forget your first pair of Louboutins
-                </Text>
-              </Box>
-            </Flex>
-          </Flex>
-
-          <Grid
-            gap={3}
-            w="100%"
-            h={{ lg: "115vh", md: "70vh", sm: "70vh" }}
-            templateRows="repeat(2,1fr)"
-            templateColumns="repeat(2,1fr)"
-          >
-            <GridItem rowSpan={2}>
-              <Image src="https://img.mytheresa.com/media/static/raw/cms/l/Rick_Owens_Moncler/Moncler_Maya_ActboxTall_2x_20221102170308.jpg?imwidth=600&imdensity=1"></Image>
-              <Link to="/womenproduct">
-                <Button
-                  h={8}
-                  fontSize={13}
-                  borderRadius="none"
-                  mt="1.2rem"
-                  ml={["3rem", "4rem", "13rem", "13rem"]}
-                  bgColor="black"
-                  color="white"
-                  colorScheme="black"
-                >
-                  SHOP NOW
-                </Button>
-              </Link>
-            </GridItem>
-
-            <GridItem>
-              <Image
-                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/Festive-Nov_ActboxSmall_GiftHIM_2x_20221028110222.jpg?imwidth=600&imdensity=1"
-                alt="one"
-              />
-              <Flex
-                borderBottom="1px solid gray"
-                h={{ lg: "15vh", md: "10vh", sm: "10vh" }}
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <Link to="/womenproduct">
-                  <Button
-                    h={8}
-                    fontSize={13}
-                    borderRadius="none"
-                    mt="1.2rem"
-                    mb="1.2rem"
-                    bgColor="black"
-                    color="white"
-                    colorScheme="black"
-                  >
-                    SHOP NOW
-                  </Button>
-                </Link>
-              </Flex>
-            </GridItem>
-
-            <GridItem w="100%">
-              <Flex
-                h={{ lg: "20vh", md: "12vh", sm: "12vh" }}
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <Text
-                  fontSize={{ lg: "1.1rem", md: "0.9rem", sm: "0.8rem" }}
-                  textAlign="center"
-                >
-                  CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
-                </Text>
-
-                <Text
-                  textAlign="center"
-                  fontSize={{ lg: "2rem", md: "1.1rem", sm: "1.2rem" }}
-                >
-                  Furry best friends deserve glamorous treats
-                </Text>
-              </Flex>
-              <Image
-                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/Festive-Nov_ActboxSmall_GiftHER_2x_20221028110218.jpg?imwidth=600&imdensity=1"
-                alt="two"
-              />
-            </GridItem>
-          </Grid>
-
-          <Flex
-            borderBottom="1px solid black"
-            h={{ lg: "18vh", md: "25vh" }}
-            justifyContent="space-around"
-            alignItems="center"
-          >
-            <Flex mt={{ lg: "0", md: "5rem" }}></Flex>
-            <Flex mt={{ lg: "0", md: "5rem" }}>
-              <Link to="/women">
-                <Button
-                  h={8}
-                  fontSize={13}
-                  borderRadius="none"
-                  mt="1.2rem"
-                  mb="1.2rem"
-                  bgColor="black"
-                  color="white"
-                  colorScheme="black"
-                >
-                  SHOP NOW
-                </Button>
-              </Link>
-            </Flex>
-          </Flex>
-        </Box>
-
-        {/* <Box mt={{ lg: "2rem", md: "1rem", sm: "1.9rem" }} mb={12} pt={5}>
-          <Stack
-            spacing={{ lg: "1", md: "0", sm: "0" }}
-            margin="auto"
-            justifyContent="center"
-            alignItems="center"
-            width="40vw"
-          >
-            <Text fontSize="0.9rem">URBAN JUNGLE</Text>
-            <Text
-              fontSize={{ lg: "2.1rem", md: "1.2rem", sm: "1.5rem" }}
-              textAlign="center"
-            >
-              Consider this your armor for city streets
+        <Box display={["block", "block", "flex"]}>
+          <Box mx="10px" align="center" w={["100%", "100%", "50%"]}>
+            <Text mb="30px" fontSize={["10px", "10px", "20px"]}>
+            THE BRIBAL EDIT
             </Text>
-          </Stack>
-          <Box mb={{ lg: "2.3rem", md: "0.8rem", sm: "0.8rem" }} mt="2rem">
-            <Grid
-              templateRows="repeat(1,1fr)"
-              templateColumns="repeat(4,1fr)"
-              gap="5"
-            >
-              <GridItem>
-                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/CW44_FE_642x642_2x__20221028110023.jpg"></Image>
-                <Text
-                  fontSize={{ lg: "1.3rem", md: "1.1rem", sm: "1rem" }}
-                  align="center"
-                >
-                  The Row
-                </Text>
-              </GridItem>
-              <GridItem>
-                {" "}
-                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/CW44_FE_642x642_2x_2_20221028110023.jpg"></Image>
-                <Text
-                  fontSize={{ lg: "1.3rem", md: "1.1rem", sm: "1rem" }}
-                  align="center"
-                >
-                  JW Anderson
-                </Text>
-              </GridItem>
-              <GridItem>
-                {" "}
-                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/CW44_FE_642x642_2x_3_20221028110026.jpg"></Image>
-                <Text
-                  fontSize={{ lg: "1.3rem", md: "1.1rem", sm: "1rem" }}
-                  align="center"
-                >
-                  Sacai
-                </Text>
-              </GridItem>
-              <GridItem>
-                {" "}
-                <Image src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/CW44_FE_642x642_2x_4_20221028110025.jpg"></Image>
-                <Text
-                  fontSize={{ lg: "1.3rem", md: "1.1rem", sm: "1rem" }}
-                  align="center"
-                >
-                  Celine Eyewear
-                </Text>
-              </GridItem>
-            </Grid>
-          </Box>
-
-          <Center>
+            <Text mb="30px" fontSize={["13px", "20px", "36px"]}>
+            Your down-the-aisle outfit is ready for you 
+            </Text>
+            <Image
+              mb="30px"
+              src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/ActboxTall-StellaParty_2x_20221028105957.jpg?imwidth=600&imdensity=1"
+            />
             <Link to="/womenproduct">
-             
+              {" "}
               <Button
-              h={8}
-              fontSize={13}
-              borderRadius="none"
-              mt="1.2rem"
-              bgColor="black"
-              color="white"
-              colorScheme="black"
-              
-            >
-              SHOP NOW
-            </Button>
+                mb="30px"
+                borderRadius="0px"
+                bgColor="black"
+                color="white"
+                _hover={{ bgColor: "black" }}
+              >
+                SHOP NOW 
+              </Button>
             </Link>
-          </Center>
-        </Box> */}
+          </Box>
+          <Box mx="10px" display="block">
+            <Box
+              border="px solid red"
+              align="center"
+              w={["100%", "100%", "100%"]}
+            >
+              <Text mb="30px" fontSize={["10px", "10px", "20px"]}>
+              CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
+              </Text>
+              <Text mb="30px" fontSize={["13px", "20px", "36px"]}>
+              You never forget your first pair of Louboutins
+              </Text>
+              <Image
+                mb="30px"
+                w="100%"
+                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x__20221031171804.jpg?imwidth=600&imdensity=1"
+              />
+              <Link to="/womenproduct">
+                <Button
+                  mb="30px"
+                  borderRadius="0px"
+                  bgColor="black"
+                  color="white"
+                  _hover={{ bgColor: "black" }}
+                >
+                  SHOP NOW 
+                </Button>
+              </Link>
+            </Box>
+            <hr />
+            <Box
+              mt="23px"
+              border="px solid red"
+              align="center"
+              w={["100%", "100%", "100%"]}
+            >
+              <Text mb="30px" fontSize={["10px", "10px", "20px"]}>
+              CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
+              </Text>
+              <Text mb="30px" fontSize={["13px", "20px", "36px"]}>
+              Furry best friends deserve  <br /> glamorous
+              </Text>
+              <Image
+                mb="30px"
+                w="100%"
+                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/LoubiFamily_ActboxSmall_2x_2_20221031171804.jpg?imwidth=600&imdensity=1"
+              />
+              <Link to="/womenproduct">
+                <Button
+                  mb="30px"
+                  borderRadius="0px"
+                  bgColor="black"
+                  color="white"
+                  _hover={{ bgColor: "black" }}
+                >
+                  SHOP NOW 
+                </Button>
+              </Link>
+            </Box>
+          </Box>
+        </Box>
+        <hr />
+
+        <Box mt="23px" display={["block", "block", "flex"]}>
+          <Box mx="10px" display="block">
+            <Box
+              border="px solid red"
+              align="center"
+              w={["100%", "100%", "100%"]}
+            >
+              <Text mt="20px" mb="30px" fontSize={["10px", "10px", "20px"]}>
+              CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
+              </Text>
+              <Text mb="30px" fontSize={["13px", "20px", "36px"]}>
+              You never forget your first <br/> pair of Louboutins
+              </Text>
+              <Image
+                mb="30px"
+                w="100%"
+                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW50/CW50_WW_HP_ActboxSmall_1_2x_20221212110608.jpg?imwidth=600&imdensity=1"
+              />
+              <Link to="/womenproduct">
+              <Button
+                mb="30px"
+                borderRadius="0px"
+                bgColor="black"
+                color="white"
+                _hover={{ bgColor: "black" }}
+              >
+                SHOP NOW 
+              </Button>
+              </Link>
+            </Box>
+            <hr />
+            <Box
+              mt="23px"
+              border="px solid red"
+              align="center"
+              w={["100%", "100%", "100%"]}
+            >
+              <Text mt="20px" mb="30px" fontSize={["10px", "10px", "20px"]}>
+              THE BRIBAL EDIT
+              </Text>
+              <Text mb="30px" fontSize={["13px", "20px", "36px"]}>
+              Your down-the-aisle outfit is<br/> ready for you
+              </Text>
+              <Image
+                mb="30px"
+                w="100%"
+                src="https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW44/Festive-Nov_ActboxSmall_GiftHIM_2x_20221028110222.jpg?imwidth=600&imdensity=1"
+              />
+              <Link to="/womenproduct">
+              <Button
+                mb="30px"
+                borderRadius="0px"
+                bgColor="black"
+                color="white"
+                _hover={{ bgColor: "black" }}
+              >
+                SHOP NOW 
+              </Button>
+              </Link>
+            </Box>
+          </Box>
+          <Box mx="10px" align="center" w={["100%", "100%", "50%"]}>
+            <Text mt="20px" mb="30px" fontSize={["10px", "10px", "20px"]}>
+            CHRISTIAN LOUBOUTIN'S LOUBI FAMILY
+            </Text>
+            <Text mb="30px" fontSize={["13px", "20px", "36px"]}>
+             
+              You never forget your first pair of <br />Louboutins
+            </Text>
+            <Image
+              mb="30px"
+              src="https://img.mytheresa.com/media/static/raw/cms/l/Rick_Owens_Moncler/Moncler_Maya_ActboxTall_2x_20221102170308.jpg?imwidth=600&imdensity=1"
+            />
+            <Link to="/womenproduct">
+            
+              <Button
+                mb="30px"
+                borderRadius="0px"
+                bgColor="black"
+                color="white"
+                _hover={{ bgColor: "black" }}
+              >
+                SHOP NOW 
+              </Button>
+            </Link>
+          </Box>
+        </Box>
 
         <Carousel link={"/women"} title="Women's Collection" data={women} />
-<Box w={["80%","95%","95%","95%"]} margin="auto">
-        <Center mt="2rem">
-          <Box lineHeight="1rem" >
-            <Heading fontSize="15px" fontWeight="400" mb="0.5rem">
-              MYTHERESA – WOMEN’S LUXURY AND DESIGNER FASHION
-            </Heading>
-            <Text fontSize="12px" fontWeight="400" >
-              Mytheresa is the most-trusted source for finding the finest
-              selection of luxurious womenswear. Our expert buying team travels
-              the globe with a simple mission: to bring international fashion’s
-              finest directly to your doorstep. With our runway-fresh new
-              arrivals every week, an easy-to-navigate platform and a mobile app
-              to shop on-the-go, we ensure a boutique-like feeling for a unique
-              shopping experience.
-            </Text>
-          </Box>
-        </Center>
+        <Box w={["80%", "95%", "95%", "95%"]} margin="auto">
+          <Center mt="2rem">
+            <Box lineHeight="1rem">
+              <Heading fontSize="15px" fontWeight="400" mb="0.5rem">
+                MYTHERESA – WOMEN’S LUXURY AND DESIGNER FASHION
+              </Heading>
+              <Text fontSize="12px" fontWeight="400">
+                Mytheresa is the most-trusted source for finding the finest
+                selection of luxurious womenswear. Our expert buying team
+                travels the globe with a simple mission: to bring international
+                fashion’s finest directly to your doorstep. With our
+                runway-fresh new arrivals every week, an easy-to-navigate
+                platform and a mobile app to shop on-the-go, we ensure a
+                boutique-like feeling for a unique shopping experience.
+              </Text>
+            </Box>
+          </Center>
 
-        <Flex mt="2rem" >
-          <Box >
-            <Heading fontSize="15px" fontWeight="400" mb="0.5rem">
-              A LUXURY SHOPPING EXPERIENCE
-            </Heading>
-            <UnorderedList fontSize="12px" fontWeight="400">
-              <ListItem>
-                The finest edit of more than 200 international luxury brands
-              </ListItem>
-              <ListItem>
-                900 new arrivals each week directly from the runway Well-curated
-                selection of items for a boutique-like
-              </ListItem>
-              <ListItem>
-                Exclusive designer collaborations and capsule collections that
-                you won’t find anywhere else
-              </ListItem>
-            </UnorderedList>
-          </Box>
-          <Box ml="2rem">
-            <Heading fontSize="15px" fontWeight="400" mb="0.5rem">
-              SERVICE AND QUALITY
-            </Heading>
-            <UnorderedList fontSize="12px" fontWeight="400">
-              <ListItem>Authentic products guaranteed</ListItem>
-              <ListItem>
-                Fast, reliable delivery within 3 business days
-              </ListItem>
-              <ListItem>Free returns and exchanges within 30 days</ListItem>
-              <ListItem>
-                Exceptional customer service available 24 hours a day, 7 days a
-                week in 13 different languages
-              </ListItem>
-            </UnorderedList>
-          </Box>
-        </Flex>
-        <Text fontSize="12px" fontWeight="400" mt="1rem">
-          Whether you are looking for the latest Bottega Veneta pouch for
-          everyday wear, Jimmy Choo heels for an upcoming wedding, or a Burberry
-          scarf to gift a friend, our edit comprises the key pieces that you
-          need for an elegant season ahead. With our assortment of timeless
-          items and exclusive capsule collections, which includes everything
-          from the understated luxury of Loro Piana and avant-garde appeal of
-          Maison Margiela, to Saint Laurent bags and time-honored Gucci loafers;
-          you are certain to find everything you want to build your dream
-          closet.
-        </Text>
-        <Text fontSize="12px" fontWeight="400" mt="1rem">
-          Get inspired by our coveted edit, which makes occasion dressing easy
-          by breaking down our buy into easy-to-shop categories such as fashion
-          sneakers or exquisite gowns. Delve into our exclusive selection of
-          designer must-haves. Our exceptional customer service team is here to
-          help you through every step of the order process, and beyond, to make
-          sure you start every day dressed to conquer.
-        </Text>
-        <Text fontSize="12px" fontWeight="400" mt="1rem">
-          Shop with us and discover why Mytheresa is your final destination for
-          online shopping for women.
-        </Text>
-      </Box>
+          <Flex mt="2rem">
+            <Box>
+              <Heading fontSize="15px" fontWeight="400" mb="0.5rem">
+                A LUXURY SHOPPING EXPERIENCE
+              </Heading>
+              <UnorderedList fontSize="12px" fontWeight="400">
+                <ListItem>
+                  The finest edit of more than 200 international luxury brands
+                </ListItem>
+                <ListItem>
+                  900 new arrivals each week directly from the runway
+                  Well-curated selection of items for a boutique-like
+                </ListItem>
+                <ListItem>
+                  Exclusive designer collaborations and capsule collections that
+                  you won’t find anywhere else
+                </ListItem>
+              </UnorderedList>
+            </Box>
+            <Box ml="2rem">
+              <Heading fontSize="15px" fontWeight="400" mb="0.5rem">
+                SERVICE AND QUALITY
+              </Heading>
+              <UnorderedList fontSize="12px" fontWeight="400">
+                <ListItem>Authentic products guaranteed</ListItem>
+                <ListItem>
+                  Fast, reliable delivery within 3 business days
+                </ListItem>
+                <ListItem>Free returns and exchanges within 30 days</ListItem>
+                <ListItem>
+                  Exceptional customer service available 24 hours a day, 7 days
+                  a week in 13 different languages
+                </ListItem>
+              </UnorderedList>
+            </Box>
+          </Flex>
+          <Text fontSize="12px" fontWeight="400" mt="1rem">
+            Whether you are looking for the latest Bottega Veneta pouch for
+            everyday wear, Jimmy Choo heels for an upcoming wedding, or a
+            Burberry scarf to gift a friend, our edit comprises the key pieces
+            that you need for an elegant season ahead. With our assortment of
+            timeless items and exclusive capsule collections, which includes
+            everything from the understated luxury of Loro Piana and avant-garde
+            appeal of Maison Margiela, to Saint Laurent bags and time-honored
+            Gucci loafers; you are certain to find everything you want to build
+            your dream closet.
+          </Text>
+          <Text fontSize="12px" fontWeight="400" mt="1rem">
+            Get inspired by our coveted edit, which makes occasion dressing easy
+            by breaking down our buy into easy-to-shop categories such as
+            fashion sneakers or exquisite gowns. Delve into our exclusive
+            selection of designer must-haves. Our exceptional customer service
+            team is here to help you through every step of the order process,
+            and beyond, to make sure you start every day dressed to conquer.
+          </Text>
+          <Text fontSize="12px" fontWeight="400" mt="1rem">
+            Shop with us and discover why Mytheresa is your final destination
+            for online shopping for women.
+          </Text>
+        </Box>
       </Box>
     </>
   );
