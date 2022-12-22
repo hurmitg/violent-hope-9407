@@ -148,6 +148,7 @@ export default function Carousel({ data, title, link }) {
             _hover={{ bg: "#f3f3f3" }}
             transform={"1s"}
             borderRadius={"none"}
+           
           >
             View All
           </Button>

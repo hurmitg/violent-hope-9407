@@ -17,7 +17,7 @@ function Corousel() {
 
   return (
     <>
-      <Flex gap={2} w={{ lg: "100%", md: "100%", sm: "100%" }}>
+      <Flex gap={2} w={{ lg: "100%", md: "100%", sm: "100%" }} ml="3rem"flexDirection={["column","column","column","row"]} alignItems="center">
         <Button
           onClick={() => setCount(count - 1)}
           disabled={count === 0 ? true : false}
