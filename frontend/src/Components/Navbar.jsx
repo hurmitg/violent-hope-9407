@@ -23,6 +23,7 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { AppContext } from "../Context/Context";
+import { DarkModeBtn } from "./darkmode";
 
 export default function Navbar({ category }) {
   const { isOpen, onOpen, onClose}=useDisclosure()
@@ -80,6 +81,7 @@ export default function Navbar({ category }) {
                   Kids
                 </Text>
               </Link>
+              <DarkModeBtn/>
             </Flex>
 
             <Flex
@@ -109,6 +111,7 @@ export default function Navbar({ category }) {
                     Sign In
                   </Text>
                 </Link>
+               
               )}
             </Flex>
           </Flex>
