@@ -13,6 +13,8 @@ import {
 import React from "react";
 import Corousel from "./Corousel";
 import { Link } from "react-router-dom";
+import Carousel from "../Landing Page/Carousel";
+import men from "../Landing Page/Data/men.json";
 function Men() {
   document.title="Men's Luxury Fashion & Designer Shopping | Violent Hope"
   return (
@@ -51,24 +53,21 @@ function Men() {
                 Marni x Mytheresa Men
               </Text>
             </Stack>
+           
             <Link to="/menproduct">
-              <Button
-                colorScheme="white"
-                bgColor="white"
-                maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-                h={8}
-                fontSize={13}
-                borderRadius="none"
-                color="black"
-                mt="1.2rem"
-                fontWeight="none"
-                w="20vw"
-              >
-                SHOP NOW
-              </Button>
-            </Link>
+                  <Button
+                    h={8}
+                    fontSize={13}
+                    borderRadius="none"
+                    mt={["1rem", "1.2rem", "1.2rem", "1.2rem"]}
+                    mb={["1rem"]}
+                  >
+                    SHOP NOW
+                  </Button>
+                </Link>
           </Flex>
         </Flex>
+        <Carousel link={"/men"} title="men's Collection" data={men}/>
 
         <Center>
           <Box>
@@ -76,35 +75,37 @@ function Men() {
               New Arrivals
             </Heading>
 
-            <Box mt="2rem" mb="2rem">
-              <Corousel />
-            </Box>
+           
+  
 
             <Center>
               <Link to="/menproduct">
-                <Button
-                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                  h={8}
-                  fontSize={{ lg: "13", md: "11", sm: "11" }}
-                  bgColor="black"
-                  borderRadius="none"
-                  color="white"
-                  w="10vw"
-                  mt="1rem"
-                >
-                  VIEW ALL
-                </Button>
+              
+                <Link to="/menproduct">
+                  <Button
+                    h={8}
+                    fontSize={13}
+                    borderRadius="none"
+                    bgColor="black"
+                   
+                    color="white"
+                    mt={["1rem", "1.2rem", "1.2rem", "1.2rem"]}
+                    mb={["1rem"]}
+                  >
+                      VIEW ALL
+                  </Button>
+                </Link>
               </Link>
             </Center>
           </Box>
         </Center>
 
-        <Center mt="3rem">
-          <Flex>
+        <Center mt="3rem" w={["90%","90%","90%","100%"]} margin="auto" >
+          <Flex flexDirection={["column","column","row","row"]}  >
             <Box
               color="white"
               bgColor="black"
-              width="50%"
+              width={["100%","100%","50%","50%"]}
               paddingTop={{ lg: "10rem", md: "6rem", sm: "5rem" }}
               paddingLeft={{ lg: "4rem", md: "4rem", sm: "4rem" }}
               lineHeight="3rem"
@@ -113,7 +114,8 @@ function Men() {
               {" "}
               <Heading
                 fontWeight="500"
-                fontSize={{ lg: "53px", md: "35px", sm: "28px" }}
+                fontSize={["10px","22px","35px","53px"  ]}
+                mt="1rem"
               >
                 The perfect gift
               </Heading>
@@ -121,49 +123,52 @@ function Men() {
                 The pieces to add to your wishlist
               </Text>
               <Link to="/menproduct">
-                <Button
-                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                  h={8}
-                  fontSize={{ lg: "13", md: "11", sm: "11" }}
-                  bgColor="white"
-                  borderRadius="none"
-                  color="black"
-                  w="10vw"
-                  mt="1rem"
-                >
-                  VIEW ALL
-                </Button>
-              </Link>
+                  <Button
+                    h={8}
+                    fontSize={13}
+                    borderRadius="none"
+                    bgColor="white"
+                   
+                    color="black"
+                    mt={["1rem", "1.2rem", "1.2rem", "1.2rem"]}
+                    mb={["1rem"]}
+                  >
+                      VIEW ALL
+                  </Button>
+                </Link>
             </Box>
             <Image
-              src="https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW45/BIG2/DESKTOP_2X_20221107170819.jpg?imwidth=1180&imdensity=1"
-              width="50%"
+              src="https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW50/FLYOUTS/BRUNELLO_20221213151310.jpg"
+              width={["100%","100%","50%","50%"]}
+              
             ></Image>
           </Flex>
         </Center>
-
+        <Carousel link={"/men"} title="men's Collection" data={men}/>
         <Box mt="2rem" mb="2rem">
-          <Corousel />
+          {/* <Corousel /> */}
         </Box>
-        <Center mt="3rem">
-          <Flex>
+        <Center mt="3rem"  w={["90%","90%","90%","100%"]} margin="auto">
+          <Flex flexDirection={["column","column","row","row"]} >
             <Image
               src="https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW45/BIG3/BIG_3_2x_20221107171209.jpg?imwidth=1180&imdensity=1"
-              width="50%"
+              width={["100%","100%","50%","50%"]}
             ></Image>
             <Box
               color="white"
               bgColor="black"
-              width="50%"
+              width={["100%","100%","50%","50%"]}
               paddingTop={{ lg: "10rem", md: "6rem", sm: "5rem" }}
               paddingLeft={{ lg: "4rem", md: "4rem", sm: "4rem" }}
               lineHeight="3rem"
               fontSize="28px"
+              mr="1rem"
             >
               {" "}
               <Heading
                 fontWeight="500"
-                fontSize={{ lg: "53px", md: "35px", sm: "28px" }}
+                mt="1rem"
+                fontSize={["10px","22px","35px","53px"  ]}
               >
                 Statement pants
               </Heading>
@@ -171,41 +176,41 @@ function Men() {
                 The pieces to add to your wishlist
               </Text>
               <Link to="/menproduct">
-                <Button
-                  maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-                  h={8}
-                  fontSize={{ lg: "13", md: "11", sm: "11" }}
-                  bgColor="white"
-                  borderRadius="none"
-                  color="black"
-                  w="10vw"
-                  mt="1rem"
-                >
-                  VIEW ALL
-                </Button>
-              </Link>
+                  <Button
+                    h={8}
+                    fontSize={13}
+                    borderRadius="none"
+                    bgColor="white"
+                   
+                    color="black"
+                    mt={["1rem", "1.2rem", "1.2rem", "1.2rem"]}
+                    mb={["1rem"]}
+                  >
+                      VIEW ALL
+                  </Button>
+                </Link>
             </Box>
           </Flex>
         </Center>
-
+        <Carousel link={"/men"} title="men's Collection" data={men}/>
         <Box mt="2rem" mb="2rem">
-          <Corousel />
+          {/* <Corousel /> */}
         </Box>
         <Center>
-          <Link to="/menproduct">
-            <Button
-              maxW={{ lg: "7vw", md: "10vw", sm: "9vw" }}
-              h={8}
-              fontSize={{ lg: "13", md: "11", sm: "11" }}
-              bgColor="black"
-              borderRadius="none"
-              color="white"
-              w="10vw"
-              mt="1rem"
-            >
-              SHOP NOW
-            </Button>
-          </Link>
+        <Link to="/menproduct">
+                  <Button
+                    h={8}
+                    fontSize={13}
+                    borderRadius="none"
+                    bgColor="black"
+                   
+                    color="white"
+                    mt={["1rem", "1.2rem", "1.2rem", "1.2rem"]}
+                    mb={["1rem"]}
+                  >
+                      SHOP NOW
+                  </Button>
+                </Link>
         </Center>
 
         <Center>
@@ -285,6 +290,14 @@ function Men() {
           online shopping for women.
         </Text>
       </Box>
+
+
+
+
+
+
+
+      
     </>
   );
 }
