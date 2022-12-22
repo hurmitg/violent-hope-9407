@@ -11,7 +11,9 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import Corousel from "./Corousel";
+import Carousel from "../Landing Page/Carousel";
+
+import children from "../Landing Page/Data/Kids.json";
 
 function Kids() {
   document.title="Kids Fashion - Designer Kidswear for Kids online | Violent Hope"
@@ -38,24 +40,27 @@ function Kids() {
               <Text
                 fontSize={{ lg: "3.3rem", md: "2.5rem", sm: "2.5rem" }}
                 color="white"
+                mt="5rem"
+               
               >
                 Girls
               </Text>
               <Link to="/kidsproduct">
-                <Button
-                  bgColor="white"
-                  maxW={{ lg: "6vw", md: "10vw", sm: "10vw" }}
-                  h={8}
-                  fontSize={13}
-                  borderRadius="none"
-                  color="black"
-                  mt="1.2rem"
-                  fontWeight="none"
-                  w="20vw"
-                >
-                  SHOP NOW
-                </Button>
-              </Link>
+            
+            <Button
+              mb="30px"
+              borderRadius="0px"
+              bgColor="white"
+              color="black"
+              _hover={{ bgColor: "black" }}
+              fontSize={["10","12","12","12"]}
+              maxW={["5rem"]}
+              h={["8","8","9","10"]}
+            
+            >
+              SHOP NOW 
+            </Button>
+          </Link>
             </Stack>
           </Flex>
 
@@ -74,24 +79,27 @@ function Kids() {
               <Text
                 fontSize={{ lg: "3.3rem", md: "2.5rem", sm: "2.5rem" }}
                 color="white"
+                mt="5rem"
               >
                 Boys
               </Text>
               <Link to="/kidsproduct">
-                <Button
-                  bgColor="white"
-                  maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-                  h={8}
-                  fontSize={13}
-                  borderRadius="none"
-                  color="black"
-                  mt="1.2rem"
-                  fontWeight="none"
-                  w="20vw"
-                >
-                  SHOP NOW
-                </Button>
-              </Link>
+            
+            <Button
+              mb="30px"
+              borderRadius="0px"
+              bgColor="white"
+              color="black"
+              _hover={{ bgColor: "black" }}
+              fontSize={["10","12","12","12"]}
+              maxW={["5rem"]}
+              h={["8","8","9","10"]}
+            
+            >
+              SHOP NOW 
+            </Button>
+          </Link>
+
             </Stack>
           </Flex>
         </Flex>
@@ -111,111 +119,36 @@ function Kids() {
             <Text
               fontSize={{ lg: "3.4rem", md: "2.2rem", sm: "2.2rem" }}
               color="black"
+              mt="3rem"
             >
               Baby
             </Text>
-            <Link to="/kidsproduct">
-              <Button
-                colorScheme="black"
-                bgColor="black"
-                maxW={{ lg: "6vw", md: "9vw", sm: "9vw" }}
-                h={8}
-                fontSize={{ lg: "13", md: "10", sm: "10" }}
-                borderRadius="none"
-                color="white"
-                mt="1.2rem"
-                fontWeight="none"
-                w="20vw"
-              >
-                SHOP NOW
-              </Button>
-            </Link>
+           
+              <Link to="/kidsproduct">
+            
+            <Button
+              mb="30px"
+              borderRadius="0px"
+              bgColor="black"
+              color="white"
+              _hover={{ bgColor: "black" }}
+              fontSize={["10","12","12","12"]}
+              maxW={["5rem"]}
+              h={["5","6","7","8"]}
+            >
+              SHOP NOW 
+            </Button>
+          </Link>
+          
           </Stack>
         </Flex>
 
-        <Flex
-          h={{ lg: "45vh", md: "40vh", sm: "46vh" }}
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Flex
-            h="100%"
-            w="49.5%"
-            direction="column"
-            justifyContent="flex-end"
-            alignItems="center"
-            pb="1rem"
-            backgroundPosition="center"
-            backgroundSize="cover"
-            backgroundImage="https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/12_Kids/PocketBanners/FW22/CW44_PB_Skiwear_Image_20221108081623.jpg"
-          >
-            <Stack spacing={5} justifyContent="center" alignItems="center">
-              <Text
-                fontSize={{ lg: "1.8rem", md: "1.4rem", sm: "1.4rem" }}
-                color="white"
-              >
-                KIDS' SKIWEAR
-              </Text>
-              <Link to="/kidsproduct">
-                <Button
-                  bgColor="white"
-                  maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-                  h={8}
-                  fontSize={13}
-                  borderRadius="none"
-                  color="black"
-                  mt="1.2rem"
-                  fontWeight="none"
-                  w="20vw"
-                >
-                  SHOP NOW
-                </Button>
-              </Link>
-            </Stack>
-          </Flex>
-
-          <Flex
-            h="100%"
-            w="49.5%"
-            direction="column"
-            justifyContent="flex-end"
-            alignItems="center"
-            pb="1rem"
-            backgroundPosition="center"
-            backgroundSize="cover"
-            backgroundImage="https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/12_Kids/PocketBanners/FW22/LoibiFamily_PB_KW_Image_20221031164331.jpg"
-          >
-            <Stack spacing={5} justifyContent="center" alignItems="center">
-              <Text
-                fontSize={{ lg: "1.8rem", md: "1.5rem", sm: "1.4rem" }}
-                color="white"
-              >
-                LOUBI FAMILY
-              </Text>
-              <Link to="/kidsproduct">
-                <Button
-                  bgColor="white"
-                  maxW={{ lg: "6vw", md: "10vw", sm: "9vw" }}
-                  h={8}
-                  fontSize={13}
-                  borderRadius="none"
-                  color="black"
-                  mt="1.2rem"
-                  fontWeight="none"
-                  w="20vw"
-                >
-                  SHOP NOW
-                </Button>
-              </Link>
-            </Stack>
-          </Flex>
-        </Flex>
-
+        <Carousel link={"/kids"} title="Kid's Collection" data={children} />
         <Box mt="2rem" mb={12} marginTop={12}>
           <Text color="black" fontSize={25} mb="1rem" textAlign="center">
             KIDS DESIGNERS
           </Text>
-          <Corousel />
+        
           <Center>
             <Link to="/kidsproduct">
               <Button
@@ -295,6 +228,9 @@ function Kids() {
           online shopping for women.
         </Text>
       </Box>
+
+
+      
     </>
   );
 }
