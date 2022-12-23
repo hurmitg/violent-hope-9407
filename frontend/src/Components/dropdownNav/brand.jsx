@@ -29,46 +29,34 @@ function Brand() {
         </div>
       </div>
       <div className="web-option">
-        <a class="dropbtn">
-          SHOES
-        </a>
+        <a class="dropbtn">SHOES</a>
         <div class="dropdown-content">
           <DropdownContent2 />
         </div>
       </div>
       <div className="web-option">
-        <a class="dropbtn" >
-          BAGS
-        </a>
+        <a class="dropbtn">BAGS</a>
         <div class="dropdown-content">
           <DropdownContent3 />
         </div>
       </div>
       <div className="web-option">
-        <a class="dropbtn" >
-          ACCESSORIES
-        </a>
+        <a class="dropbtn">ACCESSORIES</a>
         <div class="dropdown-content">
           <DropdownContent4 />
         </div>
       </div>
       <div className="web-option">
-        <a class="dropbtn">
-          JEWELRY
-        </a>
+        <a class="dropbtn">JEWELRY</a>
         <div class="dropdown-content">
           <DropdownContent6 />
         </div>
       </div>
       <div className="web-option">
-        <a class="dropbtn" >
-          VACATION
-        </a>
+        <a class="dropbtn">VACATION</a>
       </div>
       <div className="web-option">
-        <a class="dropbtn" >
-          Sale
-        </a>
+        <a class="dropbtn">Sale</a>
       </div>
     </div>
   );
