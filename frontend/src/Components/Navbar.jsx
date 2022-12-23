@@ -136,7 +136,7 @@ export default function Navbar({ category }) {
                   _hover={{bg:"none"}}
                   icon={isOpen ? <CloseIcon  color={"#111"}  fontSize={"md"} /> : <HamburgerIcon color={"#111"} fontSize={"2xl"} />}
                   
-                  display={{ lg: "none" }}
+                  display={["block","block","block","none"]}
                   onClick={isOpen ? onClose : onOpen}
                 />
                 <MenuList>

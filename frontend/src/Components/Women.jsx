@@ -17,10 +17,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from "../Landing Page/Carousel";
 import women from "../Landing Page/Data/women.json";
+import Navbar2 from "./dropdownNav/Navbar2";
 function Women() {
   document.title = "Women’s Luxury Fashion & Designer Shopping | Violent Hope";
   return (
     <>
+    <Link to="/womenproduct"><Navbar2/></Link>
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto">
         <Link to="/womenproduct">
           <Flex
