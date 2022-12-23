@@ -15,11 +15,13 @@ import Corousel from "./Corousel";
 import { Link } from "react-router-dom";
 import Carousel from "../Landing Page/Carousel";
 import men from "../Landing Page/Data/men.json";
+import Navbar2 from "./dropdownNav/Navbar2";
 function Men() {
   document.title="Men's Luxury Fashion & Designer Shopping | Violent Hope"
   return (
     <>
-      <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto" mt="100PX">
+     <Link to="/menproduct"><Navbar2/></Link>
+      <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto" >
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}
           direction="column"

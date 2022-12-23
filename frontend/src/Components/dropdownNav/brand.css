@@ -1,0 +1,53 @@
+.web {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  margin: auto;
+  height: 40px;
+  padding: 0 0 0 80px;
+ 
+}
+.web-option {
+  font-size: 16px;
+  margin-right: 16px;
+  font-weight: 200;
+  position: relative;
+  display: inline-block;
+}
+.web-option a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%;
+  margin-left: -210px;
+padding: 1rem;
+  min-width: 800px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.web-option:hover .dropdown-content {
+  display: block;
+}
+.option-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+

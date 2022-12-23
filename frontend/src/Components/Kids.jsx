@@ -12,13 +12,14 @@ import {
 import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from "../Landing Page/Carousel";
-
+import Navbar2 from "./dropdownNav/Navbar2";
 import children from "../Landing Page/Data/Kids.json";
 
 function Kids() {
   document.title="Kids Fashion - Designer Kidswear for Kids online | Violent Hope"
   return (
     <>
+     <Link to="/kidsproduct"><Navbar2/></Link>
       <Box w={{ lg: "75%", md: "100%", sm: "100%" }} margin="auto">
         <Flex
           h={{ lg: "71vh", md: "46vh", sm: "46vh" }}
