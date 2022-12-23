@@ -19,6 +19,7 @@ import Women from "./Women";
 import WomenProduct from "./WomenProduct";
 import Summary from "../pages/Summary";
 import ErrorPage from "./404 Page/ErrorPage";
+import Life from "./Life";
 
 function Allroutes() {
   return (
@@ -38,6 +39,7 @@ function Allroutes() {
         <Route path="/women" element={<Women />} />
         <Route path="/kids" element={<Kids />} />
         <Route path="/menproduct" element={<MenProduct />} />
+        <Route path="/life" element={<Life />} />
         <Route path="/womenproduct" element={<WomenProduct />} />
         <Route path="/kidsproduct" element={<KidsProduct />} />
         <Route path="/:category/:id" element={<SingleProd />} />
