@@ -81,6 +81,11 @@ export default function Navbar({ category }) {
                   Kids
                 </Text>
               </Link>
+              <Link to="/life">
+                <Text letterSpacing={1} cursor="pointer">
+                  Life
+                </Text>
+              </Link>
               <DarkModeBtn />
             </Flex>
 
