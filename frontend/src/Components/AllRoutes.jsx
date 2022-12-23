@@ -73,7 +73,7 @@ function Allroutes() {
             </PrivateRoute>
           }
         />
-        <Route path="*" element={<ErrorPage/>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>
   );
