@@ -5,14 +5,14 @@ import { useState } from "react";
 function Corousel() {
   let [count, setCount] = useState(0);
   let arr = [
-    "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/4c/P00674504.jpg",
-    "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/30/P00675265.jpg",
-    "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/e4/P00701157.jpg",
-    "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/1e/P00737342.jpg",
-    "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/4c/P00674504.jpg",
-    "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/30/P00675265.jpg",
-    "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/e4/P00701157.jpg",
-    "https://img.mytheresa.com/420/475/95/jpeg/catalog/product/1e/P00737342.jpg",
+    "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/10/P00723961_d2.jpg",
+    "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/c9/P00723934_d2.jpg",
+    "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/85/P00723896_d2.jpg",
+    "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/9f/P00724648_d2.jpg",
+    "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/63/P00678391_d2.jpg",
+    "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/9e/P00724130_d2.jpg",
+    "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/66/P00723891_d2.jpg",
+    "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/51/P00678392_d2.jpg",
   ];
 
   return (
@@ -23,20 +23,23 @@ function Corousel() {
           disabled={count === 0 ? true : false}
           bgColor="white"
           mt="5rem"
+
+
+          
         >
           <Icon as={ChevronLeftIcon} w={10} h={10} />
         </Button>
         <Box>
-          <Image src={arr[count]} />
+          <Image src={arr[count]}  _hover={{transform:"scale(1.2)"} }/>
         </Box>
         <Box>
-          <Image src={arr[count + 1]} />
+          <Image src={arr[count + 1]}  _hover={{transform:"scale(1.2)"} }/>
         </Box>
         <Box>
-          <Image src={arr[count + 2]} />
+          <Image src={arr[count + 2]}  _hover={{transform:"scale(1.2)"} }/>
         </Box>
         <Box>
-          <Image src={arr[count + 3]} />
+          <Image src={arr[count + 3]}  _hover={{transform:"scale(1.2)"} }/>
         </Box>
         <Button
           onClick={() => setCount(count + 1)}
@@ -44,6 +47,7 @@ function Corousel() {
           _hover={{ bg: "white" }}
           mt="5rem"
           disabled={count === arr.length - 4 ? true : false}
+         
         >
           <Icon as={ChevronRightIcon} w={10} h={10} />
         </Button>
