@@ -1,4 +1,4 @@
-<img src="Assets/logo.jpeg" style="border: 2px solid black; border-radius: 10px;" />
+<img src="https://user-images.githubusercontent.com/101565835/209437411-339662d2-07cb-4df3-b273-39d42997bc28.jpeg" style="width:150px" />
 
 # E-commerce Website  <a href="https://violent-hope-ecomm.netlify.app/">Live View</a>
 
