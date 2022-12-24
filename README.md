@@ -1,6 +1,6 @@
 <img src="Assets/logo.jpeg" style="border: 2px solid black; border-radius: 10px;" />
 
-# E-commerce Website
+# E-commerce Website  <a href="https://violent-hope-ecomm.netlify.app/">Live View</a>
 
 This is a full-stack shopping application built using MERN stack by a team of 5. The application loads products from a MongoDB database and displays them using **_React and Chakra UI_** ( front-end ), **_NodeJs and ExpressJS_** ( back-end ).
 
