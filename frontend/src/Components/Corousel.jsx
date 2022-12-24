@@ -23,6 +23,9 @@ function Corousel() {
           disabled={count === 0 ? true : false}
           bgColor="white"
           mt="5rem"
+
+
+          
         >
           <Icon as={ChevronLeftIcon} w={10} h={10} />
         </Button>
