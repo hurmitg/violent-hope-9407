@@ -9,6 +9,7 @@ import {
 } from "./dropdown-content";
 
 import "./brand.css";
+import { Button } from "@chakra-ui/react";
 
 function Brand() {
   return (
@@ -58,6 +59,7 @@ function Brand() {
       <div className="web-option">
         <a class="dropbtn">Sale</a>
       </div>
+     
     </div>
   );
 }

@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import {
   Box,
@@ -122,6 +123,7 @@ const SingleProd = () => {
               borderRadius="10px"
               objectFit="cover"
               alt="oneproduct"
+              _hover={{transform:"scale(1.2)"} }
             />
           </Box>
 
