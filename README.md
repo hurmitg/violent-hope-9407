@@ -38,13 +38,16 @@ Here are screenshots that show the application in use.
 <img src="https://user-images.githubusercontent.com/101565835/209432072-da6e421b-954f-462a-9272-f4548fb4ae1c.png"/>
 
 ---
-
+<br>
+<h2 align="center">Navbar</h2>
+<p align="center">On hover you can navigate to different options</p>
+<img src="https://user-images.githubusercontent.com/101565835/209432793-db6a0e6c-25e9-4459-b3a9-cf7a0ef4660e.png/>
 <br>
 <h2 align="center">Products Page</h2>
 
 <p align="center">The page displays different products and user can filter them by category, brand, price etc.</p>
 
-<img src="https://user-images.githubusercontent.com/101565835/209432142-5ff679fe-40ea-4eb3-9a17-2e3b580738c6.png"/>
+<img src="https://user-images.githubusercontent.com/101565835/209432793-db6a0e6c-25e9-4459-b3a9-cf7a0ef4660e.png"/>
 
 ---
 
