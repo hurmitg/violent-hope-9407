@@ -1,3 +1,4 @@
+
 import {
   Box,
   Button,
@@ -294,7 +295,7 @@ function KidsProduct() {
               justifyContent="space-around"
             >
               <Link to={`/kids/${e._id}/`}>
-                <Image src={e.image} h="70%" mb="8px"></Image>
+                <Image src={e.image} h="70%" mb="8px" _hover={{transform:"scale(1.2)"} }></Image>
                 <Text as="b">{e.brand}</Text>
                 <Text>{e.title}</Text>
                 <Text as="b">₹{e.price}</Text>

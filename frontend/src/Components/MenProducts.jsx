@@ -1,4 +1,3 @@
-
 import {
   Box,
   Button,
@@ -15,6 +14,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Dna } from "react-loader-spinner";
+import { transform } from "framer-motion";
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 function MenProduct() {
@@ -297,15 +297,13 @@ function MenProduct() {
               justifyContent="space-around"
             >
               <Link to={`/men/${e._id}/`}>
-                <Image src={e.image} h="70%" mb="8px"></Image>
+                <Image src={e.image} h="70%" mb="8px" _hover={{transform:"scale(1.2)"} }></Image>
                 <Text as="b">{e.brand}</Text>
                 <Text>{e.title}</Text>
                 <Text as="b">₹{e.price}</Text>
               </Link>
             </Flex>
           ))}
-
-          <Box></Box>
         </SimpleGrid>
       </Box>
     </>
