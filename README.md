@@ -26,7 +26,7 @@ Here are screenshots that show the application in use.
 
 <p align="center">The Home Page displays a complete overview of the website. The featured brands, and links to the whole website.</p>
 
-![Landing Page](/Assets/landing.jpg "Optional Title")
+<img src="https://user-images.githubusercontent.com/101565835/209432112-cee18dba-e12f-4da7-b90a-76296424a3e4.png"/>
 
 ---
 
@@ -35,7 +35,7 @@ Here are screenshots that show the application in use.
 
 <p align="center">Any User can Signup on the website by simply adding few details and use them to login later.</p>
 
-![Authentication Page](/Assets/login.jpg "Optional Title")
+<img src="https://user-images.githubusercontent.com/101565835/209432072-da6e421b-954f-462a-9272-f4548fb4ae1c.png"/>
 
 ---
 
@@ -44,7 +44,7 @@ Here are screenshots that show the application in use.
 
 <p align="center">The page displays different products and user can filter them by category, brand, price etc.</p>
 
-![Products Page](/Assets/product.jpg "Optional Title")
+<img src="https://user-images.githubusercontent.com/101565835/209432142-5ff679fe-40ea-4eb3-9a17-2e3b580738c6.png"/>
 
 ---
 
@@ -53,7 +53,7 @@ Here are screenshots that show the application in use.
 
 <p align="center">Get all the details about a products, it's availability and add it to the cart.</p>
 
-![Product Page](/Assets/singleProduct.jpg "Optional Title")
+<img src="https://user-images.githubusercontent.com/101565835/209432166-9443b3d4-e995-4bff-a39a-1a326848e22e.png"/>
 
 ---
 
@@ -62,7 +62,7 @@ Here are screenshots that show the application in use.
 
 <p align="center">Know what is in your cart, change their quantity or remove from the cart.</p>
 
-![Cart Page](/Assets/cart.jpg "Optional Title")
+<img src="https://user-images.githubusercontent.com/101565835/209432072-da6e421b-954f-462a-9272-f4548fb4ae1c.png"/>
 
 ---
 
@@ -71,7 +71,7 @@ Here are screenshots that show the application in use.
 
 <p align="center">Add address, make a payment and wait for happiness to be delivered at your doorstep.</p>
 
-![Order Placed Page](/Assets/orderPlaced.jpg "Optional Title")
+<img src="https://user-images.githubusercontent.com/101565835/209431982-eff20e4a-2d63-4c75-b8ce-bdbe567fa414.png"/>
 
 ---
 
