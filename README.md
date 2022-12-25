@@ -110,4 +110,4 @@ npm run start
 - [Onkar](https://github.com/Onkar271998)
 - [Utkarsh](https://github.com/utkarshqw)
 - [Vivek](https://github.com/Vivek-Nemade)
-- [Hurmit](https://github.com/hurmitg)
+- [Hurmit](https://github.com/hurmitg) `(TL)`
