@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const jwt_Secret = "theresa@123#clone";
+const jwt_Secret = process.env.TOKEN;
 /**
  * Generates a JWT token for the given user ID.
  */
